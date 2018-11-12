@@ -13,29 +13,29 @@
 ### how to comment
 ---
 ### Integrastion github and PC
-- 1) Abra o diretório no seu computador que devera ir para o github:  <br/>
+1. Abra o diretório no seu computador que devera ir para o github:  <br/>
 Ex: <br/>
 `brunocampos01@AVELL ~/projetos/projetos_JAVA/`
  
-- 2) Inicialize o git: <br/>
+2. Inicialize o git: <br/>
 `git init`
 
-- 3) Traker em todos os arquivos e diretórios: <br/>
+3. Traker em todos os arquivos e diretórios: <br/>
 `git add . `
 
-- 4) Verifique o andamento:<br/>
+4. Verifique o andamento:<br/>
 `git status `
 
-- 5) Enviar para o git: <br/>
+5. Enviar para o git: <br/>
 `git commit -m "commit inicial" `
  
 ---
 
 ### Upload github
-- 1) Selecione a pasta do git  <br/>
+1. Selecione a pasta do git  <br/>
 `git remote add origin https://github.com/brunocampos01/NOME_DIRETORIO`
 
-- 2) faça o envio  <br/>
+2. faça o envio  <br/>
 `git push origin master`
 
 **Caso de erro de FETCH_HEAD, use:** <br/>
@@ -44,7 +44,7 @@ Ex: <br/>
 ---
 
 ### Download github
-- 1) Abra o diretório no PC onde se deseja atualizar:
+1. Abra o diretório no PC onde se deseja atualizar:
 `git pull` 
 
 ---
@@ -57,14 +57,13 @@ Diretório local:
 
 ### Remove in github
 Remove somente o diretório do GITHUB e mantem o diretorio no PC. 
-- 1ª)Primeiro abra o terminal do PC no diretório. 
+1. Primeiro abra o terminal do PC no diretório. 
 ```
 git rm -r --cached FolderName 
 git commit -m "Removed folder from repository" 
 git push origin master
 ```
 <img src="remove_folder.png" />
-
 
 
 ## Global Settings
