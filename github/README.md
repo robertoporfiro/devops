@@ -11,14 +11,36 @@
 
 ### how to comment
 
-### Send github
+### Send to github
+- 1) Abra o diretório no seu computador que devera ir para o github: 
+Ex:
+`brunocampos01@AVELL ~/projetos/projetos_JAVA/`
+ 
+- 2) Inicialize o git: <br/>
+`git init`
+
+- 3)Traker em todos os arquivos e diretórios: <br/>
+`git add . `
+
+- 4) Verifique o andamento:<br/>
+`git status `
+
+- 5) Enviar para o git: <br/>
+`git commit -m "commit inicial" `
+ 
+- 6) **Envie para o github:** <br/>
+  - 6.1) Selecione a pasta do git: <br/>
+    `git remote add origin https://github.com/brunocampos01/NOME_DIRETORIO `
+  - 6.2) faca o envio: <br/>
+    `git push origin master `
+
+
 ### Upload github
 
 ### Remove in PC
 Diretório local: 
-```
-git rm -r NOME_DIRETORIO
-```
+`git rm -r NOME_DIRETORIO`
+
 ### Remove in github
 Remove somente o diretório do GITHUB e mantem o diretorio no PC. 
 - 1ª)Primeiro abra o terminal do PC no diretório. 
