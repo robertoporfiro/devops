@@ -12,14 +12,14 @@
 ### how to comment
 
 ### Send to github
-- 1) Abra o diretório no seu computador que devera ir para o github: 
-Ex:
+- 1) Abra o diretório no seu computador que devera ir para o github:  <br/>
+Ex: <br/>
 `brunocampos01@AVELL ~/projetos/projetos_JAVA/`
  
 - 2) Inicialize o git: <br/>
 `git init`
 
-- 3)Traker em todos os arquivos e diretórios: <br/>
+- 3) Traker em todos os arquivos e diretórios: <br/>
 `git add . `
 
 - 4) Verifique o andamento:<br/>
