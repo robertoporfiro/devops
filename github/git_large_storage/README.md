@@ -59,15 +59,12 @@ $ git add my.psd
 $ git commit -m "add psd"
 ```
 ### Tracking: 
-
 ```Git init 
-Git lfs track "name_date" ```
+Git lfs track "name_date" 
+```
 
 ### View tracks: 
 `git lfs track`
 
 ### Example of track: 
 `git lfs track "*.csv"`
-
-The [official documentation](docs) has command references and specifications for
-the tool.
