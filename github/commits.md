@@ -1,5 +1,3 @@
-Mensagens de commit 
-
 # Structure
 As mensagens de commit são compostas por três partes distintas separadas por uma linha em branco: o título, um corpo opcional e um rodapé opcional. Veja o layout abaixo: 
 - type: (obrigatório) 
@@ -8,13 +6,20 @@ As mensagens de commit são compostas por três partes distintas separadas por u
 
 ## Type
 Exemplos: 
-- **feat:** um novo recurso 
-- **fix:** uma correção de bug 
-- **docs:** mudanças em documentações 
-- **style:** formatação, dois pontos ausentes, etc. (não envolve mudança de código) 
-- **refactor:** refatoração do código de produção 
-- **test:** adição e refatoração de testes (não envolve mudanças no código de produção) 
-- **chore:** atualização de tarefas de compilação, configurações do gerenciador de pacotes, etc. (não envolve mudanças no código de produção) 
+- **feat:** um novo recurso <br/>
+`git commit -m "feat: new "`
+- **fix:** uma correção de bug <br/>
+`git commit -m "fix: reference "`
+- **docs:** mudanças em documentações <br/>
+`git commit -m "docs:  "`
+- **style:** formatação, dois pontos ausentes, etc. (não envolve mudança de código) <br/>
+`git commit -m "style:  "`
+- **refactor:** refatoração do código de produção <br/>
+`git commit -m "refactor:  "`
+- **test:** adição e refatoração de testes (não envolve mudanças no código de produção) <br/>
+`git commit -m "test:  "`
+- **chore:** atualização de tarefas de compilação, configurações do gerenciador de pacotes, etc. (não envolve mudanças no código de produção) <br/>
+`git commit -m "chore: add configuration about  "`
 
 
 ## Body
@@ -33,13 +38,3 @@ Use verbos no imperativo para descrever o que um commit faz, não o que ele fez.
 - Exemplos:<br/>
 ```Resolve: # 123
 Ver também: # 456, # 789```
-
-
-
- 
-
- 
-
-Guia de estilo da Udacity para mensagens de commit no Git 
-
-https://docs.google.com/document/d/1lwthXzmGcTVa-eTnCJEHVDRoCT9ffwvflJeesD82mt4/edit# 
