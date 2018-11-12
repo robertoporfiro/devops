@@ -11,7 +11,7 @@
 
 ### how to comment
 ---
-### Send to github
+### Integrastion github and PC
 - 1) Abra o diretório no seu computador que devera ir para o github:  <br/>
 Ex: <br/>
 `brunocampos01@AVELL ~/projetos/projetos_JAVA/`
@@ -28,12 +28,6 @@ Ex: <br/>
 - 5) Enviar para o git: <br/>
 `git commit -m "commit inicial" `
  
-- 6) **Envie para o github:** <br/>
-  - Selecione a pasta do git: <br/>
-    `git remote add origin https://github.com/brunocampos01/NOME_DIRETORIO `
-  - Faça o envio: <br/>
-    `git push origin master `
-
 ---
 
 ### Upload github
@@ -41,17 +35,24 @@ Ex: <br/>
 `git remote add origin https://github.com/brunocampos01/NOME_DIRETORIO`
 
 - 2) faça o envio  <br/>
-`git pull origin master`
-
+`git push origin master`
 
 **Caso de erro de FETCH_HEAD, use: ** <br/>
 `git pull origin master --allow-unrelated-histories`
 
 ---
 
+### Download github
+- 1) Abra o diretório no PC onde se deseja atualizar:
+`git pull` 
+
+---
+
 ### Remove in PC
 Diretório local: 
 `git rm -r NOME_DIRETORIO`
+
+---
 
 ### Remove in github
 Remove somente o diretório do GITHUB e mantem o diretorio no PC. 
@@ -89,19 +90,6 @@ Global Settings
 - Interactive Beginners Tutorial: http://try.github.io/
 - Git Cheatsheet by GitHub: https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
 
-
-Reminder
------------
-
-Press `minus + shift + s` and `return` to chop/fold long lines!
-
-Show folder content: `ls -la`
-
-
-Notes
------------
-
-Do not put (external) dependencies in version control!
 
 
 Setup
