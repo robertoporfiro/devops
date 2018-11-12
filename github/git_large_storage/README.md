@@ -11,8 +11,7 @@
 [5]: https://ci.appveyor.com/api/projects/status/46a5yoqc3hk59bl5/branch/master?svg=true
 [6]: https://ci.appveyor.com/project/git-lfs/git-lfs/branch/master
 
-[Git LFS](https://git-lfs.github.com) is a command line extension and
-[specification](docs/spec.md) for managing large files with Git.
+[Git LFS](https://git-lfs.github.com)
 
 The client is written in Go, with pre-compiled binaries available for Mac,
 Windows, Linux, and FreeBSD. Check out the [website](http://git-lfs.github.com)
