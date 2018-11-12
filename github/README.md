@@ -27,7 +27,7 @@ git rm -r --cached FolderName
 git commit -m "Removed folder from repository" 
 git push origin master
 ```
-<src=remove_folder.png>
+<img src="remove_folder.png" />
 
 
 
