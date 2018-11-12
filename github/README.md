@@ -10,7 +10,7 @@
     - modelo
 
 ### how to comment
-
+---
 ### Send to github
 - 1) Abra o diretório no seu computador que devera ir para o github:  <br/>
 Ex: <br/>
@@ -29,13 +29,25 @@ Ex: <br/>
 `git commit -m "commit inicial" `
  
 - 6) **Envie para o github:** <br/>
-  - 6.1) Selecione a pasta do git: <br/>
+  - Selecione a pasta do git: <br/>
     `git remote add origin https://github.com/brunocampos01/NOME_DIRETORIO `
-  - 6.2) faca o envio: <br/>
+  - Faça o envio: <br/>
     `git push origin master `
 
+---
 
 ### Upload github
+- 1) Selecione a pasta do git  <br/>
+`git remote add origin https://github.com/brunocampos01/NOME_DIRETORIO`
+
+- 2) faça o envio  <br/>
+`git pull origin master`
+
+
+**Caso de erro de FETCH_HEAD, use: ** <br/>
+`git pull origin master --allow-unrelated-histories`
+
+---
 
 ### Remove in PC
 Diretório local: 
