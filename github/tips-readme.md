@@ -13,7 +13,7 @@ Procure por tags aqui.
 - Bug fix or sugestions
 - How to contribuite </br>
 (explicação de como enviar pull requests, ajudo a escrever isso) 
-- Acthor
+- Author
 - Copyright and license
 
 ---
