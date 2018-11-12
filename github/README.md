@@ -12,7 +12,7 @@
 
 ### how to comment
 ---
-### Integrastion github and PC
+### Integration github and PC
 1. Abra o diretório no seu computador que devera ir para o github:  <br/>
 Ex: <br/>
 `brunocampos01@AVELL ~/projetos/projetos_JAVA/`
