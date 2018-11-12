@@ -31,12 +31,11 @@ Procure por tags aqui.
 ## References 
 ## Bug fix or sugestions
 ## How to contribuite
-## Submitting a Pull Request
-1. [Fork][fork] the [official repository][repo].
-2. [Create a topic branch.][branch]
-3. Implement your feature or bug fix.
-4. Add, commit, and push your changes.
-5. [Submit a pull request.][pr]
+1. [Fork](fork) the official repository.
+2. Create a topic branch.
+3. *Implement your feature or bug fix.*
+4. Add, commit, and **push** your changes.
+5. Submit a pull request.
 
 ## Author
 - Bruno Aurélio Rôzza de Moura Campos (brunocampos01@gmail.com)
