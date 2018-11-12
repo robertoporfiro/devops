@@ -1,11 +1,8 @@
 # DevOps
 
-# Git:
+## Git
 
-# Container:
-- Docker
-  - dockfile (modelos)
-  - dockerignore (modelo)
+## Container
   
-# Tests:
+## Tests
 
