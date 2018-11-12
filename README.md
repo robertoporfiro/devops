@@ -1,17 +1,20 @@
 # DevOps
 
 # Git:
-- 3 arquivos iniciais:
-  - modelo de README
-  - modelo de .gitignore
-  - como escolher uma LICENSE
-
+### 3 arquivos iniciais:
+  #### README 
+    - tips
+    - modelo
+  #### .gitignore
+    - tips
+    - modelo
+  #### LICENSE
+    - modelo
+- 
 # Container:
 - Docker
-  - modelo de dockfile
-  - modelo de dockerignore
-  
-  
+  - dockfile (modelos)
+  - dockerignore (modelo)
   
 # Tests:
 
