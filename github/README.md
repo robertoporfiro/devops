@@ -37,7 +37,7 @@ Ex: <br/>
 - 2) faça o envio  <br/>
 `git push origin master`
 
-**Caso de erro de FETCH_HEAD, use: ** <br/>
+**Caso de erro de FETCH_HEAD, use:** <br/>
 `git pull origin master --allow-unrelated-histories`
 
 ---
@@ -66,24 +66,7 @@ git push origin master
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Using Git
-===============
-
-Global Settings
------------
+## Global Settings
 
 - Related Setup: https://gist.github.com/hofmannsven/6814278
 - Related Pro Tips: https://ochronus.com/git-tips-from-the-trenches/
@@ -92,33 +75,23 @@ Global Settings
 
 
 
-Setup
------------
-
+## Setup
 See where Git is located:
 `which git`
 
 Get the version of Git:
 `git --version`
 
-Create an alias (shortcut) for `git status`:
-`git config --global alias.st status`
-
-
-Help
------------
-
+## Help
 Help:
 `git help`
 
 
-General
------------
-
+## General
 Initialize Git:
 `git init`
 
-Get everything ready to commit:
+Get **everything** ready to commit:
 `git add .`
 
 Get custom file ready to commit:
@@ -149,9 +122,7 @@ Restore file from a custom commit (in current branch):
 `git checkout 6eb715d -- index.html`
 
 
-Reset
------------
-
+## Reset
 Go back to commit:
 `git revert 073791e7dd71b90daa853b2c5acc2c925f02dbc6`
 
@@ -166,8 +137,7 @@ Mixed reset (move HEAD and change staging to match repo; does not affect working
 Hard reset (move HEAD and change staging dir and working dir to match repo):
 `git reset --hard 073791e7dd71b90daa853b2c5acc2c925f02dbc6`
 
-Update & Delete
------------
+## Update & Delete
 
 Test-Delete untracked files:
 `git clean -n`
@@ -182,8 +152,7 @@ Update most recent commit (also update the commit message):
 `git commit --amend -m "New Message"`
 
 
-Branch
------------
+## Branch
 
 Show branches:
 `git branch`
@@ -212,8 +181,7 @@ Delete not merged branch:
 `git branch -D branch_to_delete`
 
 
-Merge
------------
+## Merge
 
 True merge (fast forward):
 `git merge branchname`
@@ -245,8 +213,7 @@ Cancel rebase:
 Squash multiple commits into one:
 `git rebase -i HEAD~3` ([source](https://www.devroom.io/2011/07/05/git-squash-your-latests-commits-into-one/))
 
-Stash
------------
+## Stash
 
 Put in stash:
 `git stash save "Message"`
@@ -273,8 +240,7 @@ Delete complete stash:
 `git stash clear`
 
 
-Gitignore & Gitkeep
------------
+## Gitignore & Gitkeep
 
 About: https://help.github.com/articles/ignoring-files
 
