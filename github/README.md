@@ -15,9 +15,19 @@
 ### Upload github
 
 ### Remove in PC
+Diretório local: 
+```
+git rm -r NOME_DIRETORIO
+```
 ### Remove in github
-
-
+Remove somente o diretório do GITHUB e mantem o diretorio no PC. 
+- 1ª)Primeiro abra o terminal do PC no diretório. 
+```
+git rm -r --cached FolderName 
+git commit -m "Removed folder from repository" 
+git push origin master
+```
+<src=remove_folder.png>
 
 
 
