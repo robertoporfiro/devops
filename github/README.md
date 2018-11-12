@@ -1,8 +1,72 @@
-Using Git
-===============
+### Tips profile github
+### 3 arquivos iniciais:
+  #### README:
+    - (tips)[]
+    - [modelo]()
+  #### .gitignore:
+    - tips
+    - modelo
+  #### LICENSE:
+    - modelo
 
-Global Settings
------------
+### how to comment
+---
+### Integrastion github and PC
+- 1) Abra o diretório no seu computador que devera ir para o github:  <br/>
+Ex: <br/>
+`brunocampos01@AVELL ~/projetos/projetos_JAVA/`
+ 
+- 2) Inicialize o git: <br/>
+`git init`
+
+- 3) Traker em todos os arquivos e diretórios: <br/>
+`git add . `
+
+- 4) Verifique o andamento:<br/>
+`git status `
+
+- 5) Enviar para o git: <br/>
+`git commit -m "commit inicial" `
+ 
+---
+
+### Upload github
+- 1) Selecione a pasta do git  <br/>
+`git remote add origin https://github.com/brunocampos01/NOME_DIRETORIO`
+
+- 2) faça o envio  <br/>
+`git push origin master`
+
+**Caso de erro de FETCH_HEAD, use:** <br/>
+`git pull origin master --allow-unrelated-histories`
+
+---
+
+### Download github
+- 1) Abra o diretório no PC onde se deseja atualizar:
+`git pull` 
+
+---
+
+### Remove in PC
+Diretório local: 
+`git rm -r NOME_DIRETORIO`
+
+---
+
+### Remove in github
+Remove somente o diretório do GITHUB e mantem o diretorio no PC. 
+- 1ª)Primeiro abra o terminal do PC no diretório. 
+```
+git rm -r --cached FolderName 
+git commit -m "Removed folder from repository" 
+git push origin master
+```
+<img src="remove_folder.png" />
+
+
+
+## Global Settings
 
 - Related Setup: https://gist.github.com/hofmannsven/6814278
 - Related Pro Tips: https://ochronus.com/git-tips-from-the-trenches/
@@ -10,47 +74,24 @@ Global Settings
 - Git Cheatsheet by GitHub: https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
 
 
-Reminder
------------
 
-Press `minus + shift + s` and `return` to chop/fold long lines!
-
-Show folder content: `ls -la`
-
-
-Notes
------------
-
-Do not put (external) dependencies in version control!
-
-
-Setup
------------
-
+## Setup
 See where Git is located:
 `which git`
 
 Get the version of Git:
 `git --version`
 
-Create an alias (shortcut) for `git status`:
-`git config --global alias.st status`
-
-
-Help
------------
-
+## Help
 Help:
 `git help`
 
 
-General
------------
-
+## General
 Initialize Git:
 `git init`
 
-Get everything ready to commit:
+Get **everything** ready to commit:
 `git add .`
 
 Get custom file ready to commit:
@@ -81,9 +122,7 @@ Restore file from a custom commit (in current branch):
 `git checkout 6eb715d -- index.html`
 
 
-Reset
------------
-
+## Reset
 Go back to commit:
 `git revert 073791e7dd71b90daa853b2c5acc2c925f02dbc6`
 
@@ -98,8 +137,7 @@ Mixed reset (move HEAD and change staging to match repo; does not affect working
 Hard reset (move HEAD and change staging dir and working dir to match repo):
 `git reset --hard 073791e7dd71b90daa853b2c5acc2c925f02dbc6`
 
-Update & Delete
------------
+## Update & Delete
 
 Test-Delete untracked files:
 `git clean -n`
@@ -114,8 +152,7 @@ Update most recent commit (also update the commit message):
 `git commit --amend -m "New Message"`
 
 
-Branch
------------
+## Branch
 
 Show branches:
 `git branch`
@@ -144,8 +181,7 @@ Delete not merged branch:
 `git branch -D branch_to_delete`
 
 
-Merge
------------
+## Merge
 
 True merge (fast forward):
 `git merge branchname`
@@ -177,8 +213,7 @@ Cancel rebase:
 Squash multiple commits into one:
 `git rebase -i HEAD~3` ([source](https://www.devroom.io/2011/07/05/git-squash-your-latests-commits-into-one/))
 
-Stash
------------
+## Stash
 
 Put in stash:
 `git stash save "Message"`
@@ -205,8 +240,7 @@ Delete complete stash:
 `git stash clear`
 
 
-Gitignore & Gitkeep
------------
+## Gitignore & Gitkeep
 
 About: https://help.github.com/articles/ignoring-files
 
