@@ -3,8 +3,8 @@
 # Git:
 ### 3 arquivos iniciais:
   #### README 
-    - tips
-    - modelo
+    - (tips)[]
+    - [modelo]()
   #### .gitignore
     - tips
     - modelo
