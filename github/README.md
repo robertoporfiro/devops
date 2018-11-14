@@ -1,4 +1,4 @@
-### Tips profile github
+# Commands GitHub
 ### 3 arquivos iniciais:
   #### README:
     - (tips)[]
