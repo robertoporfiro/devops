@@ -1,9 +1,8 @@
 # How to README?
 
-Precisa ter o seguinte formato: 
+It must have the following format:
 - Title 
-- Tags<br/>
-Procure por tags aqui.
+- Tags: Seach shields [here !](https://shields.io/#/examples/build)
 - Describe project 
 - Pre Requirements
 - Quickstart
@@ -11,8 +10,7 @@ Procure por tags aqui.
 - Examples
 - References 
 - Bug fix or sugestions
-- How to contribuite </br>
-(explicação de como enviar pull requests, ajudo a escrever isso) 
+- How to contribuite </br> 
 - Author
 - Copyright and license
 
