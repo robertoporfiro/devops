@@ -44,25 +44,30 @@ Ex: <br/>
 ---
 
 ### Download github
-1. Abra o diretório no PC onde se deseja atualizar:
+1. Abra o diretório no PC onde se deseja atualizar:<br/>
 `git pull` 
+ou <br/>
+`git pull -force` 
 
 ---
 
 ### Remove in PC
-Diretório local: 
+Diretório local: <br/>
 `git rm -r NOME_DIRETORIO`
 
 ---
 
 ### Remove in github
 Remove somente o diretório do GITHUB e mantem o diretorio no PC. 
-1. Primeiro abra o terminal do PC no diretório. 
+1. Primeiro abra o terminal do PC no diretório. <br/>
 ```
 git rm -r --cached FolderName 
 git commit -m "Removed folder from repository" 
 git push origin master
 ```
+
+Remove files from Git:<br/>
+`git rm index.html`
 <img src="remove_folder.png" />
 
 
@@ -76,35 +81,32 @@ git push origin master
 
 
 ## Setup
-See where Git is located:
+See where Git is located:<br/>
 `which git`
 
-Get the version of Git:
+Get the version of Git:<br/>
 `git --version`
 
-## Help
+## Help<br/>
 Help:
 `git help`
 
 
-## General
+## General<br/>
 Initialize Git:
 `git init`
 
-Get **everything** ready to commit:
+Get **everything** ready to commit:<br/>
 `git add .`
 
-Get custom file ready to commit:
+Get custom file ready to commit:<br/>
 `git add index.html`
 
-Commit changes:
+Commit changes:<br/>
 `git commit -m "Message"`
 
-Add and commit in one step:
+Add and commit in one step:<br/>
 `git commit -am "Message"`
-
-Remove files from Git:
-`git rm index.html`
 
 Update all changes:
 `git add -u`
@@ -400,17 +402,7 @@ Create and checkout branch from a remote branch:
 Compare:
 `git diff origin/master..master`
 
-Push (set default with `-u`):
-`git push -u origin master`
 
-Push:
-`git push origin master`
-
-Force-Push:
-`git push origin master --force
-
-Pull:
-`git pull`
 
 Pull specific branch:
 `git pull origin branchname`
@@ -430,34 +422,4 @@ Clone specific branch to localhost:
 
 Delete remote branch (push nothing):
 `git push origin :branchname` or:
-`git push origin --delete branchname`
-
-
-Archive
------------
-Create a zip-archive: `git archive --format zip --output filename.zip master`
-
-Export/write custom log to a file: `git log --author=sven --all > log.txt`
-
-
-Troubleshooting
------------
-
-Ignore files that have already been committed to a Git repository: http://stackoverflow.com/a/1139797/1815847
-
-
-Security
------------
-
-Hide Git on the web via `.htaccess`: `RedirectMatch 404 /\.git` 
-(more info here: http://stackoverflow.com/a/17916515/1815847)
-
-
-Large File Storage
------------
-
-Website: https://git-lfs.github.com/
-
-Install: `brew install git-lfs`
-
-Track `*.psd` files: `git lfs track "*.psd"` (init, add, commit and push as written above)
+`git push origin --delete branchname
