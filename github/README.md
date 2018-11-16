@@ -6,7 +6,7 @@
 - [Modelos](https://github.com/brunocampos01/DevOps/tree/master/github/modelos-gitignore)
 #### LICENSE:
 - https://choosealicense.com/
-
+---
 ### [Como escrever COMMITS](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md)
 ---
 ### Integration github and PC
