@@ -1,16 +1,13 @@
-# Commands GitHub
-### 3 arquivos iniciais:
-  #### README:
-    - (tips)[]
-    - [modelo]()
-  #### .gitignore:
-    - tips
-    - modelo
-  #### LICENSE:
-    - modelo
-    - https://choosealicense.com/
+# GitHub
+## 3 arquivos iniciais:
+#### README:
+- [Como escrever README](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-README.md)
+#### .gitignore:
+- [Modelos]{https://github.com/brunocampos01/DevOps/tree/master/github/modelos-gitignore}
+#### LICENSE:
+- https://choosealicense.com/
 
-### how to comment
+### [Como escrever COMMITS](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md)
 ---
 ### Integration github and PC
 1. Abra o diretório no seu computador que devera ir para o github:  <br/>
