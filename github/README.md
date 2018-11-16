@@ -3,7 +3,7 @@
 #### README:
 - [Como escrever README](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-README.md)
 #### .gitignore:
-- [Modelos]{https://github.com/brunocampos01/DevOps/tree/master/github/modelos-gitignore}
+- [Modelos](https://github.com/brunocampos01/DevOps/tree/master/github/modelos-gitignore}
 #### LICENSE:
 - https://choosealicense.com/
 
