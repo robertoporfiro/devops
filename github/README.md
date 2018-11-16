@@ -64,7 +64,7 @@ git push origin master
 ```
 
 Remove files from Git:<br/>
-`git rm index.html`
+`git rm index.html`<br/>
 <img src="remove_folder.png" />
 
 
