@@ -7,7 +7,8 @@
 #### LICENSE:
 - https://choosealicense.com/
 ---
-### [Como escrever COMMITS](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md)
+### Como escrever COMMITS<br/>
+https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md
 ---
 ### Integration github and PC
 1. Abra o diretório no seu computador que devera ir para o github:  <br/>
