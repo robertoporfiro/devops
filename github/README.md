@@ -32,6 +32,7 @@ Help:
 ### Diff Tool
 É a ferramenta utilizada para resolver conflitos de merge (fusão).
  `git config --global merge.tool vimdiff`<br/>
+ Ex:
  <img src="images/diff.png" />
 
 ### Check Configuration
