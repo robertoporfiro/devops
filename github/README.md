@@ -13,7 +13,8 @@
 ### Git Init Configuration
 Após instalar o git, é necessário definir o seu nome de usuário e endereço de e-mail. 
 
-```git config --global user.name "John Doe"
+```
+git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
@@ -30,7 +31,8 @@ Help:
 
 ### Diff Tool
 É a ferramenta utilizada para resolver conflitos de merge (fusão).
- `git config --global merge.tool vimdiff`
+ `git config --global merge.tool vimdiff`<br/>
+ <img src="images/diff.png" />
 
 ### Check Configuration
 `git config --list`<br/>
