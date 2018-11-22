@@ -10,6 +10,34 @@
 ### Como escrever COMMITS<br/>
 - https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md
 ---
+### Git Init Configuration
+Após instalar o git, é necessário definir o seu nome de usuário e endereço de e-mail. 
+
+```git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+
+## Setup
+See where Git is located:<br/>
+`which git`
+
+Get the version of Git:<br/>
+`git --version`
+
+## Help<br/>
+Help:
+`git help`
+
+### Diff Tool
+É a ferramenta utilizada para resolver conflitos de merge (fusão).
+ `git config --global merge.tool vimdiff`
+
+### Check Configuration
+`git config --list`<br/>
+Ex:
+<img src="images/git_config.png" />
+
+---
 ### Integration github and PC
 1. Abra o diretório no seu computador que devera ir para o github:  <br/>
 Ex: <br/>
@@ -66,7 +94,7 @@ git push origin master
 
 Remove files from Git:<br/>
 `git rm index.html`<br/>
-<img src="remove_folder.png" />
+<img src="images/remove_folder.png" />
 
 
 ## Global Settings
@@ -75,19 +103,6 @@ Remove files from Git:<br/>
 - Related Pro Tips: https://ochronus.com/git-tips-from-the-trenches/
 - Interactive Beginners Tutorial: http://try.github.io/
 - Git Cheatsheet by GitHub: https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
-
-
-
-## Setup
-See where Git is located:<br/>
-`which git`
-
-Get the version of Git:<br/>
-`git --version`
-
-## Help<br/>
-Help:
-`git help`
 
 
 ## General<br/>
