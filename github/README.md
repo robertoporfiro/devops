@@ -10,6 +10,19 @@
 ### Como escrever COMMITS<br/>
 - https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md
 ---
+
+
+
+## Git instalation
+ - Install
+ - Configuration in PC
+ - Tools
+ - Help
+ - General
+ 
+ ### Install
+ `sudo apt-get install git`
+ 
 ### Git Init Configuration
 Após instalar o git, é necessário definir o seu nome de usuário e endereço de e-mail. 
 
@@ -17,6 +30,8 @@ Após instalar o git, é necessário definir o seu nome de usuário e endereço 
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
+
+
 
 ## Setup
 See where Git is located:<br/>
@@ -49,14 +64,29 @@ Ex: <br/>
 2. Inicialize o git: <br/>
 `git init`
 
-3. Traker em todos os arquivos e diretórios: <br/>
+
+#### 3. Track files:
+Há vários tipos de trackear os dados para o git.
+
+- Arquivo em especifico:<br/>
+`git add index.html`
+
+- Trakear em **everything** os arquivos e diretórios: <br/>
 `git add . `
+
+- Trakear somente as alterações:
+`git add -u`
+
+- Add e commit em uma única etapa:<br/>
+`git commit -am "Message"`
 
 4. Verifique o andamento:<br/>
 `git status `
 
 5. Enviar para o git: <br/>
 `git commit -m "commit inicial" `
+
+
  
 ---
 
@@ -108,24 +138,8 @@ Remove files from Git:<br/>
 - Git Cheatsheet by GitHub: https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
 
 
-## General<br/>
-Initialize Git:
-`git init`
 
-Get **everything** ready to commit:<br/>
-`git add .`
 
-Get custom file ready to commit:<br/>
-`git add index.html`
-
-Commit changes:<br/>
-`git commit -m "Message"`
-
-Add and commit in one step:<br/>
-`git commit -am "Message"`
-
-Update all changes:
-`git add -u`
 
 Remove file but do not track anymore:
 `git rm --cached index.html`
