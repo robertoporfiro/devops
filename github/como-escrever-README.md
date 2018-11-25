@@ -2,7 +2,7 @@
 
 It must have the following format:
 - Title 
-- Tags: Seach shields [here !](https://shields.io/#/examples/build)
+- Tags: Search shields [here !](https://shields.io/#/examples/build)
 - Describe project 
 - Pre Requirements
 - Quickstart
