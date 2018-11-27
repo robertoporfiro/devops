@@ -1,5 +1,5 @@
 # GitHub
-https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg
+![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
 
 ## 3 arquivos iniciais:
 #### README:
