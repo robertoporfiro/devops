@@ -1,20 +1,6 @@
 # GitHub
 ![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
 
-## 3 arquivos iniciais:
-#### README:
-- [Como escrever README](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-README.md)
-#### .gitignore:
-- [Modelos](https://github.com/brunocampos01/DevOps/tree/master/github/modelos-gitignore)
-#### LICENSE:
-- https://choosealicense.com/
----
-### Como escrever COMMITS<br/>
-- https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md
----
-
-
-
 ## Git instalation
  - Install
  - Configuration in PC
@@ -22,7 +8,7 @@
  - Help
  - General
  
- ### Install
+### Install
  `sudo apt-get install git`
  
 ### Git Init Configuration
