@@ -106,7 +106,7 @@ Diretório local: <br/>
 
 ---
 
-## Remove in cache
+### Remove in cache
 Quando já foi trackeado os arquivos mas ainda não foi feito o commit.<br/> 
 `git rm --cached <arquivo>`<br/>
 para não enviar ao github
