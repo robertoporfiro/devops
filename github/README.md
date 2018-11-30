@@ -106,6 +106,15 @@ Diretório local: <br/>
 
 ---
 
+## Remove in cache
+Quando já foi trackeado os arquivos mas ainda não foi feito o commit.<br/> 
+`git rm --cached <arquivo>`<br/>
+para não enviar ao github
+
+<img src="images/cached.png" />
+
+---
+
 ### Remove in github
 Remove somente o diretório do GITHUB e mantem o diretorio no PC. 
 1. Primeiro abra o terminal do PC no diretório. <br/>
