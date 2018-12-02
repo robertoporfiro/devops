@@ -1,17 +1,5 @@
 # GitHub
-## 3 arquivos iniciais:
-#### README:
-- [Como escrever README](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-README.md)
-#### .gitignore:
-- [Modelos](https://github.com/brunocampos01/DevOps/tree/master/github/modelos-gitignore)
-#### LICENSE:
-- https://choosealicense.com/
----
-### Como escrever COMMITS<br/>
-- https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md
----
-
-
+![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
 
 ## Git instalation
  - Install
@@ -20,7 +8,7 @@
  - Help
  - General
  
- ### Install
+### Install
  `sudo apt-get install git`
  
 ### Git Init Configuration
@@ -48,11 +36,13 @@ Help:
 É a ferramenta utilizada para resolver conflitos de merge (fusão).<br/>
  `git config --global merge.tool vimdiff`<br/>
  Ex:
+ 
  <img src="images/diff.png" />
 
 ### Check Configuration
 `git config --list`<br/>
 Ex:
+
 <img src="images/git_config.png" />
 
 ---
@@ -116,6 +106,15 @@ Diretório local: <br/>
 
 ---
 
+### Remove in cache
+Quando já foi trackeado os arquivos mas ainda não foi feito o commit.<br/> 
+`git rm --cached <arquivo>`<br/>
+para não enviar ao github
+
+<img src="images/cached.png" />
+
+---
+
 ### Remove in github
 Remove somente o diretório do GITHUB e mantem o diretorio no PC. 
 1. Primeiro abra o terminal do PC no diretório. <br/>
@@ -127,6 +126,7 @@ git push origin master
 
 Remove files from Git:<br/>
 `git rm index.html`<br/>
+
 <img src="images/remove_folder.png" />
 
 
