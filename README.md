@@ -1,6 +1,10 @@
 # DevOps
-## Infraestrutura como código
-## Controle de versão
+## Infrastructure as code
+- Scripts de instalação
+- Chef
+- Ansible
+
+## Control Version
 - [Instalação do git](https://github.com/brunocampos01/DevOps/tree/master/github#git-instalation)
 - [Comandos git](https://github.com/brunocampos01/DevOps/blob/master/github/README.md)
 - [Como escrever COMMITS](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md)
