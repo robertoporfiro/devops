@@ -12,10 +12,11 @@ sudo add-apt-repository ppa:linuxuprising/java
 echo
 
 echo -e "Update packages \n"
-sudo apt-get update
+sudo apt-get update && apt-get upgrade
 echo
 
 echo -e "Install Java \n"
+sudo apt-get install software-properties-common
 sudo apt-get install oracle-java11-installer | sleep 3
 echo
 
