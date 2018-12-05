@@ -7,6 +7,8 @@
 - Now, execute:<br/>
 `./file-name.run`
 
+## Update python
+- https://tecadmin.net/install-python-3-7-on-ubuntu-linuxmint/
 ---
 ## References 
 https://howtoubuntu.org/how-to-execute-a-run-or-bin-file-in-ubuntu
