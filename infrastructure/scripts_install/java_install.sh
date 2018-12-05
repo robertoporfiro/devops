@@ -3,8 +3,8 @@
 # Script: ./install_java.sh
 # ----------------------------------- #
 # Script install OFICIAL version JAVA 11
-# Entrada: N/A
-# Saida: Version do java
+# input: N/A
+# output: Version do java
 # ----------------------------------- #
 
 echo -e "Add ppa repository \n"
