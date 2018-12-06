@@ -5,7 +5,7 @@
 `chmod +x /path/to/yourscript.sh`
 
 - Now, execute:<br/>
-`./file-name.run`
+`./file-name.sh`
 
 ## Update python
 - https://tecadmin.net/install-python-3-7-on-ubuntu-linuxmint/
