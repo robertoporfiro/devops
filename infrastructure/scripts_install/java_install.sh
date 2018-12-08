@@ -15,6 +15,16 @@ echo -e "Update packages \n"
 sudo apt-get update && apt-get upgrade
 echo
 
+echo -e "remove the lock files \n"
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
+echo
+
+echo -e "reconfigure the packages \n"
+sudo dpkg --configure -a
+echo
+
 echo -e "Install Java \n"
 sudo apt-get install software-properties-common
 sudo apt-get install oracle-java11-installer | sleep 3
