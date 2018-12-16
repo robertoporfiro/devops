@@ -106,16 +106,21 @@ Há vários tipos de trackear os dados para o git.
 5. Enviar para o git: <br/>
 `git commit -m "commit inicial" `
 
-
- 
 ---
 
 ### Upload github
-1. Selecione a pasta do git  <br/>
-`git remote add origin https://github.com/brunocampos01/NOME_DIRETORIO`
+1. É necessário informar o servidor remoto, Ex: <br/>
+` https://github.com/brunocampos01/NOME_DIRETORIO`
 
-2. faça o envio  <br/>
-`git push origin master`
+2. Agora é necessário informar que esse servidor remoto é a **origin** <br/>
+`git remote add origin https://github.com/brunocampos01/NOME_DIRETORIO`<br/>
+
+#### Origin ?
+- _origin_ é um alias para o servidor remoto. 
+- Ele _aponta_ para o servidor remoto.
+
+3. faça o envio  <br/>
+`git push origin branchname`
 
 **Caso de erro de FETCH_HEAD, use:** <br/>
 `git pull origin master --allow-unrelated-histories`
