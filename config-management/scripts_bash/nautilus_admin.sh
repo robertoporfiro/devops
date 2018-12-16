@@ -10,13 +10,18 @@
 echo -e "Add nautilus_admin \n"
 sudo apt-get install nautilus-admin
 echo
+echo -e "======================================== \n"
 
 echo -e "Update packages \n"
 sudo apt-get update && apt-get upgrade
 echo
+echo -e "======================================== \n"
+
 
 echo -e "you must restart Nautilus ! \n"
 nautilus -q | sleep 5
 echo
+echo -e "======================================== \n"
+
 
 

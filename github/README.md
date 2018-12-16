@@ -1,15 +1,24 @@
-# GitHub
+# GitHub Comands
 ![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
 
 ## Git instalation
  - Install
+ - Authenticating to Github 
  - Configuration in PC
  - Tools
  - Help
  - General
+
+ ## Understanding
+ - http://rogerdudler.github.io/git-guide/index.pt_BR.html
  
 ### Install
- `sudo apt-get install git`
+ `
+ sudo apt-get install git
+ `
+
+ ### Install gitk (GUI)
+ `sudo apt-get install gitk`
  
 ### Git Init Configuration
 Após instalar o git, é necessário definir o seu nome de usuário e endereço de e-mail. 
@@ -18,6 +27,27 @@ Após instalar o git, é necessário definir o seu nome de usuário e endereço 
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
+
+## Authenticating to Github 
+
+### Install ssh
+`sudo apt install -y openssh-server`
+
+### Check status
+`sudo systemctl status ssh`<br/>
+
+ <img src="images/ssh.png" />
+
+
+## Generate SSH  public and private Key
+`ssh-keygen -t rsa`<br/>
+
+OBS: This will generate the keys using the _RSA Algorith_.<br/>
+OBS: By default the public key is saved in the file ~/.ssh/id_rsa.pub, while ~/.ssh/id_rsa is the private key.
+
+
+**(help.github) Generating a new SSH key:**  
+https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key
 
 
 
