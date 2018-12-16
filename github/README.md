@@ -1,10 +1,20 @@
 # GitHub Comands
 ![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
 
+- Understanding
 - Git instalation
 - Authenticating to Github
 - Comands
-- Understanding: http://rogerdudler.github.io/git-guide/index.pt_BR.html
+
+---
+
+## Understanding 
+In portuguese: http://rogerdudler.github.io/git-guide/index.pt_BR.html
+
+### Git flow
+ <img src="images/flowgit.png" />
+
+ ---
  
 ### Install
  `
@@ -20,6 +30,7 @@ Após instalar o git, é necessário definir o seu nome de usuário e endereço 
 ```
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
+git config --global core.editor vim
 git config --global color.ui auto
 ```
 
@@ -73,7 +84,13 @@ Ex:
 ---
 
 ## Diff Tool
-- Pre requeriments<br/>
+
+
+ <img src="images/merge-conflict.png" />
+
+
+
+Pre requeriments: <br/>
 `sudo apt install vim`<br/>
 
 É a ferramenta utilizada para resolver conflitos de merge (fusão).<br/>
@@ -157,6 +174,16 @@ Diretório local: <br/>
 
 <img src="images/cached.png" />
 
+### Did you digress from what you did? 
+
+1. First view modified<br/>
+`git status`
+
+2. Do checkout in file<br/>
+`git checkout -- <file_name_modifield>`
+
+<img src="images/cao-arrependido.png" />
+
 
 ### Remove in github
 Remove somente o diretório do GITHUB e mantem o diretorio no PC. 
@@ -176,8 +203,13 @@ Remove files from Git:<br/>
 
 ## Branch
 
-Show branches:<br/>
+<img src="images/branches.svg" />
+
+Show branches (local):<br/>
 `git branch`
+
+Show all branches (remote + local):<br/>
+`git branch --all`
 
 Create branch:<br/>
 `git branch branchname`
@@ -195,6 +227,24 @@ Delete not merged branch: <br/>
 `git branch -D branch_to_delete`
 
 ---
+## Git remote configuration
+
+### View configuration git remote (server)
+`git remote -v`
+
+<img src="images/git_remote.png" />
+
+### Create a new connection to a remote repository
+`git remote add <name> <url>`<br/>
+OBS: by default name connection is _origin_ .
+
+<img src="images/nova-conexao.png" />
+
+
+### Remove a connection to a remote repository
+`git remote remove <name>`
+
+
 ---
 ---
 ## Global Settings
