@@ -35,6 +35,34 @@ sudo apt-get update
 
 python_alternatives.png
 
+---
+
+## Glossary
+
+https://linuxconfig.org/linux-commands
+
+`pwd`  print the current working directory path
+
+
+### File and directory
+- `cat -n ` add line numbers to all lines
+- `mkdir dir1` Creating a directory
+- `touch file1` Creating files and reading the file content
+- `cat -n todo-list.txt` display a content of any text file eith numenbers line.
+- `file todo-list.txt` Obtain the file type
+- `rm -r my_files` remove repository
+- `chmod +xwr file` 
+ - x, execute
+ - w, write
+ - r, read
+ - Ex: 
+ ```
+ chmod +x hello_world.sh
+ ./hello_world.sh 
+ ```
+
+### System information
+` uname -a` kernel version
 
 ---
 ## 
