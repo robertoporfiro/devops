@@ -1,16 +1,10 @@
 # GitHub Comands
 ![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
 
-## Git instalation
- - Install
- - Authenticating to Github 
- - Configuration in PC
- - Tools
- - Help
- - General
-
- ## Understanding
- - http://rogerdudler.github.io/git-guide/index.pt_BR.html
+- Git instalation
+- Authenticating to Github 
+- Comands
+- Understanding:  http://rogerdudler.github.io/git-guide/index.pt_BR.html
  
 ### Install
  `
@@ -27,6 +21,8 @@ Após instalar o git, é necessário definir o seu nome de usuário e endereço 
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
+
+---
 
 ## Authenticating to Github 
 
@@ -49,17 +45,20 @@ OBS: By default the public key is saved in the file ~/.ssh/id_rsa.pub, while ~/.
 **(help.github) Generating a new SSH key:**  
 https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key
 
+## Adding a new SSH key to your GitHub account:
+https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 
+---
+## Comands
 
-## Setup
+### Setup
 See where Git is located:<br/>
 `which git`
 
 Get the version of Git:<br/>
 `git --version`
 
-## Help<br/>
-Help:
+### Help:
 `git help`
 
 ### Diff Tool
@@ -94,7 +93,7 @@ Há vários tipos de trackear os dados para o git.
 - Trakear em **everything** os arquivos e diretórios: <br/>
 `git add . `
 
-- Trakear somente as alterações:
+- Trakear somente as alterações:<br/>
 `git add -u`
 
 - Add e commit em uma única etapa:<br/>
@@ -160,6 +159,14 @@ Remove files from Git:<br/>
 <img src="images/remove_folder.png" />
 
 
+
+
+
+
+
+----
+----
+---
 ## Global Settings
 
 - Related Setup: https://gist.github.com/hofmannsven/6814278
