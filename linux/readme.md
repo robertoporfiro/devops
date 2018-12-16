@@ -19,7 +19,7 @@ sudo apt-get autoremove
 sudo apt-get update
 ```
 
-## <Language Programming> ALternatives List 
+## (Language Programming) Alternatives List 
  CMD: `update-alternatives`
 
 - Ex with Python<br/>
