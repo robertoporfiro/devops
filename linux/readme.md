@@ -64,6 +64,23 @@ https://linuxconfig.org/linux-commands
 ### System information
 ` uname -a` kernel version
 
+### Service managemant
+O Systemd é um gerenciador de sistema de inicialização
+
+- Start service<br/>
+`sudo systemctl start application.service`
+
+- Service initiaze in boot<br/>
+`sudo systemctl enable application.service`
+
+- Status
+`systemctl status application.service`
+
+
+
+Fonte: https://sempreupdate.com.br/como-usar-o-systemctl-para-gerenciar-servicos-do-systemd/
+
+
 ---
 ## 
 - https://linuxconfig.org/how-to-change-default-python-version-on-debian-9-stretch-linux
