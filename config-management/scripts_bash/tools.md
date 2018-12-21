@@ -1,5 +1,5 @@
 #### Linux System Optimizer & Monitoring
-Stacer: https://oguzhaninan.github.io/Stacer-Web/<br/>
+https://oguzhaninan.github.io/Stacer-Web/<br/>
 
 ### terminator
 https://launchpad.net/terminator/+download
