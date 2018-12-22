@@ -7,10 +7,6 @@
 - Now, execute:<br/>
 `./file-name.run`
 
-## Update python
-- https://tecadmin.net/install-python-3-7-on-ubuntu-linuxmint/
-- Update bashrc: `export PYTHON=/usr/bin/python3.7`
-
 ---
 ## References 
 https://howtoubuntu.org/how-to-execute-a-run-or-bin-file-in-ubuntu
