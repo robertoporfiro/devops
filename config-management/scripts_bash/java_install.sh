@@ -33,4 +33,5 @@ echo -e "======================================== \n"
 
 echo -e "Version compiler Java \n"
 javac -version | sleep 3
+echo
 echo -e "======================================== \n"
