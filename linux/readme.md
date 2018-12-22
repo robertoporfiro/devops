@@ -7,7 +7,10 @@
 ## view manual
 `man <BINARIE>`<br/>
 
-www.explainshell.com
+www.explainshell.com<br/>
+explain commands, example: 
+
+explainshell.png
 
 ## Find 
 `find /etc -name <FILE>`
@@ -51,16 +54,25 @@ https://linuxconfig.org/linux-commands
 - `cat -n todo-list.txt` display a content of any text file eith numenbers line.
 - `file todo-list.txt` Obtain the file type
 - `rm -r my_files` remove repository
+
+ 
+ 
+ ### Permissions execute, write, read
 - `chmod +xwr file` 
  - x, execute
  - w, write
  - r, read
- - Ex: 
+ - Ex: <br/>
  ```
  chmod +x hello_world.sh
  ./hello_world.sh 
  ```
 
+ #### Alter onwer file or repository
+ `sudo chown USER-NAME FILE_OR_REPOSITORY`<br/>
+  <br/>
+ chown.png
+ 
 ### System information
 ` uname -a` kernel version
 
