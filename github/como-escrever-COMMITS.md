@@ -25,6 +25,7 @@ Exemplos:
 ## Body
 - Use o corpo para explicar o que e o porquê de um commit, não o “como”.
 - Os corpos não podem ter mais do que 50 caracteres, devem começar com uma letra maiúscula e não devem ser encerrados com ponto.
+- Ex, If applied, this PR will...
 
 ### Forbidden
 Não use frases como "eu corrigi" ou "eu fiz algo"; ele precisa ser claro e informativo.  
