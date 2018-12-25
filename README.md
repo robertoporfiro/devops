@@ -12,8 +12,7 @@
   - README: [Como escrever README](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-README.md)
   - .gitignore: [Modelos](https://github.com/brunocampos01/DevOps/tree/master/github/modelos-gitignore)
   - LICENSE: [Tipos de LICENSE](https://choosealicense.com/)
- - [emojis] (https://gist.github.com/rxaviers/7360908) 
-
+ 
 
 ## Containers
 - O que é container
