@@ -8,7 +8,7 @@
 # ----------------------------------- #
 
 echo -e "Add nautilus_admin \n"
-sudo apt-get install nautilus-admin
+sudo apt-get install nautilus-admin; S
 echo
 echo -e "======================================== \n"
 
