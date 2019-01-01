@@ -53,7 +53,7 @@ OBS: This will generate the keys using the _RSA Algorith_.<br/>
 OBS: By default the public key is saved in the file ~/.ssh/id_rsa.pub, while ~/.ssh/id_rsa is the private key.
 
 
-**(help.github) Generating a new SSH key:**  
+### Generating a new SSH key:  
 https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key
 
 ### Adding a new SSH key to your GitHub account:
