@@ -26,8 +26,12 @@ java -version | sleep 3
 echo
 echo -e "======================================== \n"
 
+echo -e "Version language Java \n"
+jar -version | sleep 3
+echo
+echo -e "======================================== \n"
 
-echo -e "Version compiler Java \n"
+
 javac -version | sleep 3
 echo -e " visit https://websiteforstudents.com/how-to-install-oracle-java-jdk-11-on-ubuntu-18-04-16-04-18-10/"
 echo -e "======================================== \n"
