@@ -31,7 +31,13 @@ jar -version | sleep 3
 echo
 echo -e "======================================== \n"
 
-
+echo -e "Version compiler javac \n"
 javac -version | sleep 3
-echo -e " visit https://websiteforstudents.com/how-to-install-oracle-java-jdk-11-on-ubuntu-18-04-16-04-18-10/"
+echo
 echo -e "======================================== \n"
+
+
+echo -e " CONFIG: visit and continue install in step 2:"
+echo
+echo -e " https://websiteforstudents.com/how-to-install-oracle-java-jdk-11-on-ubuntu-18-04-16-04-18-10/"
+
