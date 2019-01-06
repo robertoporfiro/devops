@@ -22,6 +22,9 @@ sudo apt-get autoremove
 sudo apt-get update
 ```
 
+
+
+
 ## (Language Programming) Alternatives List 
  CMD: `update-alternatives`
 
@@ -74,7 +77,12 @@ https://linuxconfig.org/linux-commands
  chown.png
  
 ### System information
-` uname -a` kernel version
+- kernel version <br/>
+`uname -a` 
+
+- System Operation and version<br/>
+`cat /etc/lsb-release`
+
 
 ### Service managemant
 O Systemd é um gerenciador de sistema de inicialização
