@@ -16,9 +16,16 @@ explainshell.png
 
 ## dpkg problems
 ```
+sudo dpkg --configure -a
+sudo apt-get -f install
+sudo apt-get -f remove
+
 sudo apt-get autoclean
 sudo apt-get autoremove
 sudo apt-get update
+
+
+sudo apt-get upgrade
 ```
 
 
