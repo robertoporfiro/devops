@@ -29,7 +29,7 @@ It must have the following format:
 ## References 
 ## Bug fix or sugestions
 ## How to contribuite
-- [x] [Fork](fork) the official repository.
+- [x] Fork the repository.
 - [x] Create a topic branch.
 - [x] *Implement your feature or bug fix.*
 - [x] Add, commit, and **push** your changes.
