@@ -1,7 +1,6 @@
-# Linux
+# Linux Commands
 
 ## Search comands:
-
 `apropose <PARAMETRO>`
 
 ## view manual
