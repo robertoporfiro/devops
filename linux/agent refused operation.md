@@ -38,6 +38,20 @@ echo Agent pid 5831;
 - SSH agent wasn´t running
 - Keys loaded correctly
 
+### Solution
+- PAM_ssh is a lib to ssh-client
+- In the PAM session phase, an ssh-agent process is started and keys are added.
+- https://packages.ubuntu.com/xenial/admin/libpam-ssh
+- Now, service ssh inactive and ssh.socket activate
+
+####
+- In ~/.ssh create file agent-NAME-PC<br/>
+```
+SSH_AUTH_SOCK=/tmp/ssh-yy5ZvJCU3Lde/agent.2676; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=2677; export SSH_AGENT_PID;
+echo Agent pid 2677;
+```
+
 
 
 #### References:
@@ -47,3 +61,4 @@ echo Agent pid 5831;
 - https://packages.ubuntu.com/xenial/admin/libpam-ssh
 - https://linux.die.net/man/1/ssh-agent
 - http://manpages.ubuntu.com/manpages/xenial/en/man1/ssh.1.html
+- https://packages.ubuntu.com/xenial/admin/libpam-ssh
