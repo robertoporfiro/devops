@@ -89,6 +89,14 @@ https://linuxconfig.org/linux-commands
 - System Operation and version<br/>
 `cat /etc/lsb-release`
 
+- Process<br/>
+`ps` current processes
+
+- Htop ...
+
+- Memory<br/>
+`free`
+
 
 ### Service managemant
 O Systemd é um gerenciador de sistema de inicialização
@@ -103,8 +111,14 @@ O Systemd é um gerenciador de sistema de inicialização
 `systemctl status application.service`
 
 
+### Configuration profile
+`cd /etc/profile.d/`
+
+
 
 Fonte: https://sempreupdate.com.br/como-usar-o-systemctl-para-gerenciar-servicos-do-systemd/
+
+###
 
 
 ---
