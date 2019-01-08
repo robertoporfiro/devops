@@ -112,7 +112,8 @@ O Systemd é um gerenciador de sistema de inicialização
 
 
 ### Configuration profile
-`cd /etc/profile.d/`
+`/etc/profile.d/`<br/>
+...
 
 
 
