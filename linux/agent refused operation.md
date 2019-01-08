@@ -23,14 +23,27 @@ echo Agent pid 5831;
  - Run environment variable SSH_AUTH_SOCK with contains path `/run/user/1000/keyring/ssh`<br/>
  - The path execute a file socket with contains private key auth
  
-
-### Problem
+ 
+ ### Configuration key to ssh-agent
 - Start the ssh-agent in the background.<br/>
 `eval "$(ssh-agent -s)"`
 
-- Agent não tinha private key configurada.<br/>
+- Agent dont have set private key.<br/>
 `ssh-add ~/.ssh/id_rsa`
 
 
-https://linux.die.net/man/1/ssh-agent
+---
 
+### Problem
+- SSH agent wasn´t running
+- Keys loaded correctly
+
+
+
+#### References:
+- http://blog.joncairns.com/2013/12/understanding-ssh-agent-and-ssh-add/
+- https://stackoverflow.com/questions/18880024/start-ssh-agent-on-login
+- https://unix.stackexchange.com/questions/420124/who-is-starting-my-ssh-agent-and-why-wont-it-properly-terminate
+- https://packages.ubuntu.com/xenial/admin/libpam-ssh
+- https://linux.die.net/man/1/ssh-agent
+- http://manpages.ubuntu.com/manpages/xenial/en/man1/ssh.1.html
