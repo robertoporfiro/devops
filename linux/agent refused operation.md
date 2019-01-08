@@ -53,6 +53,10 @@ echo Agent pid 2677;
 ```
 
 
+---
+- create new user to check ssh
+- view if lib contains in apt/dpkg
+
 
 #### References:
 - http://blog.joncairns.com/2013/12/understanding-ssh-agent-and-ssh-add/
