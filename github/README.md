@@ -39,7 +39,8 @@ git config --global color.ui auto
 ## Authenticating to Github 
 
 ### Install ssh
-`sudo apt install -y openssh-server`
+`sudo apt install openssh-server`<br/>
+`sudo apt install openssh-client`
 
 ### Check status
 `sudo systemctl status ssh`<br/>
