@@ -64,6 +64,10 @@ https://linuxconfig.org/linux-commands
 - `file todo-list.txt` Obtain the file type
 - `rm -r my_files` remove repository
 
+#### grep and find
+grep search in file<bvr/>
+find search in folder and files
+
  
  
  ### Permissions execute, write, read
