@@ -8,6 +8,9 @@
 <br/>
 
 - Cookbook prontas: https://supermarket.chef.io/dashboard
+Ex supermarket:<br/>
+`knife supermarket install postgresql`
+
 
 - **Exemplo**: instalar o Apache em 100 máquinas.
   -É possível fazer um script bash, em seguida acessar máquina por máquina para instalar a aplicação.
