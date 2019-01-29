@@ -1,12 +1,9 @@
 #!/bin/bash
 # Autor: brunocampos01	
 # Script: ./install Conky.sh
+# Visit: https://www.noobslab.com/2012/07/conky-collection-for-ubuntulinux.html for themes
+# How to install: https://www.shellhacks.com/install-configure-conky-linux-mint-ubuntu-debian/
 # ----------------------------------- #
-# Script install Conky
-# input: N/A
-# output: Conky runnig
-# ----------------------------------- #
-
 echo -e "Install Conky \n"
 sudo apt-get install conky conky-all
 echo
