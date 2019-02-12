@@ -202,6 +202,13 @@ Remove files from Git:<br/>
 
 ---
 
+## Commit
+
+1. Commit each change in a file
+ `git add -p pom.xml `
+
+
+
 ## Branch
 
 <img src="images/branches.svg" />
