@@ -241,6 +241,9 @@ Delete merged branch (only possible if not HEAD):<br/>
 Delete not merged branch: <br/>
 `git branch -D branch_to_delete`
 
+### Delete branch remote
+`git push --delete origin NAME_BRANCH`
+
 ---
 ## Git remote configuration
 
