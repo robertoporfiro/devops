@@ -203,6 +203,10 @@ Remove files from Git:<br/>
 ### Remove changes commited
 `git reset HEAD~1`
 
+
+### Git amend
+git commit --amend
+
 ---
 
 ## Commit
