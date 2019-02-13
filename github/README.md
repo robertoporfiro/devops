@@ -204,9 +204,9 @@ Remove files from Git:<br/>
 `git reset HEAD~1`
 
 
-### Git amend
-git commit --amend
-
+### Reedit menssage commit
+`git commit --amend`
+- edit last message commit
 ---
 
 ## Commit
