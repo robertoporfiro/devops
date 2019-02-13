@@ -200,6 +200,9 @@ Remove files from Git:<br/>
 
 <img src="images/remove_folder.png" />
 
+### Remove changes commited
+`git rebase -i HEAD~1`
+
 ---
 
 ## Commit
