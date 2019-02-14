@@ -213,8 +213,21 @@ Remove files from Git:<br/>
 
 1. Commit each change in a file
  `git add -p pom.xml `
+ 
 
+## Working with paths in pull request
+Open rebase,:<br/>
+`git rebase -i master`
 
+IMG
+
+### Cocatenate equals paths
+IMG rebase
+IMG rebase with fixup
+
+### Edit only message commits
+IMG rebase
+IMG rebase with reword
 
 ## Branch
 
