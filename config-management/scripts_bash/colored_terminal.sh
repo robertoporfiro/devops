@@ -47,8 +47,9 @@ echo
 echo -e "======================================== \n"
 
 
-echo -e "Create file config \n"
+echo -e "Create file with default config \n"
 mkdir -p ~/.config/powerline-shell && powerline-shell --generate-config > ~/.config/powerline-shell/config.json
+
 echo
 echo -e "======================================== \n"
 
