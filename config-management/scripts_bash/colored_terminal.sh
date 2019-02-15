@@ -4,14 +4,26 @@
 # Script install poweline-shell
 # ----------------------------------- #
 
-echo -e "Install powerline-shell (PIP) \n"
-pip install powerline-shell
+echo -e "Pre-requeriments (PIP) \n"
+sudo su
+apt install python-pip
+apt install git
 echo
 echo -e "======================================== \n"
 
 
+echo -e "Install powerline-shell ans status (PIP) \n"
+pip install powerline-status powerline-shell
+echo
+echo -e "======================================== \n"
+
+echo -e "fonts-powerline (APT) \n"
+sudo apt-get install fonts-powerline
+echo
+echo -e "======================================== \n"
+
 echo -e "Insert function in bashrc \n"
-vim ~./bashrc
+vim ~/.bashrc
 echo
 echo
 function _update_ps1() {
@@ -40,4 +52,5 @@ echo -e "======================================== \n"
 echo -e " Visit: \n"
 echo
 echo -e "https://github.com/b-ryan/powerline-shell#bash"
+echo -e "https://powerline.readthedocs.io/en/latest/installation.html"
 
