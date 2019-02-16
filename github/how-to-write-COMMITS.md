@@ -1,10 +1,11 @@
 # Structure
 As mensagens de commit são compostas por três partes distintas separadas por uma linha em branco: o título, um corpo opcional e um rodapé opcional. Veja o layout abaixo: 
-- type: (obrigatório) 
-- body (opcional)
-- tail (opcional)
+- head: (obrigatório) 
+- body (optional)
 
-## Type
+## Head
+- Head must has maximum 50 characters.
+- Don´t use “.” or “…”
 Exemplos: 
 - **feat:** um novo recurso <br/>
 `git commit -m "feat: new "`
@@ -23,9 +24,13 @@ Exemplos:
 
 
 ## Body
-- Use o corpo para explicar o que e o porquê de um commit, não o “como”.
-- Os corpos não podem ter mais do que 50 caracteres, devem começar com uma letra maiúscula e não devem ser encerrados com ponto.
-- Ex, If applied, this PR will...
+- Ex<br/>
+ 
+ If applied, this PR will
+- [x] Update version
+- [x] resolve problem
+- [x] create test to
+- [ ] remove 
 
 ### Forbidden
 Não use frases como "eu corrigi" ou "eu fiz algo"; ele precisa ser claro e informativo.  
