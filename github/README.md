@@ -257,6 +257,9 @@ Delete not merged branch: <br/>
 ### Delete branch remote
 `git push --delete origin NAME_BRANCH`
 
+### Download specific branch
+`git clone --single-branch --branch <branchname> host:/dir.git`
+
 ---
 ## Git remote configuration
 
