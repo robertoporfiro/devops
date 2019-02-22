@@ -1,4 +1,9 @@
 # DevOps
+## Bash script
+- 
+- 
+## Linux
+- https://github.com/brunocampos01/devops/tree/master/linux
 
 ## Infrastructure as code
 - Scripts bash
