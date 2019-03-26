@@ -2,9 +2,24 @@
 ![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
 
 - Understanding
+- Git Areas
 - Git instalation
 - Authenticating to Github
-- Comands
+- Basic Comands
+- Commit
+- Git upload
+- Git download
+- Clean and remove files
+- Diff Tool
+
+Compare
+Reset
+Merge
+Rebase
+Stash
+Releases & Version Tags
+log
+Gitignore & Gitkeep
 
 ---
 
@@ -306,6 +321,17 @@ Restore file from a custom commit (in current branch):
 
 
 ## Reset
+
+Compare
+Reset
+Merge
+Rebase
+Stash
+Releases & Version Tags
+log
+Gitignore & Gitkeep
+
+
 Go back to commit:
 `git revert 073791e7dd71b90daa853b2c5acc2c925f02dbc6`
 
