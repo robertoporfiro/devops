@@ -2,6 +2,7 @@
 ![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
 
 ## Summary
+
 - Understanding
 - Git instalation
 - Authenticating to Github
@@ -54,7 +55,10 @@ https://comandosgit.github.io/#patching
 ## Understanding
 - Tutorial: http://rogerdudler.github.io/git-guide/index.pt_BR.html
 - OfficialEbook: https://git-scm.com/book/pt-br/v1/Primeiros-passos-Sobre-Controle-de-Vers%C3%A3o
-
+- https://www.slideshare.net/origamiaddict/git-get-ready-to-use-it
+- http://ndpsoftware.com/git-cheatsheet.html
+- https://medium.com/@porteneuve/mastering-git-reset-commit-alchemy-ba3a83bdfddc
+- https://www.gitkraken.com/git-client#merge-editor
 
 # Git Areas
 <img src="images/pull_fetch.png" />
@@ -102,6 +106,22 @@ $ git stash pop
 ```
 
 ## Staging (index)
+
+
+<img src="images/git_workflow.png" height=100% />
+
+
+<img src="images/untrakeded.png" height=100% />
+
+To add our files to the staging area:
+```
+git add blah.txt
+git status
+```
+
+<img src="images/tracked.png" height=100% />
+
+
 
 Git commits files from the "staged files" list, also called "indexed files".
 
