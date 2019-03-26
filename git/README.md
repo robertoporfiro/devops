@@ -1,36 +1,139 @@
-# GitHub Comands
+# Git
 ![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
 
+## Summary
 - Understanding
-- Git Areas
 - Git instalation
 - Authenticating to Github
+- Gitignore & Gitkeep
+- Git Areas
+    - Stash area
+    - working area
+    - Staging area
+    - Local repository
+    - Remote repository
 - Basic Comands
 - Commit
-- Git upload
-- Git download
-- Clean and remove files
-- Diff Tool
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-Compare
-Reset
-Merge
-Rebase
-Stash
-Releases & Version Tags
-log
-Gitignore & Gitkeep
+- Upload
+- Download
+- Git fetch X git pull
+- Diff
+- Merge
+- Rebase
 
+- git remote
+- Resolve conflits
+
+- Git branches
+    - git checkout
+    - git merge
+    - git submodules
+    - Releases & Version Tags
+
+- Git inspect
+    - git show
+    - git diff
+    - git status
+    - git describe
+
+- Git debug
+    - Bisect (detect when insered bug)
+    - git blame
+    - git grep
+
+- Git management
+    - git clean
+    - git gc
+    - git reflog
+    - git log
+    - git reset
+
+https://comandosgit.github.io/#patching
 ---
 
-## Understanding 
-In portuguese: http://rogerdudler.github.io/git-guide/index.pt_BR.html
+## Understanding
+- Tutorial: http://rogerdudler.github.io/git-guide/index.pt_BR.html
+- OfficialEbook: https://git-scm.com/book/pt-br/v1/Primeiros-passos-Sobre-Controle-de-Vers%C3%A3o
 
-### Git flow
- <img src="images/flowgit.png" />
+
+# Git Areas
+<img src="images/pull_fetch.png" />
+
+- Stash area
+- working area
+- Staging area
+- Local repository
+- Remote repository
+
+## Stash (esconderijo)
+
+Use `git stash` quando quiser gravar o estado atual do diretório de trabalho e do índice, mas quiser voltar para um diretório de trabalho limpo. O comando salva suas modificações locais e reverte o diretório de trabalho para corresponder ao HEAD commit.
+
+<img src="images/stash.png" height=100% />
+
+Put in stash:<br/>
+`git stash save "Message"`
+
+Show modify in stash:<br/>
+`git stash list`
+
+Show stash changes:<br/>
+`git stash show -p stash@{0}`
+
+Restore to workspace:<br/>
+`git stash apply`
+
+Delete custom stash item:<br/>
+`git stash drop stash@{0}`
+
+Delete complete stash:<br/>
+`git stash clear`
+
+#### Advantage stash area:
+When `git pull` give conflit. In this case, it's possible stash local changes to permit `git pull`, example:<br/>
+
+```
+$ git pull
+ ...
+file foobar not up to date, cannot merge.
+$ git stash save
+$ git pull
+$ git stash pop
+```
+
+## Staging (index)
+
+Git commits files from the "staged files" list, also called "indexed files".
+
+The git add command will not add dropped files by default.
+
+It's possible use `git stage`
+
+- To add everything files in stage area:<br/>
+`git add --all`
+
+- Trakear em **everything** os arquivos e diretórios correntes: <br/>
+`git add . `
+
+- Add spefic file:<br/>
+`git add index.html`
+
+- Trakear somente as alterações:
+`git add -u`
+
+- Add each change in a file:<br/>
+`git add -p <file-name>`<br/>
+`git add --patch <file-name>`
+
+
+
+
+
+
+
 
  ---
- 
+
 ### Install
  `
  sudo apt-get install git
@@ -38,20 +141,20 @@ In portuguese: http://rogerdudler.github.io/git-guide/index.pt_BR.html
 
  ### Install gitk (GUI)
  `sudo apt-get install gitk`
- 
+
 ### Git Init Configuration
-Após instalar o git, é necessário definir o seu nome de usuário e endereço de e-mail. 
+Após instalar o git, é necessário definir o seu nome de usuário e endereço de e-mail.
 
 ```
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 git config --global core.editor vim
-git config --global color.ui auto
+git config --global color.ui true
 ```
 
 ---
 
-## Authenticating to Github 
+## Authenticating to Github
 
 ### Install ssh
 `sudo apt install openssh-server`<br/>
@@ -69,7 +172,7 @@ OBS: This will generate the keys using the _RSA Algorith_.<br/>
 OBS: By default the public key is saved in the file ~/.ssh/id_rsa.pub, while ~/.ssh/id_rsa is the private key.
 
 
-### Generating a new SSH key:  
+### Generating a new SSH key:
 https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key
 
 ### Adding a new SSH key to your GitHub account:
@@ -99,29 +202,13 @@ Ex:
 
 ---
 
-## Diff Tool
 
-
- <img src="images/merge-conflict.png" />
-
-
-
-Pre requeriments: <br/>
-`sudo apt install vim`<br/>
-
-É a ferramenta utilizada para resolver conflitos de merge (fusão).<br/>
- `git config --global merge.tool vimdiff`<br/>
- Ex:
- 
- <img src="images/diff.png" />
-
- ---
 
 ### Integration github and PC
 1. Abra o diretório no seu computador que devera ir para o github:  <br/>
 Ex: <br/>
 `brunocampos01@AVELL ~/projetos/projetos_JAVA/`
- 
+
 2. Inicialize o git: <br/>
 `git init`
 
@@ -146,7 +233,7 @@ Há vários tipos de trackear os dados para o git.
 
 5. Enviar para o git: <br/>
 `git commit -m "commit inicial" `
- 
+
 ---
 
 ## Upload github
@@ -171,9 +258,9 @@ Há vários tipos de trackear os dados para o git.
 
 ### Download github
 1. Abra o diretório no PC onde se deseja atualizar:<br/>
-`git pull` 
+`git pull`
 ou <br/>
-`git pull -force` 
+`git pull -force`
 
 ---
 
@@ -185,12 +272,12 @@ Diretório local: <br/>
 
 ### Remove in cache
 - Para não enviar ao github
-- Quando já foi trackeado os arquivos mas ainda não foi feito o commit.<br/> 
+- Quando já foi trackeado os arquivos mas ainda não foi feito o commit.<br/>
 `git rm --cached <arquivo>`<br/>
 
 <img src="images/cached.png" />
 
-### Did you digress from what you did? 
+### Did you digress from what you did?
 
 1. First view modified<br/>
 `git status`
@@ -202,11 +289,11 @@ Diretório local: <br/>
 
 
 ### Remove in github
-Remove somente o diretório do GITHUB e mantem o diretorio no PC. 
+Remove somente o diretório do GITHUB e mantem o diretorio no PC.
 1. Primeiro abra o terminal do PC no diretório. <br/>
 ```
-git rm -r --cached FolderName 
-git commit -m "Removed folder from repository" 
+git rm -r --cached FolderName
+git commit -m "Removed folder from repository"
 git push origin master
 ```
 
@@ -228,7 +315,7 @@ Remove files from Git:<br/>
 
 1. Commit each change in a file
  `git add -p pom.xml `
- 
+
 
 ## Working with paths in pull request
 Open rebase,:<br/>
@@ -322,16 +409,6 @@ Restore file from a custom commit (in current branch):
 
 ## Reset
 
-Compare
-Reset
-Merge
-Rebase
-Stash
-Releases & Version Tags
-log
-Gitignore & Gitkeep
-
-
 Go back to commit:
 `git revert 073791e7dd71b90daa853b2c5acc2c925f02dbc6`
 
@@ -381,7 +458,7 @@ Stop merge (in case of conflicts):
 Stop merge (in case of conflicts):
 `git reset --merge` // prior to v1.7.4
 
-Merge only one specific commit: 
+Merge only one specific commit:
 `git cherry-pick 073791e7`
 
 Rebase:
@@ -396,31 +473,7 @@ Cancel rebase:
 Squash multiple commits into one:
 `git rebase -i HEAD~3` ([source](https://www.devroom.io/2011/07/05/git-squash-your-latests-commits-into-one/))
 
-## Stash
 
-Put in stash:
-`git stash save "Message"`
-
-Show stash:
-`git stash list`
-
-Show stash stats:
-`git stash show stash@{0}`
-
-Show stash changes:
-`git stash show -p stash@{0}`
-
-Use custom stash item and drop it:
-`git stash pop stash@{0}`
-
-Use custom stash item and do not drop it:
-`git stash apply stash@{0}`
-
-Delete custom stash item:
-`git stash drop stash@{0}`
-
-Delete complete stash:
-`git stash clear`
 
 
 ## Gitignore & Gitkeep
@@ -429,10 +482,10 @@ About: https://help.github.com/articles/ignoring-files
 
 Useful templates: https://github.com/github/gitignore
 
-Add or edit gitignore: 
+Add or edit gitignore:
 `nano .gitignore`
 
-Track empty dir: 
+Track empty dir:
 `touch dir/.gitkeep`
 
 
@@ -604,3 +657,23 @@ Clone specific branch to localhost:
 Delete remote branch (push nothing):
 `git push origin :branchname` or:
 `git push origin --delete branchname
+
+
+
+## Diff Tool
+
+
+ <img src="images/merge-conflict.png" />
+
+
+
+Pre requeriments: <br/>
+`sudo apt install vim`<br/>
+
+É a ferramenta utilizada para resolver conflitos de merge (fusão).<br/>
+ `git config --global merge.tool vimdiff`<br/>
+ Ex:
+
+ <img src="images/diff.png" />
+
+ ---
