@@ -44,6 +44,45 @@ EOF
 }
 ```
 
+### Test if file exists
+```
+if [ ! -f "$@" ]; then
+    echo "File "$@" doesn't exist"
+    exit
+fi
+```
+
+### Extract file by using extension as reference
+```
+case "$@" in
+    *.7z ) 7z x "$@" ;;
+    *.tar.bz2 ) tar xvjf "$@" ;;
+    *.bz2 ) bunzip2 "$@" ;;
+    *.deb ) ar vx "$@" ;;
+    *.tar.gz ) tar xvf "$@" ;;
+    *.gz ) gunzip "$@" ;;
+    *.tar ) tar xvf "$@" ;;
+    *.tbz2 ) tar xvjf "$@" ;;
+    *.tar.xz ) tar xvf "$@" ;;
+    *.tgz ) tar xvzf "$@" ;;
+    *.rar ) unrar x "$@" ;;
+    *.zip ) unzip "$@" ;;
+    *.Z ) uncompress "$@" ;;
+    * ) echo " Unsupported file format" ;;
+esac
+```
+
+
+### Histograms
+```
+$ < data/tips.csv Rio -ge 'g+geom_histogram(aes(bill))' | display
+```
+<br/>or<br/>
+```
+data/tips.csv csvcut -c bill | feedgnuplot --terminal 'dumb 80,25' \
+--histogram 0 --with boxes --ymin 0 --binwidth 1.5 --unset grid --exit
+```
+
 
 ### References:
 - https://linuxconfig.org/bash-scripting-tutorial-for-beginners
