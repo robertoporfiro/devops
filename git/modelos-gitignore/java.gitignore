@@ -30,15 +30,6 @@ hs_err_pid*
 .classpath
 .settings
 
-# Idea
-.idea
-*.iml
-*.iws
-*.ipr
-
-# VSCODE
-.vscode/*
-
 # OS
 Thumbs.db
 .DS_Store
@@ -54,3 +45,7 @@ target
 out
 build
 bin
+
+# IDEs and editors
+.vscode/*
+.idea/*

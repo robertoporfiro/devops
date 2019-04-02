@@ -1,7 +1,10 @@
 # DevOps
-## Bash script
+
+
+## Shell Script
 - 
 - 
+
 ## Linux
 - https://github.com/brunocampos01/devops/tree/master/linux
 
@@ -28,6 +31,9 @@
 ## Continuos Integration
 - Jenkins
 - Rundeck
+
+## Cloud
+- AWS
 
 
 ## Bug fix or sugestions
