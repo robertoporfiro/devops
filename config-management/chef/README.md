@@ -167,10 +167,10 @@ end
 
 ### Update cookbook
 
-- If necessary run all cockbooks, recipe and roles, execute:<br/>
+- Check cockbook's install in machine:<br/>
 ```
 cd /etc/chef; \
-cat first-boot.json
+cat first-boot.json	# output: {"run_list":"role[NAME_COOKBOOK]"}
 ```
 
 - Run a cookbook:<br/>
