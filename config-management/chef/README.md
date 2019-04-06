@@ -150,35 +150,55 @@ end
 
 
 ---
+## Bizus
 
+```
 - Knife = roles
 - berks = recipes
-
-
-
-
+- chef  = cockbook
+```
 
 ---
-## In container
-
-### Pre requeriments:
-- docker 
-- orquestration containeir
-
-### Install and configuration:
-https://docs.chef.io/install_server.html
+## Update
+- Update cookbook
+- Update recipe
+- Update role
 
 
-### Start container:
-`docker-compose up -d`<br/>
-OBS: -d in background
+### Update cookbook
 
-### Start an interactive Bash session on the `workstation` container:
-`docker exec -it workstation bash`
+- If necessary run all cockbooks, recipe and roles, execute:<br/>
+```
+cd /etc/chef; \
+cat first-boot.json
+```
 
-<img src="images/docker-compose.png" />
+- Run a cookbook:<br/>
+`sudo chef-client <NAME_COOKBOOK>`
+
+## Update recipe
+
+- Make changes and upload to chef server, after run:<br/>
+`berks upload <NAME_RECIPE> --force`
+<br/>
+e.g, without update version in `metadata.rb`:<br/>
+` berks upload platform-repos --force`
+
+- Vá na máquina provisionada e rode o chef novamente:<br/>
+`sudo chef-client -o "recipe[NAME_COOKBOOK::NAME_RECIPE]"`
+
+## Update role
+` knife upload from file roles/<NAME_ROLES.rb>`
 
 ---
+## Remove machine of chef-client
+
+### Drop 
+```
+knife node delete NAME_MACHINE
+knife client delete NAME_MACHINE
+```
+
 
 ### Problem berks install
 `gem update --system 2.7.5`
