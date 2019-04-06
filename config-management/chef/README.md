@@ -170,7 +170,7 @@ end
 - Check cockbook's install in machine:<br/>
 ```
 cd /etc/chef; \
-cat first-boot.json	# output: {"run_list":"role[NAME_COOKBOOK]"}
+cat first-boot.json	# output: {"run_list":"role[NAME_ROLE]"}
 ```
 
 - Run a cookbook:<br/>
