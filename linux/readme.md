@@ -80,6 +80,11 @@ find search in folder and files
  chmod +x hello_world.sh
  ./hello_world.sh 
  ```
+ 
+ ### Give permission of sudo to a user
+ `sudo visudo`
+ <br/>
+ 
 
  #### Alter onwer file or repository
  `sudo chown USER-NAME FILE_OR_REPOSITORY`<br/>
