@@ -195,8 +195,9 @@ e.g, without update version in `metadata.rb`:<br/>
 
 ### Drop 
 ```
-knife node delete NAME_MACHINE
-knife client delete NAME_MACHINE
+cd /$HOME/platform-chef-repo/
+knife node delete platform-luigi-08 --yes
+knife client delete platform-luigi-08 --yes
 ```
 
 
