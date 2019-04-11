@@ -200,6 +200,12 @@ knife node delete platform-luigi-08 --yes
 knife client delete platform-luigi-08 --yes
 ```
 
+or
+```
+knife ec2 server delete i-0a8d49b68d37e8e9e --node-name platform-luigi-08 --purge
+```
+Apague a maquina no EC2 > instances
+
 
 ### Problem berks install
 `gem update --system 2.7.5`
