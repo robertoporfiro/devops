@@ -1,5 +1,7 @@
 # DevOps
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3a8c68906dba4076bf0b74a2fced61c8)](https://app.codacy.com/app/brunocampos01/devops?utm_source=github.com&utm_medium=referral&utm_content=brunocampos01/devops&utm_campaign=Badge_Grade_Dashboard)
+
 
 ## Shell Script
 - 
