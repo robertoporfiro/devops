@@ -4,8 +4,7 @@
 
 
 ## Shell Script
-- 
-- 
+- Coockbooks
 
 ## Linux
 - https://github.com/brunocampos01/devops/tree/master/linux
@@ -19,12 +18,14 @@
 - [Installing git](https://github.com/brunocampos01/DevOps/tree/master/github#git-instalation)
 - [Commands git](https://github.com/brunocampos01/DevOps/blob/master/github/README.md)
 - [How to write COMMITS](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md)
-- Whenever you start a project in github, there must be 3 initial files:
-  - README: [How to write README](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-README.md)
-  - .gitignore: [Models](https://github.com/brunocampos01/DevOps/tree/master/github/modelos-gitignore)
-  - LICENSE: [Types of LICENSE](https://choosealicense.com/)
-- [emojis](https://gist.github.com/rxaviers/7360908) 
+- [How to write BRANCHES]()
+- [How to write README](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-README.md)
+- [Types of LICENSE](https://choosealicense.com/)
+- [Models](https://github.com/brunocampos01/DevOps/tree/master/github/modelos-gitignore)
+- [emojis](https://gist.github.com/rxaviers/7360908)
 
+## Documentation
+- Markdown: [style guide](https://github.com/DavidAnson/markdownlint/blob/v0.13.0/doc/Rules.md#md025)
 
 ## Containers
 - Containers
