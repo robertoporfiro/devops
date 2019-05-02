@@ -8,7 +8,7 @@
 - Authenticating to Github
 - Gitignore & Gitkeep
 - Git Areas
-    - Stash area
+  - Stash area
     - working area
     - Staging area
     - Local repository
@@ -26,33 +26,35 @@
 - Resolve conflits
 
 - Git branches
-    - git checkout
-    - git merge
-    - git submodules
-    - Releases & Version Tags
+  - git checkout
+  - git merge
+  - git submodules
+  - Releases & Version Tags
 
 - Git inspect
-    - git show
-    - git diff
-    - git status
-    - git describe
+  - git show
+  - git diff
+  - git status
+  - git describe
 
 - Git debug
-    - Bisect (detect when insered bug)
-    - git blame
-    - git grep
+  - Bisect (detect when insered bug)
+  - git blame
+  - git grep
 
 - Git management
-    - git clean
-    - git gc
-    - git reflog
-    - git log
-    - git reset
+  - git clean
+  - git gc
+  - git reflog
+  - git log
+  - git reset
 
 https://comandosgit.github.io/#patching
+
 ---
 
 ## Understanding
+
 - Tutorial: http://rogerdudler.github.io/git-guide/index.pt_BR.html
 - OfficialEbook: https://git-scm.com/book/pt-br/v1/Primeiros-passos-Sobre-Controle-de-Vers%C3%A3o
 - https://www.slideshare.net/origamiaddict/git-get-ready-to-use-it
@@ -60,7 +62,72 @@ https://comandosgit.github.io/#patching
 - https://medium.com/@porteneuve/mastering-git-reset-commit-alchemy-ba3a83bdfddc
 - https://www.gitkraken.com/git-client#merge-editor
 
+ ---
+
+## Install
+ ```bash
+ sudo apt-get install git
+ ```
+
+ ### Install gitk (GUI)
+ ```bash
+ sudo apt-get install gitk
+ ```
+
+### Git Init Configuration
+Após instalar o git, é necessário definir o seu nome de usuário e endereço de e-mail.
+
+```bash
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git config --global core.editor vim
+git config --global color.ui true
+```
+
+---
+
+## Authenticating to Github
+
+### Install ssh
+```bash
+sudo apt install openssh-server
+sudo apt install openssh-client
+```
+
+### Check status
+```bash
+sudo systemctl status ssh
+```
+
+ <img src="images/ssh.png" />
+
+### Generate SSH  public and private Key
+
+```bash
+ssh-keygen -t rsa
+```
+
+OBS: This will generate the keys using the _RSA Algorith_.
+OBS: By default the public key is saved in the file ~/.ssh/id_rsa.pub, while ~/.ssh/id_rsa is the private key.
+
+### Generating a new SSH key:
+
+https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key
+
+### Adding a new SSH key to your GitHub account:
+
+https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+
+### Testing your SSH connection
+
+```bash
+ssh -T git@github.com
+```
+
+---
+
 # Git Areas
+
 <img src="images/pull_fetch.png" />
 
 - Stash area
@@ -75,28 +142,47 @@ Use `git stash` quando quiser gravar o estado atual do diretório de trabalho e 
 
 <img src="images/stash.png" height=100% />
 
-Put in stash:<br/>
-`git stash save "Message"`
+##### Put in stash
 
-Show modify in stash:<br/>
-`git stash list`
-
-Show stash changes:<br/>
-`git stash show -p stash@{0}`
-
-Restore to workspace:<br/>
-`git stash apply`
-
-Delete custom stash item:<br/>
-`git stash drop stash@{0}`
-
-Delete complete stash:<br/>
-`git stash clear`
-
-#### Advantage stash area:
-When `git pull` give conflit. In this case, it's possible stash local changes to permit `git pull`, example:<br/>
-
+```bash
+git stash save "Message"
 ```
+
+##### Show modify in stash
+
+```bash
+git stash list
+```
+
+##### Show stash changes
+
+```bash
+git stash show -p stash@{0}
+```
+
+##### Restore to workspace
+
+```bash
+git stash apply
+```
+
+##### Delete custom stash item
+
+```bash
+git stash drop stash@{0}
+```
+
+##### Delete complete stash
+
+```bash
+git stash clear
+```
+
+#### Advantage stash area
+
+When `git pull` give conflit. In this case, it's possible stash local changes to permit `git pull`, example:
+
+```bash
 $ git pull
  ...
 file foobar not up to date, cannot merge.
@@ -107,20 +193,17 @@ $ git stash pop
 
 ## Staging (index)
 
-
 <img src="images/git_workflow.png" height=100% />
-
 
 <img src="images/untrakeded.png" height=100% />
 
 To add our files to the staging area:
-```
+```bash
 git add blah.txt
 git status
 ```
 
 <img src="images/tracked.png" height=100% />
-
 
 
 Git commits files from the "staged files" list, also called "indexed files".
@@ -129,130 +212,105 @@ The git add command will not add dropped files by default.
 
 It's possible use `git stage`
 
-- To add everything files in stage area:<br/>
+- To add everything files in stage area:
 `git add --all`
 
-- Trakear em **everything** os arquivos e diretórios correntes: <br/>
+- Trakear em **everything** os arquivos e diretórios correntes:
 `git add . `
 
-- Add spefic file:<br/>
+- Add spefic file
 `git add index.html`
 
 - Trakear somente as alterações:
 `git add -u`
 
-- Add each change in a file:<br/>
-`git add -p <file-name>`<br/>
-`git add --patch <file-name>`
-
-
-
-
-
-
-
-
- ---
-
-### Install
- `
- sudo apt-get install git
- `
-
- ### Install gitk (GUI)
- `sudo apt-get install gitk`
-
-### Git Init Configuration
-Após instalar o git, é necessário definir o seu nome de usuário e endereço de e-mail.
-
-```
-git config --global user.name "John Doe"
-git config --global user.email johndoe@example.com
-git config --global core.editor vim
-git config --global color.ui true
+- Add each change in a file:
+```bash
+git add -p <file-name>
+git add --patch <file-name>
 ```
 
----
-
-## Authenticating to Github
-
-### Install ssh
-`sudo apt install openssh-server`<br/>
-`sudo apt install openssh-client`
-
-### Check status
-`sudo systemctl status ssh`<br/>
-
- <img src="images/ssh.png" />
-
-### Generate SSH  public and private Key
-`ssh-keygen -t rsa`<br/>
-
-OBS: This will generate the keys using the _RSA Algorith_.<br/>
-OBS: By default the public key is saved in the file ~/.ssh/id_rsa.pub, while ~/.ssh/id_rsa is the private key.
-
-
-### Generating a new SSH key:
-https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key
-
-### Adding a new SSH key to your GitHub account:
-https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
-
-### Testing your SSH connection
-`ssh -T git@github.com`
-
----
 ## Basic Comands
 
 ## Setup
-See where Git is located:<br/>
-`which git`
 
-Get the version of Git:<br/>
-`git --version`
+See where Git is located
+```bash
+which git
+```
 
-Help:<br/>
-`git help`
+Get the version of Git
+```bash
+git --version
+```
 
-Check Configuration:<br/>
-`git config --list`<br/>
+Help
+```bash
+git help
+```
+
+Check Configuration
+```bash
+git config --list
+```
+
 Ex:
-
 <img src="images/git_config.png" />
 
 ---
 
-
-
 ### Integration github and PC
-1. Abra o diretório no seu computador que devera ir para o github:  <br/>
-Ex: <br/>
-`brunocampos01@AVELL ~/projetos/projetos_JAVA/`
 
-2. Inicialize o git: <br/>
-`git init`
+1. Open directory local (in PC) with thes files to upload to github:
 
+```bash
+user@name_pc ~/projetos/projetos_JAVA/
+```
 
-#### 3. Track files:
+2. Inicialize o git:
+
+```bash
+git init
+```
+
+#### 3. Track files
+
 Há vários tipos de trackear os dados para o git.
 
-- Arquivo em especifico:<br/>
-`git add index.html`
+##### Arquivo em especifico
 
-- Trakear em **everything** os arquivos e diretórios: <br/>
-`git add . `
+```bash
+git add index.html
+```
 
-- Trakear somente as alterações:
-`git add -u`
+##### Trakear em **everything** os arquivos e diretórios
 
-- Add e commit em uma única etapa:<br/>
-`git commit -am "Message"`
+```bash
+git add .
+```
 
-4. Verifique o andamento:<br/>
-`git status `
+##### Trakear somente as alterações
 
-5. Enviar para o git: <br/>
-`git commit -m "commit inicial" `
+```bash
+git add -u
+```
+
+##### Add e commit em uma única etapa
+
+```bash
+git commit -am "Message"
+```
+
+#### 4. Check Status
+
+```bash
+git status
+```
+
+#### 5. Enviar para o git
+```bash
+git commit -m "commit inicial"
+```
 
 ---
 
@@ -267,8 +325,11 @@ Há vários tipos de trackear os dados para o git.
 - origin é um _alias_ para o servidor remoto.
 - Ele aponta para o servidor remoto.
 
-3. faça o envio.:<br/>
-`git push origin branchname`
+3. faça o envio
+
+```bash
+git push origin branchname
+```
 
 
 **Caso de erro de FETCH_HEAD, use:** <br/>
@@ -376,11 +437,22 @@ Delete merged branch (only possible if not HEAD):<br/>
 Delete not merged branch: <br/>
 `git branch -D branch_to_delete`
 
-### Delete branch remote
-`git push --delete origin NAME_BRANCH`
+##### Delete branch remote
 
-### Download specific branch
-`git clone --single-branch --branch <branchname> host:/dir.git`
+```bash
+git push --delete origin NAME_BRANCH
+```
+
+##### Delete branch local
+
+```bash
+git branch --delete NAME_BRANCH
+```
+
+##### Download specific branch
+```bash
+git clone --single-branch --branch <branchname> host:/dir.git
+```
 
 ---
 ## Git remote configuration

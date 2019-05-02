@@ -9,38 +9,40 @@
 
 - Cookbook prontas: https://supermarket.chef.io/dashboard
 Ex supermarket:<br/>
-`knife supermarket install postgresql`
+```bash
+knife supermarket install postgresql
+```
 
-
-- **Exemplo**: instalar o Apache em 100 máquinas.
-  -É possível fazer um script bash, em seguida acessar máquina por máquina para instalar a aplicação.
-    - Com o chef é possível criar uma _recipes_ de instalação do apache e inserir num **cookbook**. Basta executar 1 vez que ele instala nos 100 nodes.
-    - Caso seja necessário alterar alguma coisa basta mudar a _recipe_ e reexecutar.
+-  **Exemplo**: instalar o Apache em 100 máquinas.
+  -  É possível fazer um script bash, em seguida acessar máquina por máquina para instalar a aplicação.
+  -  Com o chef é possível criar uma _recipes_ de instalação do apache e inserir num **cookbook**. Basta executar 1 vez que ele instala nos 100 nodes.
+  -  Caso seja necessário alterar alguma coisa basta mudar a _recipe_ e reexecutar.
 
 ---
-
 ## Recipes
 São os scripts de instalação e configuração.
 
-
-#### Example 1:
+#### Example 1
 1. Create _recipe_: hello.rb
-```
+```ruby
 file 'output_file' do 
 	content 'hello world'
 end
 ```
 
 2. Run recipe<br/>
-`chef-apply hello.rb`
+```bash
+chef-apply hello.rb
+```
+
 <img src="images/recipe_hello.png" />
 
 - Será gerado um arquivo chamado motd contendo: hello world
 
-#### Example 2:
+#### Example 2
 
 1. Create _recipe_: recipe-web-server.rb
-```
+```ruby
 # install package with apt/dpkg
 package 'apache2'
 
@@ -58,15 +60,18 @@ file '/var/www/html/index.html' do
 </html>'
 end
 ```
+
 2. Run recipe<br/>
-`sudo chef-apply recipe-web-server.rb`
+```bash
+sudo chef-apply recipe-web-server.rb
+```
 
 3. Open browser in http://localhost/80 or `curl localhost`
 
 ---
 
 ## Cookbook
-<br/>
+
 <img src="images/chef-configuration.jpg" />
 
 #### Estrutura de diretórios do cookbook
@@ -99,26 +104,25 @@ cookbooks
                 └── default_test.rb
 
 8 directories, 10 files
-
 ```
 
 ### Hands-on
 
 #### Example create cookbooks:
 1. Create repository<br/>
-`mkdir cookbooks`
-
-2. Create _cookbook_: web-server-apache<br/>
-`chef generate cookbook cookbooks/cookbook-web-server-apache`
-
-3. Edit recipe _default.rb_<br/>
+```bash
+mkdir cookbooks
 ```
 
+2. Create _cookbook_: web-server-apache<br/>
+```bash
+chef generate cookbook cookbooks/cookbook-web-server-apache
+```
+
+3. Edit recipe _default.rb_<br/>
+```ruby
 # Cookbook:: web-server-apache
 # Recipe:: default
-#
-# Copyright:: 2018, The Authors, All Rights Reserved.
-
 
 # install package with apt/dpkg
 package 'apache2'
@@ -138,16 +142,13 @@ file '/var/www/html/index.html' do
 end
 ```
 4. Execute recipe in a cookbook<br/>
-`sudo chef-client --local-mode --runlist 'recipe['cookbook-web-server-apache']'`
+```bash
+sudo chef-client --local-mode --runlist 'recipe['cookbook-web-server-apache']'
+```
 
 ---
 
-
-
-<br/>
-
 <img src="images/arq.png" />
-
 
 ---
 ## Bizus
@@ -168,50 +169,62 @@ end
 ### Update cookbook
 
 - Check cockbook's install in machine:<br/>
-```
+```bash
 cd /etc/chef; \
 cat first-boot.json	# output: {"run_list":"role[NAME_ROLE]"}
 ```
 
 - Run a cookbook:<br/>
-`sudo chef-client <NAME_COOKBOOK>`
+```bash
+sudo chef-client <NAME_COOKBOOK>
+```
 
 ## Update recipe
 
 - Make changes and upload to chef server, after run:<br/>
-`berks upload <NAME_RECIPE> --force`
-<br/>
+```bash
+berks upload <NAME_RECIPE> --force
+```
+
 e.g, without update version in `metadata.rb`:<br/>
-` berks upload platform-repos --force`
+```bash
+berks upload platform-repos --force
+```
 
 - Vá na máquina provisionada e rode o chef novamente:<br/>
-`sudo chef-client -o "recipe[NAME_COOKBOOK::NAME_RECIPE]"`
+```bash
+sudo chef-client -o "recipe[NAME_COOKBOOK::NAME_RECIPE]"
+```
 
 ## Update role
-` knife upload from file roles/<NAME_ROLES.rb>`
+```bash
+knife upload from file roles/<NAME_ROLES.rb>
+```
 
 ---
+
 ## Remove machine of chef-client
 
 ### Drop 
-```
+```bash
 cd /$HOME/platform-chef-repo/
 knife node delete platform-luigi-08 --yes
 knife client delete platform-luigi-08 --yes
 ```
 
 or
+
 ```
 knife ec2 server delete i-0a8d49b68d37e8e9e --node-name platform-luigi-08 --purge
 ```
 Apague a maquina no EC2 > instances
 
-
 ### Problem berks install
-`gem update --system 2.7.5`
+```bash
+gem update --system 2.7.5
+```
 
-
----
-### Fonts
-- chaordic CHEF: https://github.com/chaordic/platform-chef-repo
-- 
+## Author
+- Bruno Aurélio Rôzza de Moura Campos (brunocampos01@gmail.com)
+## Copyright
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Bruno A. R. M. Campos</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

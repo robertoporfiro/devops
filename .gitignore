@@ -122,8 +122,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# IDE, text editor
+.idea/
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
