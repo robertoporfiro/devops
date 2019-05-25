@@ -11,9 +11,9 @@ echo -e "======================================== \n"
 
 
 echo -e "Install some extra staff \n"
-sudo sudo apt-get install curl ;\
-                            lm-sensors ;\
-                            hddtemp
+sudo sudo apt-get install curl ; \
+                          lm-sensors ; \
+                          hddtemp
 echo
 echo -e "======================================== \n"
 

@@ -2,7 +2,7 @@
 # Autor: brunocampos01	
 # Script: ./install_java.sh
 # ----------------------------------- #
-# Script install OFICIAL version JAVA 11
+# Script install JAVA version 11
 # input: N/A
 # output: Version do java
 # ----------------------------------- #

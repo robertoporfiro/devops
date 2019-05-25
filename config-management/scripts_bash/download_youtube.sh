@@ -18,6 +18,11 @@ echo
 echo -e "======================================== \n"
 
 
+echo -e "Install Dependences \n"
+sudo apt-get install ffmpeg
+echo
+echo -e "======================================== \n"
+
 echo -e "Update packages \n"
 sudo apt-get update
 echo
@@ -35,5 +40,7 @@ clipgrab
 echo
 echo -e "======================================== \n"
 
-
+echo -e "Visit site\n"
+echo -e https://clipgrab.org/
+echo -e "======================================== \n"
 
