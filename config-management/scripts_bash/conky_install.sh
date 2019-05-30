@@ -38,3 +38,8 @@ pkill -HUP conky
 echo
 echo -e "======================================== \n"
 
+
+echo -e "Configuration:"
+pkill -HUP conky
+echo -e "Conky will firstly try to look for a local ~/.conkyrc file and if it doesn’t exist, then it will read the default one – /etc/conky/conky.conf."
+echo -e "======================================== \n"

@@ -15,19 +15,46 @@ It must have the following format:
 - Copyright and license
 
 ---
-# Example
 
-## Title
+# Example Project Title
+
 [![Python 3.7](https://img.shields.io/badge/python-3.7-yellow.svg)](https://www.python.org/downloads/release/python-371/)
 ![License](https://img.shields.io/badge/Code%20License-MIT-blue.svg)
 
-## Describe project 
-## Pre Requirements
+
+## Describe project
+
+Project description goes here.
+
+## Prerequisites
+
+```
+Give examples
+```
+
 ## Quickstart
+
 ## Install
-## Examples
-## References 
+
+A step by step.
+```
+Give the example
+```
+
+## Running the Tests
+
+Explain how to run the automated tests for this system.
+
+## Built With
+
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
+## References
+
 ## Bug fix or sugestions
+
 ## How to contribuite
 - [x] Fork the repository.
 - [x] Create a topic branch.
