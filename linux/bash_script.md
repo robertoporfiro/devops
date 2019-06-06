@@ -1,5 +1,22 @@
 # Cookbook
 
+
+## Comentários
+- Single line
+```
+# comentário por linha
+```
+
+- Mutiple lines
+```
+<<HEREDOC
+    usage function
+    write comments
+    this not show
+HEREDOC
+```
+
+
 ## Debug
 - `set -x` : print everything
 - `set -e` : print only error
