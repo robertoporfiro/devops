@@ -126,6 +126,47 @@ ssh -T git@github.com
 
 ---
 
+## Set Local Repository
+
+If project start in personal computer is possible configurate with a remote (github).
+
+```bash
+git init
+git remote add <name_remote> <url_ssh>
+```
+
+NOTE: if use url git@github, the config ssh to this repo is ACTIVATE.
+
+- Check config of local repository
+```bash
+git config --list
+
+# user.name=brunocampos01
+# user.email=brunocampos01@gmail.com
+# core.editor=vim
+# color.ui=true
+# color.ui=auto
+# color.branch.current=yellow bold
+# color.branch.local=green bold
+# color.branch.remote=cyan bold
+# color.diff.meta=yellow bold
+# color.diff.frag=magenta bold
+# color.diff.old=red bold
+# color.diff.new=green bold
+# color.diff.whitespace=red reverse
+# color.status.added=green bold
+# color.status.changed=yellow bold
+# color.status.untracked=red bold
+# web.browser=google-chrome
+# core.repositoryformatversion=0
+# core.filemode=true
+# core.bare=false
+# core.logallrefupdates=true
+# remote.origin.url=git@github.com:brunocampos01/web_development.git
+# remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+```
+---
+
 # Git Areas
 
 <img src="images/pull_fetch.png" />

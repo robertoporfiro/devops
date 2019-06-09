@@ -2,8 +2,9 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3a8c68906dba4076bf0b74a2fced61c8)](https://app.codacy.com/app/brunocampos01/devops?utm_source=github.com&utm_medium=referral&utm_content=brunocampos01/devops&utm_campaign=Badge_Grade_Dashboard)
 ![License](https://img.shields.io/badge/Code%20License-MIT-blue.svg)
+![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
 
-<img src='images/python.png'>
+<img src='images/devops.png'>
 
 
 # Summary
@@ -22,6 +23,8 @@
     - [Ansible]()
 
 - **Control Version**
+:black_circle::heavy_minus_sign::black_circle::black_circle: 
+
     - [Installing git](https://github.com/brunocampos01/DevOps/tree/master/github#git-instalation)
     - [Commands git](https://github.com/brunocampos01/DevOps/blob/master/github/README.md)
     - [Types of LICENSE](https://choosealicense.com/)
