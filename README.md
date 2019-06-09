@@ -44,6 +44,8 @@
         - [.gitkeep]()
 
     - Documentation
+        - [Images](#images)
+        - [Shields](https://shields.io/category/build)
         - [Markdown: style guide](https://github.com/DavidAnson/markdownlint/blob/v0.13.0/doc/Rules.md#md025)
         - [Markdown: emojis](https://gist.github.com/rxaviers/7360908)
 
@@ -155,7 +157,12 @@ dig my-addr-aws.net
 ```bash
 `< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32};`
 ```
+## Images in Markdown
 
+- Responsive
+```
+<img src="images/stash.png" height=auto width=100%/>
+```
 
 **References:**<br/>
 
