@@ -75,7 +75,7 @@ https://comandosgit.github.io/#patching
  ```
 
 ### Git Init Configuration
-Após instalar o git, é necessário definir o seu nome de usuário e endereço de e-mail.
+Before install, It's necessary st user.name and user.email.
 
 ```bash
 git config --global user.name "John Doe"
@@ -123,6 +123,9 @@ https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 ```bash
 ssh -T git@github.com
 ```
+
+**References**
+- https://help.github.com/en/categories/authenticating-to-github
 
 ---
 
