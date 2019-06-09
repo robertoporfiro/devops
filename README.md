@@ -31,20 +31,21 @@
 
     - [Installing git](https://github.com/brunocampos01/devops/tree/master/git#install)
     - [Authentication in Github](https://github.com/brunocampos01/devops/blob/master/git/README.md#authenticating-to-github)
-    - [Commands git](https://github.com/brunocampos01/DevOps/blob/master/github/README.md)
-    - [Types of LICENSE](https://choosealicense.com/)
-    - [Models](https://github.com/brunocampos01/DevOps/tree/master/github/modelos-gitignore)
+    - [Understanding git](https://github.com/brunocampos01/DevOps/blob/master/github/README.md)
 
+    - Files Git
+        - [Local Directory: .git]()
+        - [.gitconfig]()
+        - [.gitignore]()
+        - [.gitattributes]()
+        - [.gitkeep]()
+        
     - **Good Pratices**
         - [Commits](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md)
         - [Branches]() # in production
         - [Readme](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-README.md)
         - [.editorconfig]()
-    - Files Git
-        - [.gitconfig]()
-        - [.gitignore]()
-        - [.gitattributes]()
-        - [.gitkeep]()
+        - [Types of LICENSE](https://choosealicense.com/)
 
     - Documentation
         - [Images](#images)
