@@ -37,7 +37,7 @@
 
     - **Good Pratices**
         - [Commits](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md)
-        - [Branches]()
+        - [Branches]() # in production
         - [Readme](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-README.md)
         - [.editorconfig]()
     - Files Git
@@ -48,6 +48,7 @@
 
     - Documentation
         - [Images](#images)
+        - [Basic writing and formatting syntax](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
         - [Shields](https://shields.io/category/build)
         - [Markdown: style guide](https://github.com/DavidAnson/markdownlint/blob/v0.13.0/doc/Rules.md#md025)
         - [Markdown: emojis](https://gist.github.com/rxaviers/7360908)
