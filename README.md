@@ -4,12 +4,13 @@
 ![License](https://img.shields.io/badge/Code%20License-MIT-blue.svg)
 ![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
 
-<img src='images/devops.png'>
+<img src='images/devops.png' height=auto width=70%>
 
 
 # Summary
 
-- **Linux** :penguin:
+- **Linux**
+:penguin:
     - [Home Sweet home]()
     - [Shell Script]()
     - [Network]()
@@ -17,13 +18,14 @@
         - [Agent Refused Operation](#agent-refused-operation)
 
 
-- **Infrastructure As Code and Configuration Managemen** :computer: :computer: :computer: :computer: :computer:
+- **Infrastructure As Code and Configuration Managemen**
+:computer: :computer: :computer: :computer: :computer:
     - [Scripts]()
     - [Chef]()
     - [Ansible]()
 
 - **Control Version**
-:black_circle::heavy_minus_sign::black_circle::black_circle: 
+:black_circle::heavy_minus_sign::black_circle::heavy_minus_sign::black_circle: 
 
     - [Installing git](https://github.com/brunocampos01/DevOps/tree/master/github#git-instalation)
     - [Commands git](https://github.com/brunocampos01/DevOps/blob/master/github/README.md)

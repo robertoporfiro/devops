@@ -169,7 +169,7 @@ git config --list
 
 # Git Areas
 
-<img src="images/pull_fetch.png" />
+<img src="images/pull_fetch.png" height=auto width=70%/>
 
 - Stash area
 - working area
@@ -181,7 +181,7 @@ git config --list
 
 Use `git stash` quando quiser gravar o estado atual do diretório de trabalho e do índice, mas quiser voltar para um diretório de trabalho limpo. O comando salva suas modificações locais e reverte o diretório de trabalho para corresponder ao HEAD commit.
 
-<img src="images/stash.png" height=100% />
+<img src="images/stash.png" height=auto width=70%/>
 
 ##### Put in stash
 
@@ -234,9 +234,9 @@ $ git stash pop
 
 ## Staging (index)
 
-<img src="images/git_workflow.png" height=100% />
+<img src="images/git_workflow.png" height=90% width=90%/>
 
-<img src="images/untrakeded.png" height=100% />
+<img src="images/untrakeded.png" height=90% width=90% />
 
 To add our files to the staging area:
 ```bash
@@ -244,7 +244,7 @@ git add blah.txt
 git status
 ```
 
-<img src="images/tracked.png" height=100% />
+<img src="images/tracked.png" height=90% width=90% />
 
 
 Git commits files from the "staged files" list, also called "indexed files".
@@ -296,7 +296,7 @@ git config --list
 ```
 
 Ex:
-<img src="images/git_config.png" />
+<img src="images/git_config.png" height=90% width=90%/>
 
 ---
 
@@ -422,7 +422,7 @@ git push origin master
 Remove files from Git:<br/>
 `git rm index.html`<br/>
 
-<img src="images/remove_folder.png" />
+<img src="images/remove_folder.png" height=90% width=90%/>
 
 ### Remove changes commited
 `git reset HEAD~1`
@@ -455,7 +455,7 @@ IMG rebase with reword
 
 ## Branch
 
-<img src="images/branches.svg" />
+<img src="images/branches.svg" height=90% width=90%/>
 
 Show branches (local):<br/>
 `git branch`
@@ -501,7 +501,7 @@ git clone --single-branch --branch <branchname> host:/dir.git
 ### View configuration git remote (server)
 `git remote -v`
 
-<img src="images/git_remote.png" />
+<img src="images/git_remote.png" height=90% width=90%/>
 
 ### Create a new connection to a remote repository
 `git remote add <name> <url>`<br/>
@@ -796,7 +796,7 @@ Delete remote branch (push nothing):
 ## Diff Tool
 
 
- <img src="images/merge-conflict.png" />
+ <img src="images/merge-conflict.png" height=90% width=90%/>
 
 
 
@@ -807,6 +807,6 @@ Pre requeriments: <br/>
  `git config --global merge.tool vimdiff`<br/>
  Ex:
 
- <img src="images/diff.png" />
+ <img src="images/diff.png" height=100% width=100%/>
 
  ---
