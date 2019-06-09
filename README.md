@@ -1,8 +1,10 @@
 # DevOps
 
+![devops](https://img.shields.io/badge/Dev-Ops-blue.svg)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3a8c68906dba4076bf0b74a2fced61c8)](https://app.codacy.com/app/brunocampos01/devops?utm_source=github.com&utm_medium=referral&utm_content=brunocampos01/devops&utm_campaign=Badge_Grade_Dashboard)
 ![License](https://img.shields.io/badge/Code%20License-MIT-blue.svg)
-![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
+![github](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
+
 
 <img src='images/devops.png' height=auto width=70%>
 
@@ -11,23 +13,24 @@
 
 - **Linux**
 :penguin:
-    - [Home Sweet home]()
-    - [Shell Script]()
-    - [Network]()
+    - [Home Sweet home](https://github.com/brunocampos01/home-sweet-home)
+    - [Shell Script]() # learning
+    - [Network](#network)
     - [My Problems]() # create repository LINUX
         - [Agent Refused Operation](#agent-refused-operation)
 
 
 - **Infrastructure As Code and Configuration Managemen**
 :computer: :computer: :computer: :computer: :computer:
-    - [Scripts]()
-    - [Chef]()
-    - [Ansible]()
+    - [Scripts]() # learning
+    - [Chef](https://github.com/brunocampos01/devops/tree/master/infra-as-code/chef)
+    - [Ansible]() # learning
 
 - **Control Version**
 :black_circle::heavy_minus_sign::black_circle::heavy_minus_sign::black_circle: 
 
-    - [Installing git](https://github.com/brunocampos01/DevOps/tree/master/github#git-instalation)
+    - [Installing git](https://github.com/brunocampos01/devops/tree/master/git#install)
+    - [Authentication in Github](https://github.com/brunocampos01/devops/blob/master/git/README.md#authenticating-to-github)
     - [Commands git](https://github.com/brunocampos01/DevOps/blob/master/github/README.md)
     - [Types of LICENSE](https://choosealicense.com/)
     - [Models](https://github.com/brunocampos01/DevOps/tree/master/github/modelos-gitignore)
