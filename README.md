@@ -20,14 +20,12 @@
         - [Agent Refused Operation](#agent-refused-operation)
 
 
-- **Infrastructure As Code and Configuration Managemen**
-:computer: :computer: :computer: :computer: :computer:
+- **Infrastructure As Code and Configuration Management** :computer: :computer: :computer:
     - [Scripts]() # learning
     - [Chef](https://github.com/brunocampos01/devops/tree/master/infra-as-code/chef)
     - [Ansible]() # learning
 
-- **Control Version**
-:black_circle::heavy_minus_sign::black_circle::heavy_minus_sign::black_circle: 
+- **Control Version** :black_circle::heavy_minus_sign::black_circle::heavy_minus_sign::red_circle: 
 
     - [Installing git](https://github.com/brunocampos01/devops/tree/master/git#install)
     - [Authentication in Github](https://github.com/brunocampos01/devops/blob/master/git/README.md#authenticating-to-github)
