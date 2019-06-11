@@ -1,35 +1,46 @@
 # Git
 ![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
 
+<img src="images/github-logo.png" height=auto width=80%/>
+
+<img src="images/logo-git.jpeg" height=auto width=80%/>
+
+
+
 ## Summary
 
-- Understanding
-- Git instalation
-- Authenticating to Github
-- Gitignore & Gitkeep
+- Understanding git
+
+- [Instalation](#instalation)
+    - System Install
+    - Configuration parameters (user, ignore, …)
+    - Push and pull configurations
+
+- [Authenticating to Github](#authenticationg-to-github)
+    - Access protocols (ssh, https, git)
+
 - Git Areas
+  - working area
   - Stash area
-    - working area
-    - Staging area
-    - Local repository
-    - Remote repository
-- Basic Comands
-- Commit
-- Upload
-- Download
-- Git fetch X git pull
-- Diff
-- Merge
-- Rebase
+  - Staging area
+  - Local repository
+  - Remote repository
 
-- git remote
-- Resolve conflits
+- Basic Commands
+    - Commit https://help.github.com/en/categories/commits
+    - Upload
+    - Download - https://help.github.com/en/articles/syncing-a-fork
+    - Creating a first repository
+    - Adding or removing files
+    - Moving and deleting files
+    - Commit, checkout, reset
+    - Displaying commit history and moving inside
 
-- Git branches
-  - git checkout
-  - git merge
-  - git submodules
-  - Releases & Version Tags
+- Branch management
+    - Introduction to branches and HEAD Definition
+    - Branch creation
+    - Branch navigation
+    - Branch merge and rebase
 
 - Git inspect
   - git show
@@ -48,8 +59,35 @@
   - git reflog
   - git log
   - git reset
+  
+- GIT best practices on a Project
+    GitFlow : a branch model (https://guides.github.com/introduction/flow/)
+    Code reviews using Gerrit, GitLab or GitHub
+    Best practices to use GIT on your project
 
-https://comandosgit.github.io/#patching
+- Searching
+    - Git fetch X git pull
+    - Diff
+    - Merge
+    - git remote
+    - Resolve conflits
+    - Tags
+    - Submodule
+    - Hook
+   - git checkout
+   - git merge
+   - git submodules
+   - Releases & Version Tags - https://help.github.com/en/articles/about-releases
+   - gist https://help.github.com/en/categories/gists
+   - https://help.github.com/en/articles/using-keyboard-shortcuts (AMAZING!!!!!!!)
+ - Advanced Git
+    - rebase - https://help.github.com/en/categories/advanced-git
+
+
+- https://help.github.com/en#github-pages-basics
+- https://comandosgit.github.io/#patching
+- http://marklodato.github.io/visual-git-guide/index-en.html
+- https://learngitbranching.js.org/
 
 ---
 
@@ -75,7 +113,7 @@ https://comandosgit.github.io/#patching
  ```
 
 ### Git Init Configuration
-Após instalar o git, é necessário definir o seu nome de usuário e endereço de e-mail.
+- Before install, It's necessary st user.name and user.email.
 
 ```bash
 git config --global user.name "John Doe"
@@ -84,60 +122,7 @@ git config --global core.editor vim
 git config --global color.ui true
 ```
 
----
-
-## Authenticating to Github
-
-### Install ssh
-```bash
-sudo apt install openssh-server
-sudo apt install openssh-client
-```
-
-### Check status
-```bash
-sudo systemctl status ssh
-```
-
- <img src="images/ssh.png" />
-
-### Generate SSH  public and private Key
-
-```bash
-ssh-keygen -t rsa
-```
-
-OBS: This will generate the keys using the _RSA Algorith_.
-OBS: By default the public key is saved in the file ~/.ssh/id_rsa.pub, while ~/.ssh/id_rsa is the private key.
-
-### Generating a new SSH key:
-
-https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key
-
-### Adding a new SSH key to your GitHub account:
-
-https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
-
-### Testing your SSH connection
-
-```bash
-ssh -T git@github.com
-```
-
----
-
-## Set Local Repository
-
-If project start in personal computer is possible configurate with a remote (github).
-
-```bash
-git init
-git remote add <name_remote> <url_ssh>
-```
-
-NOTE: if use url git@github, the config ssh to this repo is ACTIVATE.
-
-- Check config of local repository
+- Check config
 ```bash
 git config --list
 
@@ -164,6 +149,73 @@ git config --list
 # core.logallrefupdates=true
 # remote.origin.url=git@github.com:brunocampos01/web_development.git
 # remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+```
+
+---
+
+## Authenticating to Github
+
+<img src="images/ssh-git.png" height=auto width=80%/>
+
+### Install ssh
+```bash
+sudo apt install openssh-server
+sudo apt install openssh-client
+```
+
+### Check status
+```bash
+sudo systemctl status ssh
+```
+
+<img src="images/ssh.png" />
+
+
+### Generate SSH public and private Key
+```bash
+ssh-keygen -t rsa
+```
+
+OBS: This will generate the keys using the _RSA Algorith_.
+OBS: By default the public key is saved in the file `~/.ssh/id_rsa.pub`, while `~/.ssh/id_rsa` is the private key.
+
+### Generating a new SSH key:
+https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key
+
+### Adding a new SSH key to your GitHub account:
+https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+
+### Testing your SSH connection
+```bash
+ssh -T git@github.com
+```
+
+**References**
+- https://help.github.com/en/categories/authenticating-to-github
+
+---
+
+## Set Local Repository
+
+ <img src="images/local-repo.png" height=auto width=100%/>
+
+
+
+If project start in personal computer is possible configurate with a remote (github).
+
+```bash
+git init
+git remote add <name_remote> <url_ssh>
+```
+
+NOTE: if use url git@github, the config ssh to this repo is ACTIVATE.
+
+- Check config of local repository
+```bash
+git remote -v
+
+# origin	git@github.com:brunocampos01/web_development.git (fetch)
+# origin	git@github.com:brunocampos01/web_development.git (push)
 ```
 ---
 
@@ -606,24 +658,33 @@ Cancel rebase:
 Squash multiple commits into one:
 `git rebase -i HEAD~3` ([source](https://www.devroom.io/2011/07/05/git-squash-your-latests-commits-into-one/))
 
+---
+
+## Files Git
+
+### .gitconfig
+...
+
+### .gitattributes
+...
+
+### .gitignore
+
+- About: https://help.github.com/articles/ignoring-files
+- Useful templates: https://github.com/github/gitignore
 
 
+### .gitkeep
+- Track empty dir
+```bash
+touch .gitkeep
+```
 
-## Gitignore & Gitkeep
+**NOTE**: It's better create a file README.md each repository to keep (temporary) empty.
 
-About: https://help.github.com/articles/ignoring-files
+---
 
-Useful templates: https://github.com/github/gitignore
-
-Add or edit gitignore:
-`nano .gitignore`
-
-Track empty dir:
-`touch dir/.gitkeep`
-
-
-Log
------------
+## Log
 
 Show commits:
 `git log`

@@ -1,8 +1,10 @@
 # DevOps
 
+![devops](https://img.shields.io/badge/Dev-Ops-blue.svg)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3a8c68906dba4076bf0b74a2fced61c8)](https://app.codacy.com/app/brunocampos01/devops?utm_source=github.com&utm_medium=referral&utm_content=brunocampos01/devops&utm_campaign=Badge_Grade_Dashboard)
 ![License](https://img.shields.io/badge/Code%20License-MIT-blue.svg)
-![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
+![github](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
+
 
 <img src='images/devops.png' height=auto width=70%>
 
@@ -11,39 +13,42 @@
 
 - **Linux**
 :penguin:
-    - [Home Sweet home]()
-    - [Shell Script]()
-    - [Network]()
+    - [Home Sweet home](https://github.com/brunocampos01/home-sweet-home)
+    - [Shell Script]() # learning
+    - [Network](#network)
     - [My Problems]() # create repository LINUX
         - [Agent Refused Operation](#agent-refused-operation)
 
 
-- **Infrastructure As Code and Configuration Managemen**
-:computer: :computer: :computer: :computer: :computer:
-    - [Scripts]()
-    - [Chef]()
-    - [Ansible]()
+- **Infrastructure As Code and Configuration Management** :computer: :computer: :computer:
+    - [Scripts]() # learning
+    - [Chef](https://github.com/brunocampos01/devops/tree/master/infra-as-code/chef)
+    - [Ansible]() # learning
 
-- **Control Version**
-:black_circle::heavy_minus_sign::black_circle::heavy_minus_sign::black_circle: 
+- **Control Version** :black_circle::heavy_minus_sign::black_circle::heavy_minus_sign::red_circle: 
 
-    - [Installing git](https://github.com/brunocampos01/DevOps/tree/master/github#git-instalation)
-    - [Commands git](https://github.com/brunocampos01/DevOps/blob/master/github/README.md)
-    - [Types of LICENSE](https://choosealicense.com/)
-    - [Models](https://github.com/brunocampos01/DevOps/tree/master/github/modelos-gitignore)
+    - [Installing git](https://github.com/brunocampos01/devops/tree/master/git#install)
+    - [Authentication in Github](https://github.com/brunocampos01/devops/blob/master/git/README.md#authenticating-to-github)
+    - [Understanding git](https://github.com/brunocampos01/DevOps/blob/master/github/README.md)
 
-    - **Good Pratices**
-        - [Commits](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md)
-        - [Branches]()
-        - [Readme](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-README.md)
-        - [.editorconfig]()
     - Files Git
+        - [Local Directory: .git]()
         - [.gitconfig]()
         - [.gitignore]()
         - [.gitattributes]()
         - [.gitkeep]()
+        
+    - **Good Pratices**
+        - [Commits](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md)
+        - [Branches]() # in production
+        - [Readme](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-README.md)
+        - [.editorconfig]()
+        - [Types of LICENSE](https://choosealicense.com/)
 
     - Documentation
+        - [Images](#images)
+        - [Basic writing and formatting syntax](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
+        - [Shields](https://shields.io/category/build)
         - [Markdown: style guide](https://github.com/DavidAnson/markdownlint/blob/v0.13.0/doc/Rules.md#md025)
         - [Markdown: emojis](https://gist.github.com/rxaviers/7360908)
 
@@ -155,7 +160,12 @@ dig my-addr-aws.net
 ```bash
 `< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32};`
 ```
+## Images in Markdown
 
+- Responsive
+```
+<img src="images/stash.png" height=auto width=100%/>
+```
 
 **References:**<br/>
 
