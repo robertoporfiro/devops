@@ -491,6 +491,34 @@ Um commit é um documento que descreve uma alteração, um ponto na linha do tem
 
  <img src="images/commit.jpg" height=auto width=70%/>
 
+
+#### Understanding a deeper commit
+É arquivo encriptado em SHA-1 que armazena metadados de:
+- tree (é o hash da árvore de commits)
+- parents (de qual último node da tree esta vindo)
+- Autor
+- Committer
+- commit date
+- Menssagem de commit
+
+<img src="images/tree.png" align="middle" height=auto width=80%/>
+
+
+```sh
+sha1(
+    commit message  => "second commit"
+    committer        => campos <campos@gmail.com>
+    commit date     => Sat Nov 8 11:13:49 2014 +0100
+    author          => bruno campos <brunocampos01@gmail.com>
+    author date     => Sat Nov 8 11:13:49 2018 +0100
+    tree            => 9c435a86e664be00db0d973e981425e4a3ef3f8d
+    parents         => [0d973e9c4353ef3f8ddb98a86e664be001425e4a]
+)
+```
+
+
+
+
 1. Commit each change in a file
  `git add -p pom.xml `
 

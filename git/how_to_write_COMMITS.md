@@ -1,30 +1,5 @@
 # Commits
 
-# O que é um commit?
-É arquivo encriptado em SHA-1 que armazena metadados de:
-- tree (é o hash da árvore de commits)
-- parents (de qual ultimo node da tree esta vindo)
-- Autor
-- Committer
-- commit date
-- Menssagem de commit
-
-<img src="images/tree.png" align="middle" height=auto width=100%/>
-
-
-```sh
-sha1(
-    commit message  => "second commit"
-    committer        => campos <campos@gmail.com>
-    commit date     => Sat Nov 8 11:13:49 2014 +0100
-    author          => bruno campos <brunocampos01@gmail.com>
-    author date     => Sat Nov 8 11:13:49 2018 +0100
-    tree            => 9c435a86e664be00db0d973e981425e4a3ef3f8d
-    parents         => [0d973e9c4353ef3f8ddb98a86e664be001425e4a]
-)
-```
-
-#### Goal
 O objetivo de escrever bons commits é facilitar a vida dos reviewers.
 
 
@@ -52,9 +27,8 @@ Lengt: 50/72 rule is a commonly accepted best practice for formatting commit mes
 - **`feat: `** um novo recurso.
 ```sh
 git commit -m "feat: add script SQL to create schemas and tables"
-```
 
-```sh
+
 git commit -m "feat(runImport): Add new parameter and change function runImport()"
 ```
 
@@ -66,15 +40,14 @@ git commit -m "fix: update HDFS url and Junit version"`
 - **`docs: `** mudanças em documentações.
 ```sh
 git commit -m "doc(readme): improved readability, add new topics, change version node"
+
+
+git commit -m "style(runImport): Add brackets in variables and script description"
 ```
 
 - **`style: `** formatação, dois pontos ausentes, etc. (não envolve mudança de código).
 ```sh
 git commit -m "style: improve legibility and follow PEP8"
-```
-
-```sh
-git commit -m "style(runImport): Add brackets in variables and script description"
 ```
 
 - **`refactor: `** refatoração do código de produção <br/>
@@ -90,19 +63,19 @@ git commit -m "test: add RDS test"
 - **`chore: `** atualização de tarefas de compilação, configurações do gerenciador de pacotes, etc. (não envolve mudanças no código de produção).
 ```sh
 git commit -m "chore: remove emails"
-```
 
-```sh
+
 git commit -m "chore: change url of repository"
 ```
 
 - **`BREAKING CHANGE: `** ou **`chore!: `** quebra a compatibilidade.
 ```sh
 git commit -m "chore!: drop Node 6 from testing matrix"
-```
-```sh
+
+
 git commit -m "BREAKING CHANGE: dropping Node 6 which hits end of life in April"
 ```
+
 
 ## Body
 Explique o problema que o commit está resolvendo.
@@ -131,11 +104,11 @@ The creator about PR:<br/>
 _"Git comes with a nice pull-request generation module, but GitHub instead decided to replace it with their own totally inferior version. As a result, I consider GitHub useless for these kinds of things. It's fine for hosting, but the pull requests and the online commit editing, are just pure garbage."_
 **Torvalds**
 
-#### Example
+#### Exemplo
 
 <img src="images/pr.png" align="middle" height=auto width=100%/>
 
-#### Example
+#### Exemplo
 
 If applied, this PR will
 - [x] Update version ...
