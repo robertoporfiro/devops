@@ -96,10 +96,30 @@
 
 # Linux
 
+## Processing Files and Data
+
+- For JSON, use [`jq`](http://stedolan.github.io/jq/). For interactive use, also see [`jid`](https://github.com/simeji/jid) and [`jiq`](https://github.com/fiatjaf/jiq).
+
+- For YAML, use [`shyaml`](https://github.com/0k/shyaml).
+
+- For Excel or CSV files, [csvkit](https://github.com/onyxfish/csvkit) provides `in2csv`, `csvcut`, `csvjoin`, `csvgrep`, etc.
+
+- For Amazon S3, [`s3cmd`](https://github.com/s3tools/s3cmd) is convenient and [`s4cmd`](https://github.com/bloomreach/s4cmd) is faster. Amazon's [`aws`](https://github.com/aws/aws-cli) and the improved [`saws`](https://github.com/donnemartin/saws) are essential for other AWS-related tasks.
+
+- Know about `sort` and `uniq`, including uniq's `-u` and `-d` options -- see one-liners below. See also `comm`.
+
+- Know about `cut`, `paste`, and `join` to manipulate text files. Many people use `cut` but forget about `join`.
+
+- Know about `wc` to count newlines (`-l`), characters (`-m`), words (`-w`) and bytes (`-c`).
+
+- Know about `tee` to copy from stdin to a file and also to stdout, as in `ls -al | tee file.txt`.
+
+- For more complex calculations, including grouping, reversing fields, and statistical calculations, consider [`datamash`](https://www.gnu.org/software/datamash/).
+
 ## Network
 
 ### Check DNS
-```bash
+```sh
 host localhost    # return IP
 
 # localhost has address 127.0.0.1
@@ -113,18 +133,18 @@ telnet 192.168.0.1 3306
 
 ### Copy file localhost to remote-machine
 ##### download: remote -> local
-```bash
+```sh
 scp user@remote_host:remote_file local_file
 ```
 
 #### upload: local -> remote
-```bash
+```sh
 scp local_file user@remote_host:remote_file
 ```
 
 ##### Example
 
-```bash
+```sh
 scp lojas_xxx.csv brunorozza@yarn.systems.com:/home/brunorozza
 lojas_xxx.csv
 ```
@@ -328,10 +348,12 @@ dig my-addr.aws.net
 - Rundeck
 
 **References:**<br/>
+- https://github.com/jlevy/the-art-of-command-line/blob/master/README.md
 
 ---
 
 ## Author
 - Bruno Aurélio Rôzza de Moura Campos (brunocampos01@gmail.com)
+
 ## Copyright
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Bruno A. R. M. Campos</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
