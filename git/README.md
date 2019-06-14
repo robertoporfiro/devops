@@ -1,8 +1,7 @@
 # Git
 ![License](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
 
-<img src="images/git_logo.png" height=auto width=50%/>
-
+<img src="images/git_logo.png" align="right" height=auto width=30%/>
 
 
 ## Summary
