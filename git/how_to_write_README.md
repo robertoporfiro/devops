@@ -4,7 +4,7 @@ It must have the following format:
 - Title 
 - Tags: Search shields [here !](https://shields.io/#/examples/build)
 - Describe project 
-- Pre Requirements
+- Requirements
 - Quickstart
 - Install
 - Examples
@@ -26,7 +26,7 @@ It must have the following format:
 
 Project description goes here.
 
-## Prerequisites
+## Requisites
 
 ```
 Give examples

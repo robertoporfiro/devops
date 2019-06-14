@@ -12,66 +12,59 @@
 # Summary
 
 - :penguin:**Linux**:penguin:
-    - [Home Sweet home](https://github.com/brunocampos01/home-sweet-home)
-    - [Shell Script]() # learning
-    - [Network](#network)
-    - [My Problems]() # create repository LINUX
-        - [Agent Refused Operation](#agent-refused-operation)
+  - [Home Sweet home](https://github.com/brunocampos01/home-sweet-home)
+  - [Shell Script]() # learning
+  - [Network](#network)
+  - [My Problems]() # create repository LINUX
+    - [Agent Refused Operation](#agent-refused-operation)
 
 - **Infrastructure As Code and Configuration Management** :computer: :computer: :computer:
-    - [Scripts]() # learning
-    - [Chef](https://github.com/brunocampos01/devops/tree/master/infra-as-code/chef)
-    - [Ansible]() # learning
+  - [Scripts]() # learning
+  - [Chef](infra-as-code/chef/)
+  - [Ansible](infra-as-code/ansible) # learning
 
 - **Control Version** :black_circle::heavy_minus_sign::black_circle::heavy_minus_sign::red_circle:
+  - Files Git
+    - [Local Directory: .git]()
+    - [.gitconfig](git/.gitconfig)
+    - [.gitignore](git/gitignore-models)
+    - [.gitattributes](git/) # in production
+    - [.gitkeep](git/) # in production
+  
+  - Good Pratices :bookmark_tabs:
+    - [Writing Commits](git/) 
+    - [Writing Branches](git/) # in production
+    - [Writing Readme](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-README.md)
+    - [Coding Styles: .editorconfig](git/.editorconfig)
+    - [Types of LICENSE](https://choosealicense.com/)
 
-    - [Installing git](https://github.com/brunocampos01/devops/tree/master/git#install)
-    - [Authentication in Github](https://github.com/brunocampos01/devops/blob/master/git/README.md#authenticating-to-github)
-    - [Understanding git](https://github.com/brunocampos01/DevOps/blob/master/github/README.md)
+  - Documentation (markdown) :page_with_curl:
+    - [Basic writing](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
+    - [Style guide](https://github.com/DavidAnson/markdownlint/blob/v0.13.0/doc/Rules.md#md025)
+    - [Emojis](https://gist.github.com/rxaviers/7360908)
+    - [Images](#images)
+    - [Shields](https://shields.io/category/build)
 
-    - Files Git
-        - [Local Directory: .git]()
-        - [.gitconfig](git/.gitconfig)
-        - [.gitignore](git/gitignore-models)
-        - [.gitattributes](git/)
-        - [.gitkeep](git/)
-        
-    - **Good Pratices**
-        - [Commits](git/)
-        - [Branches](git/) # in production
-        - [Readme](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-README.md)
-        - [.editorconfig](git/.editorconfig)
-        - [Types of LICENSE](https://choosealicense.com/)
-
-    - Documentation
-        - [Images](#images)
-        - [Basic writing and formatting syntax](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
-        - [Shields](https://shields.io/category/build)
-        - [Markdown: style guide](https://github.com/DavidAnson/markdownlint/blob/v0.13.0/doc/Rules.md#md025)
-        - [Markdown: emojis](https://gist.github.com/rxaviers/7360908)
-
-- **Virtualization**
+- **Virtualization** :shell:
+  - [Fundamentals]()
+  - [Virtual Environment Python](#virtual-environment-python) :snake:
+  - [Containers](#containers)
     - [Fundamentals]()
-    - [Virtual Environment Python](#virtual-environment-python)
-    - [Containers](#containers)
-        - [Fundamentals]()
-        - Files Docker
-            - [dockfile]()
-            - [dockerignore]()
-    
-        - [Docker Comands](#docker-commands)
-
+      - Files Docker
+        - [dockfile]()
+        - [dockerignore]()
+    - [Docker Comands](#docker-commands)
     - [Orchestrators](#orchestrators)
-        - [Mesos](#Mesos)
-        - [Marathon](#managemant-libraries)
+      - [Mesos](#Mesos)
+      - [Marathon](#managemant-libraries)
 
-    - [Cloud](#cloud)
-        - [AWS CLI](#awscli)
-        - [S3](#s3)
-        - [EC2](#ec2)
-        - [Secutiry](#s3)
-            - [VPC](#VPC)
-            - [Security Group](#security-group)
+  - [Cloud](#cloud)
+    - [AWS CLI](#awscli)
+    - [S3](#s3)
+    - [EC2](#ec2)
+      - [Secutiry](#s3)
+      - [VPC](#VPC)
+      - [Security Group](#security-group)
 
 - **Continuos Integration and Continuous Delivery**
     - [Crontab](#crontab)
