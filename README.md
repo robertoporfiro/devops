@@ -6,26 +6,24 @@
 ![github](https://img.shields.io/badge/Control%20Version-GitHub-brightgreen.svg)
 
 
-<img src='images/devops.png' height=auto width=70%>
+<img src='images/devops.png' align="right" height=auto width=50%>
 
 
 # Summary
 
-- **Linux**
-:penguin:
+- :penguin:**Linux**:penguin:
     - [Home Sweet home](https://github.com/brunocampos01/home-sweet-home)
     - [Shell Script]() # learning
     - [Network](#network)
     - [My Problems]() # create repository LINUX
         - [Agent Refused Operation](#agent-refused-operation)
 
-
 - **Infrastructure As Code and Configuration Management** :computer: :computer: :computer:
     - [Scripts]() # learning
     - [Chef](https://github.com/brunocampos01/devops/tree/master/infra-as-code/chef)
     - [Ansible]() # learning
 
-- **Control Version** :black_circle::heavy_minus_sign::black_circle::heavy_minus_sign::red_circle: 
+- **Control Version** :black_circle::heavy_minus_sign::black_circle::heavy_minus_sign::red_circle:
 
     - [Installing git](https://github.com/brunocampos01/devops/tree/master/git#install)
     - [Authentication in Github](https://github.com/brunocampos01/devops/blob/master/git/README.md#authenticating-to-github)
@@ -34,15 +32,15 @@
     - Files Git
         - [Local Directory: .git]()
         - [.gitconfig](git/.gitconfig)
-        - [.gitignore]()
-        - [.gitattributes]()
-        - [.gitkeep]()
+        - [.gitignore](git/gitignore-models)
+        - [.gitattributes](git/)
+        - [.gitkeep](git/)
         
     - **Good Pratices**
-        - [Commits](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-COMMITS.md)
-        - [Branches]() # in production
+        - [Commits](git/)
+        - [Branches](git/) # in production
         - [Readme](https://github.com/brunocampos01/DevOps/blob/master/github/como-escrever-README.md)
-        - [.editorconfig]()
+        - [.editorconfig](git/.editorconfig)
         - [Types of LICENSE](https://choosealicense.com/)
 
     - Documentation
@@ -51,8 +49,6 @@
         - [Shields](https://shields.io/category/build)
         - [Markdown: style guide](https://github.com/DavidAnson/markdownlint/blob/v0.13.0/doc/Rules.md#md025)
         - [Markdown: emojis](https://gist.github.com/rxaviers/7360908)
-
-
 
 - **Virtualization**
     - [Fundamentals]()
@@ -77,19 +73,16 @@
             - [VPC](#VPC)
             - [Security Group](#security-group)
 
-
-
 - **Continuos Integration and Continuous Delivery**
     - [Crontab](#crontab)
     - [Jenkins](#jenkins)
     - [Rundeck](#rundeck)
 
-- Monitoring 
-:hourglass_flowing_sand:
-:chart_with_upwards_trend: 
+- **Monitoring** :hourglass_flowing_sand: :chart_with_upwards_trend:
+    - In production ...
 
-- Logs :page_facing_up:
-...
+- **Logs** :page_facing_up:
+    - In production ...
 
 ------
 ------
@@ -198,9 +191,7 @@ Use `height=auto`
 
 <img src="images/devops.png" align="right" height=auto width=30%/>
 
-<br/>
-
-**References:**<br/>
+Line Test ...
 
 ---
 
