@@ -1,9 +1,10 @@
-# Commits
+# Commits 
 
 O objetivo de escrever bons commits é facilitar a vida dos reviewers.
 
 
-# Structure
+# Commit Structure
+
 As mensagens de commit podem ser compostas por **três partes** separadas por uma linha em branco:
 - Head ou summary (obrigatório)
 - Body (opcional)
@@ -20,6 +21,24 @@ Exemplo usando regex
 # tail
 [optional footer]
 ```
+
+
+#### Allow :heavy_check_mark:
+- Use **verbos no imperativo** para descrever o que um commit faz, não o que ele fez. Por exemplo, use “mudar”, não “mudou” ou “muda”.
+
+
+#### Forbidden :no_entry_sign:
+- Não use frases como "eu corrigi" ou "eu fiz algo"; é preciso ser claro e informativo. 
+
+- Não use `.` ou `…`
+
+- Um commit não é para fazer várias coisas, como por exemplo:
+`add new feature, code style, fix a bug ...`
+
+:dizzy_face:
+As alterações ficam difíceis de serem enxergadas e torna mais trabalhoso revisar o código.
+
+
 
 ## Head
 Lengt: 50/72 rule is a commonly accepted best practice for formatting commit messages in Git. [Reference](#reference2)
@@ -96,36 +115,6 @@ see the issue for details on the typos fixed
 
 
 
-
-## Pull Request
-
-The creator about PR:<br/>
-
-_"Git comes with a nice pull-request generation module, but GitHub instead decided to replace it with their own totally inferior version. As a result, I consider GitHub useless for these kinds of things. It's fine for hosting, but the pull requests and the online commit editing, are just pure garbage."_
-**Torvalds**
-
-#### Exemplo
-
-<img src="images/pr.png" align="middle" height=auto width=100%/>
-
-#### Exemplo
-
-If applied, this PR will
-- [x] Update version ...
-- [x] resolve problem ...
-- [x] create test to ...
-- [ ] remove ...
-
-
-### Allow
-Use verbos no imperativo para descrever o que um commit faz, não o que ele fez. Por exemplo, use “mudar”, não “mudou” ou “muda”. 
-
-### Forbidden
-- Não use frases como "eu corrigi" ou "eu fiz algo"; ele precisa ser claro e informativo.  
-
-- Não use `.` ou `…`
-
-
 ## Tail
 - Mencionar IDs do rastreador de falhas.
 - Exemplo
@@ -145,6 +134,40 @@ see the issue for details on the typos fixed
 # tail
 closes issue #12
 ```
+
+---
+
+# Pull Request :octocat:
+
+_"Git comes with a nice pull-request generation module, but GitHub instead decided to replace it with their own totally inferior version. As a result, I consider GitHub useless for these kinds of things. It's fine for hosting, but the pull requests and the online commit editing, are just pure garbage."_
+**Torvalds**
+
+#### Exemplo
+
+<img src="images/pr.png" align="middle" height=auto width=100%/>
+
+#### Exemplo
+
+If applied, this PR will
+- [x] Update version ...
+- [x] resolve problem ...
+- [x] create test to ...
+- [ ] remove ...
+
+
+#### Lentgh
+Pull Request (PR) muito grande, vários commits, vão fazer desenvolvedores perderem muito tempo revisando código, exemplo:
+
+<img src="images/big-pr.png" align="middle" height=auto width=100%/>
+
+- Isso desânima :weary: um code review. :persevere:
+- Limite de no máximo a 15 commits
+- Se for necessário abra vários PR pequenos que façam sentido semânticamente, como por exemplo:
+    - para uma nova feat
+    - para code style
+    - para um fix
+
+
 
 ## MAJOR.MINOR.PATCH
 
