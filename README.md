@@ -33,7 +33,7 @@
 
     - Files Git
         - [Local Directory: .git]()
-        - [.gitconfig]()
+        - [.gitconfig](git/.gitconfig)
         - [.gitignore]()
         - [.gitattributes]()
         - [.gitkeep]()
@@ -178,14 +178,27 @@ dig my-addr-aws.net
 
 ### Generate Key
 ```bash
-`< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32};`
+`< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-10};`
 ```
 ## Images in Markdown
 
-- Responsive
+- Responsive Images
+Use `height=auto`
+
 ```
-<img src="images/stash.png" height=auto width=100%/>
+<img src="images/git_logo.png" align="right" height=auto width=30%/>
 ```
+
+- align
+`align=left`
+
+<img src="images/devops.png" align="left" height=auto width=30%/>
+
+<img src="images/devops.png" align="middle" height=auto width=30%/>
+
+<img src="images/devops.png" align="right" height=auto width=30%/>
+
+<br/>
 
 **References:**<br/>
 
