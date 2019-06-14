@@ -34,7 +34,6 @@ Exemplo usando regex
 
 - Um commit não é para fazer várias coisas, como por exemplo:
 `add new feature, code style, fix a bug ...`
-
 :dizzy_face:
 As alterações ficam difíceis de serem enxergadas e torna mais trabalhoso revisar o código.
 
@@ -47,53 +46,60 @@ Lengt: 50/72 rule is a commonly accepted best practice for formatting commit mes
 ```sh
 git commit -m "feat: add script SQL to create schemas and tables"
 
-
 git commit -m "feat(runImport): Add new parameter and change function runImport()"
 ```
+
+<br/>
 
 - **`fix: `** uma correção de bug. Semânticamente, deve estar correlacionado a uma **issue**.
 ```sh
 git commit -m "fix: update HDFS url and Junit version"`
 ```
 
+<br/>
+
 - **`docs: `** mudanças em documentações.
 ```sh
 git commit -m "doc(readme): improved readability, add new topics, change version node"
 
-
 git commit -m "style(runImport): Add brackets in variables and script description"
 ```
+
+<br/>
 
 - **`style: `** formatação, dois pontos ausentes, etc. (não envolve mudança de código).
 ```sh
 git commit -m "style: improve legibility and follow PEP8"
 ```
+<br/>
 
 - **`refactor: `** refatoração do código de produção <br/>
 ```sh
 git commit -m "refactor: change DNS to new hosted zones"
 ```
+<br/>
 
 - **`test: `** adição e refatoração de testes (não envolve mudanças no código de produção) <br/>
 ```sh
 git commit -m "test: add RDS test"
 ```
+<br/>
 
 - **`chore: `** atualização de tarefas de compilação, configurações do gerenciador de pacotes, etc. (não envolve mudanças no código de produção).
 ```sh
 git commit -m "chore: remove emails"
 
-
 git commit -m "chore: change url of repository"
 ```
+<br/>
 
 - **`BREAKING CHANGE: `** ou **`chore!: `** quebra a compatibilidade.
 ```sh
 git commit -m "chore!: drop Node 6 from testing matrix"
 
-
 git commit -m "BREAKING CHANGE: dropping Node 6 which hits end of life in April"
 ```
+
 
 
 ## Body
@@ -166,12 +172,6 @@ Pull Request (PR) muito grande, vários commits, vão fazer desenvolvedores perd
     - para uma nova feat
     - para code style
     - para um fix
-
-
-
-## MAJOR.MINOR.PATCH
-
-In production...
 
 
 **References:**<br/>

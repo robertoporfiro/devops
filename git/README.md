@@ -152,7 +152,7 @@ git config --list
 
 ## Authenticating to Github
 
-<img src="images/ssh-git.png" height=auto width=80%/>
+<img src="images/ssh-git.png" align="middle" height=auto width=80%/>
 
 ### Install ssh
 ```bash
@@ -194,7 +194,7 @@ ssh -T git@github.com
 
 ## Set Local Repository
 
- <img src="images/local-repo.png" height=auto width=100%/>
+ <img src="images/local-repo.png" align="middle" height=auto width=70%/>
 
 
 
@@ -218,12 +218,19 @@ git remote -v
 
 # Git Areas
 
-<img src="images/pull_fetch.png" height=auto width=70%/>
+### Local
+
+<img src="images/areas-local.png" align="middle" height=auto width=70%/>
+
+
+### Local + Remote
+
+<img src="images/pull_fetch.png" align="middle" height=auto width=70%/>
 
 - Stash area
 - working area
 - Staging area
-- Local repository
+- Local repository (HEAD)
 - Remote repository
 
 ## Stash (esconderijo)
@@ -283,9 +290,9 @@ $ git stash pop
 
 ## Staging (index)
 
-<img src="images/git_workflow.png" height=auto width=90%/>
+<img src="images/git_workflow.png" align="middle" height=auto width=90%/>
 
-<img src="images/untrakeded.png" height=auto width=90% />
+<img src="images/untrakeded.png" align="middle" height=auto width=90% />
 
 To add our files to the staging area:
 ```bash
@@ -293,7 +300,7 @@ git add blah.txt
 git status
 ```
 
-<img src="images/tracked.png" height=auto width=90% />
+<img src="images/tracked.png" align="middle" height=auto width=90% />
 
 
 Git commits files from the "staged files" list, also called "indexed files".
@@ -345,13 +352,13 @@ git config --list
 ```
 
 Ex:
-<img src="images/git_config.png" height=auto width=90%/>
+<img src="images/git_config.png" align="middle" height=auto width=90%/>
 
 ---
 
 ### Integration github and PC
 
- <img src="images/git+github.png" height=auto width=70%/>
+ <img src="images/git+github.png" align="middle" height=auto width=70%/>
 
 
 1. Open directory local (in PC) with thes files to upload to github:
@@ -459,7 +466,7 @@ Diretório local: <br/>
 2. Do checkout in file<br/>
 `git checkout -- <file_name_modifield>`
 
-<img src="images/cao-arrependido.png" height=auto/>
+<img src="images/cao-arrependido.png" align="middle" height=auto/>
 
 
 ### Remove in github
@@ -474,7 +481,7 @@ git push origin master
 Remove files from Git:<br/>
 `git rm index.html`<br/>
 
-<img src="images/remove_folder.png" height=auto width=90%/>
+<img src="images/remove_folder.png" align="middle" height=auto width=90%/>
 
 ### Remove changes commited
 `git reset HEAD~1`
@@ -489,7 +496,7 @@ Remove files from Git:<br/>
 
 Um commit é um documento que descreve uma alteração, um ponto na linha do tempo do projeto. 
 
- <img src="images/commit.jpg" height=auto width=70%/>
+ <img src="images/commit.jpg" align="middle" height=auto width=70%/>
 
 
 #### Understanding a deeper commit
@@ -539,7 +546,7 @@ IMG rebase with reword
 
 ## Branch
 
-<img src="images/branches.svg" height=auto width=90%/>
+<img src="images/branches.svg" align="middle" height=auto width=90%/>
 
 Show branches (local):<br/>
 `git branch`
@@ -585,17 +592,40 @@ git clone --single-branch --branch <branchname> host:/dir.git
 ### View configuration git remote (server)
 `git remote -v`
 
-<img src="images/git_remote.png" height=auto width=90%/>
+<img src="images/git_remote.png" align="middle" height=auto width=90%/>
 
 ### Create a new connection to a remote repository
 `git remote add <name> <url>`<br/>
 OBS: by default name connection is _origin_ .
 
-<img src="images/nova-conexao.png" height=auto/>
+<img src="images/nova-conexao.png" align="middle" height=auto/>
 
 
 ### Remove a connection to a remote repository
 `git remote remove <name>`
+
+
+
+---
+
+## Release and Tags
+
+
+### Semantic Versioning
+
+```
+MAJOR.MINOR.PATCH
+
+X.Y.Z
+
+1.9.6
+```
+
+1. **MAJOR** version, é quando são alterações que fazem o código antigo ficar incompatível
+2. **MINOR** version, nova feature
+3. **PATCH** version, quando corrigir falhas mantendo compatibilidade.
+
+O bizu é começar um projeto com 0.1.0, ncrementar a uma versão ‘menor’ em cada lançamento subsequente.
 
 
 ---
@@ -900,6 +930,6 @@ Pre requeriments: <br/>
  `git config --global merge.tool vimdiff`<br/>
  Ex:
 
- <img src="images/diff.png" height=auto width=100%/>
+ <img src="images/diff.png" align="middle" height=auto width=100%/>
 
  ---
