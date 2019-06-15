@@ -1,4 +1,4 @@
-# Commits 
+# Commits
 
 O objetivo de escrever bons commits é facilitar a vida dos reviewers.
 
@@ -28,7 +28,7 @@ Exemplo usando regex
 
 
 #### Forbidden :no_entry_sign:
-- Não use frases como "eu corrigi" ou "eu fiz algo"; é preciso ser claro e informativo. 
+- Não use frases como "eu corrigi" ou "eu fiz algo"; é preciso ser claro e informativo.
 
 - Não use `.` ou `…`
 
@@ -125,7 +125,7 @@ see the issue for details on the typos fixed
 - Mencionar IDs do rastreador de falhas.
 - Exemplo
 ```
-Resolve: # 123 
+Resolve: # 123
 Ver também: # 456, # 789
 ```
 
@@ -173,15 +173,14 @@ Pull Request (PR) muito grande, vários commits, vão fazer desenvolvedores perd
     - para code style
     - para um fix
 
-
-**References:**<br/>
-- reference1: https://semver.org/#summary
-- reference2: https://www.midori-global.com/blog/2018/04/02/git-50-72-rule
-- reference3: https://www.conventionalcommits.org/en/v1.0.0-beta.4/
-- guia de estilo Udacity: https://docs.google.com/document/d/1lwthXzmGcTVa-eTnCJEHVDRoCT9ffwvflJeesD82mt4/edit#heading=h.gjdgxs
-- https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html
-
 ---
+
+## References
+- [1] https://semver.org/#summary
+- [2] https://www.midori-global.com/blog/2018/04/02/git-50-72-rule
+- reference3: https://www.conventionalcommits.org/en/v1.0.0-beta.4/
+- [3] guia de estilo Udacity: https://docs.google.com/document/d/1lwthXzmGcTVa-eTnCJEHVDRoCT9ffwvflJeesD82mt4/edit#heading=h.gjdgxs
+- [4] https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html
 
 ## Author
 - Bruno Aurélio Rôzza de Moura Campos (brunocampos01@gmail.com)

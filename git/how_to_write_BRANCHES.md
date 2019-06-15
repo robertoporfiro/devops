@@ -1,13 +1,11 @@
-# Branches 
+# Branches
 
-O objetivo de convencionar o nome de branches é para facilitar o entendimento do tem numa branch e até controlar um ciclo de desenvolvimento.
-
+O objetivo de convencionar o nome de branches é para facilitar o entendimento do conteúdo de uma branch e até controlar um ciclo de desenvolvimento.
 
 Ex:
 ```
 name/feature/short-description
 ```
-
 
 ### Group tokens
 
@@ -67,14 +65,13 @@ Menu:   fix/CR15032    test/CR15032
 
 Dentro da expansão de tabulação de um nome de referência, o git pode decidir que um número faz parte de um nome sha-1 em vez de um nome de uma branch.
 
+---
 
-
-**References:**<br/>
+## References
 - [1] https://www.stefanfiott.com/notes/git-notes
 - [2] https://stackoverflow.com/questions/273695/what-are-some-examples-of-commonly-used-practices-for-naming-git-branches
 - [3]
 
----
 
 ## Author
 - Bruno Aurélio Rôzza de Moura Campos (brunocampos01@gmail.com)
