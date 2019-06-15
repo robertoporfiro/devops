@@ -9,35 +9,34 @@
 - Understanding git
 
 - [Instalation](#instalation)
-    - System Install
-    - Configuration parameters (user, ignore, …)
-    - Push and pull configurations
+  - System Install
+  - Configuration parameters (user, ignore, …)
+  - Push and pull configurations
 
 - [Authenticating to Github](#authenticationg-to-github)
-    - Access protocols (ssh, https, git)
 
 - Git Areas
   - working area
   - Stash area
   - Staging area
-  - Local repository
+  - Local repository (HEAD)
   - Remote repository
 
 - Basic Commands
-    - Commit https://help.github.com/en/categories/commits
-    - Upload
-    - Download - https://help.github.com/en/articles/syncing-a-fork
-    - Creating a first repository
-    - Adding or removing files
-    - Moving and deleting files
-    - Commit, checkout, reset
-    - Displaying commit history and moving inside
+  - Commit https://help.github.com/en/categories/commits
+  - Upload
+  - Download - https://help.github.com/en/articles/syncing-a-fork
+  - Creating a first repository
+  - Adding or removing files
+  - Moving and deleting files
+  - Commit, checkout, reset
+  - Displaying commit history and moving inside
 
 - Branch management
-    - Introduction to branches and HEAD Definition
-    - Branch creation
-    - Branch navigation
-    - Branch merge and rebase
+  - Introduction to branches and HEAD Definition
+  - Branch creation
+  - Branch navigation
+  - Branch merge and rebase
 
 - Git inspect
   - git show
@@ -56,30 +55,29 @@
   - git reflog
   - git log
   - git reset
-  
+
 - GIT best practices on a Project
     GitFlow : a branch model (https://guides.github.com/introduction/flow/)
     Code reviews using Gerrit, GitLab or GitHub
     Best practices to use GIT on your project
 
 - Searching
-    - Git fetch X git pull
-    - Diff
-    - Merge
-    - git remote
-    - Resolve conflits
-    - Tags
-    - Submodule
-    - Hook
-   - git checkout
-   - git merge
-   - git submodules
-   - Releases & Version Tags - https://help.github.com/en/articles/about-releases
-   - gist https://help.github.com/en/categories/gists
-   - https://help.github.com/en/articles/using-keyboard-shortcuts (AMAZING!!!!!!!)
+  - Git fetch X git pull
+  - Diff
+  - Merge
+  - git remote
+  - Resolve conflits
+  - Tags
+  - Submodule
+  - Hook
+  - git checkout
+  - git merge
+  - git submodules
+  - Releases & Version Tags - https://help.github.com/en/articles/about-releases
+  - gist https://help.github.com/en/categories/gists
+  - https://help.github.com/en/articles/using-keyboard-shortcuts (AMAZING!!!!!!!)
  - Advanced Git
-    - rebase - https://help.github.com/en/categories/advanced-git
-
+   - rebase - https://help.github.com/en/categories/advanced-git
 
 - https://help.github.com/en#github-pages-basics
 - https://comandosgit.github.io/#patching
@@ -152,7 +150,7 @@ git config --list
 
 ## Authenticating to Github
 
-<img src="images/ssh-git.png" align="middle" height=auto width=80%/>
+<img src="images/ssh-git.png" align="middle" height=auto width=40%/>
 
 ### Install ssh
 ```bash
@@ -494,7 +492,7 @@ Remove files from Git:<br/>
 
 ## Commit
 
-Um commit é um documento que descreve uma alteração, um ponto na linha do tempo do projeto. 
+Um commit é um documento que descreve uma alteração, um ponto na linha do tempo do projeto.
 
  <img src="images/commit.jpg" align="middle" height=auto width=70%/>
 

@@ -1,8 +1,10 @@
-FROM ubuntu:latest
-MAINTAINER brunocampos "brunocampos01@gmail.com"
+FROM debian:latest
+
+# MAINTAINER is deprecated since Docker 1.13.0 
+# MAINTAINER brunocampos "brunocampos01@gmail.com" 
 
 RUN apt-get update -y
-RUN apt-get install -y python-pip python-dev build-essential
+RUN apt-get install -y python=3 python-pip python-dev build-essential 
 
 COPY . /part-1
 WORKDIR /part-1
