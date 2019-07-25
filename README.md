@@ -201,6 +201,8 @@ Line Test ...
 - Run container: 
 ```
 docker run [OPTIONS] CONTAINER [CONTAINER...]
+
+# docker run -it -p 8888:8888 image:version
 ```
 
 - Stop container: 
@@ -208,8 +210,18 @@ docker run [OPTIONS] CONTAINER [CONTAINER...]
 docker stop [OPTIONS] CONTAINER [CONTAINER...]
 ```
 
+
+
+problemas git clone: usando você não é capaz de puxar commit específico com facilidade num CI
+é melhor para testar o código e por em produção usar o COPY
+Clone repository
+```
+CMD git clone <url-repo>
+```
+
 **References:**<br/>
 - Documentation: https://docs.docker.com/engine/reference/commandline/docker/
+- https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
 
 ---
 
@@ -232,14 +244,18 @@ https://www.infoq.com/br/presentations/infraestrutura-e-criacao-de-apis-em-alta-
 
 ## Cloud
 
+- AWS
+  - Configuration AWS
+- Azure
+  - [Sample Scripts](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cli-samples?toc=%2Fcli%2Fazure%2Ftoc.json&bc=%2Fcli%2Fazure%2Fbreadcrumb%2Ftoc.json&view=azure-cli-latest)
 
-### Configuration
+
+### Configuration AWS
 
 ##### Install client aws
 ```bash
 pip install awscli
 ```
-
 
 ##### Configure AWS CLI
 ```bash
@@ -254,6 +270,36 @@ Default output format [None]: json
 ##### Test
 ```bash
 aws s3 ls
+```
+
+### Configuration AZURE
+
+##### Install CLI Azure
+- https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest
+
+- [Running on vs code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli) 
+
+```bash
+sudo apt-get update
+sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg
+
+curl -sL https://packages.microsoft.com/keys/microsoft.asc | \
+    gpg --dearmor | \
+    sudo tee /etc/apt/trusted.gpg.d/microsoft.asc.gpg > /dev/null
+
+```
+
+- Add repository
+```bash
+AZ_REPO=$(lsb_release -cs)
+echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO main" | \
+    sudo tee /etc/apt/sources.list.d/azure-cli.list
+```
+
+- Update repository information and install package
+```bash
+sudo apt-get update
+sudo apt-get install azure-cli
 ```
 
 ---
