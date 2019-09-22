@@ -1,6 +1,6 @@
 $connection_string = 'DefaultEndpointsProtocol=https;`
                       AccountName=<name_container>;`
-                      AccountKey=K49/xk4NuCVOgOFVs5JWWxiWOjsr5Gbjf+2EpBjhX6YzIX323n3zL0Qt4qnHbOIh/vPY1Osd6D6T9A2qPKenOQ==;`
+                      AccountKey=<your_account_key>;`
                       EndpointSuffix=core.windows.net'
 $storage_account = New-AzureStorageContext -ConnectionString $connection_string
 $container_name = '<name>' 
