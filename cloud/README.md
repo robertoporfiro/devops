@@ -6,4 +6,4 @@
 - Resources
   - Automation Account
   - Storage Account
-  - 
+  - Budget
