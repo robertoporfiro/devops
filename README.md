@@ -29,7 +29,7 @@
     - [.gitconfig](git/.gitconfig)
     - [.gitignore](git/gitignore-models)
     - [.gitattributes](git/) # in production
-    - [.gitkeep](git/) # in production
+    - [.gitkeep](git/)
   
   - Good Pratices :bookmark_tabs:
     - [Writing Commits](git/) 
