@@ -12,7 +12,7 @@
         The name file of backup  
 #>  
 Param (  
-    [parameter(Mandatory=$false)] 
+    [parameter(Mandatory=$true)] 
     [string] $server_name = "asazure://brazilsouth.asazure.windows.net/insightsmppostgre",
 
     [Parameter(Mandatory = $false)]
