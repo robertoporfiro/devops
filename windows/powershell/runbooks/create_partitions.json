@@ -1,0 +1,15 @@
+{  
+    "create": {  
+      "parentObject": {  
+        "database": "AdventureWorksTabular1200",  
+        "table": "Date"  
+      },  
+      "partition": {  
+        "name": "Date 2",  
+        "source": {  
+          "query": "SELECT [dbo].[DimDate].* FROM [dbo].[DimDate]",  
+          "dataSource": "SqlServer localhost AdventureworksDW2016"  
+        }  
+      }  
+    }  
+  }  
