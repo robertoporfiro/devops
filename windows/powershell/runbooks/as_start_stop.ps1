@@ -1,15 +1,18 @@
 param(     
     [parameter(Mandatory=$false)] 
-    [string] $ResourceGroupName = "INSIGHTS_MP_PROD",
+    [string] $ResourceGroupName = "",
+
+    [Parameter(Mandatory=$false)]  
+    [String]$NameUser = "application_user",
 
     [parameter(Mandatory=$false)] 
-    [string] $ServerName = "insightsmpms",
+    [string] $ServerName = "",
 
     [parameter(Mandatory=$false)]
     [string] $serviceTimeZone = "E. South America Standard Time",
 
     [parameter(Mandatory=$false)]
-    [string] $AutomationAccountName = "sajinsights-mpms",
+    [string] $AutomationAccountName = "",
 
     [parameter(Mandatory=$false)]
     [string] $RunbookNameEmail = "send_email",
@@ -23,13 +26,14 @@ param(
                                 {
                                     WeekDays:[1,2,3,4,5]	
                                     ,StartTime: ""09:00:00""
-                                    ,StopTime: ""10:00:00""
+                                    ,StopTime: ""09:30:00""
                                     ,Sku: ""S0""
                                 }  
                             ]
                           "
 )
 
+# Log
 Write-Output "Parameters: $ResourceGroupName, `
                           $ServerName, `
                           $configStr "
@@ -70,13 +74,16 @@ $dayObjects = $stateConfig `
     Expression = {
         [datetime]::ParseExact($_.StopTime,"HH:mm:ss", [System.Globalization.CultureInfo]::InvariantCulture)}}
 
-
 #******************************************************************************
-# Logging into Azure
+# Logging in to Azure
 #******************************************************************************
-Write-Output "Logging into Azure..." | timestamp
+Write-Output "Logging in to Azure..." | timestamp
 try {
-    # Add an authenticated account to use for Azure Resource Manager
+
+    # Ensures that any credentials apply only to the execution of this runbook
+    Disable-AzureRmContextAutosave -Scope Process
+
+    # Connect to Azure with RunAs account
     $connectionName = "AzureRunAsConnection" 
     $servicePrincipalConnection = Get-AutomationConnection -Name $connectionName         
     
@@ -95,7 +102,6 @@ try {
             -Name $RunbookNameAddAccount `
             -ResourceGroupName $ResourceGroupName
         
-        #throw $ErrorMessage
     }else {
         Write-Output $_.Exception
         Write-Error -Message $_.Exception
@@ -115,25 +121,23 @@ try{
     # If not match any day then exit
     if($dayObjects -ne $null) {
         # Can't treat several objects for same time-frame, if there's more than one, pick first
-        $matchingObject = $dayObjects `
-            | Where-Object {($startTime -ge $_.StartTime) -and ($startTime -lt $_.StopTime) } `
-            | Select-Object -First 1
+        $matchingObject = $dayObjects | Where-Object {($startTime -ge $_.StartTime) -and ($startTime -lt $_.StopTime)} | Select-Object -First 1
 
         if($matchingObject -ne $null) {
-            # if Paused, resume
+            # if Paused resume
             if($asServer.State -eq "Paused") {
                 Write-Output "Resuming..." | timestamp
                 $asServer | Resume-AzureRmAnalysisServicesServer -Verbose
             }      
         }else {
-            # if Succeeded, OK
-            Write-Output "Server Succeeded. Exiting... " | timestamp
-            $asServer | Suspend-AzureRmAnalysisServicesServer -Verbose
-        } 
+            Write-Output "Pausing services..." | timestamp
+            if($asServer.State -eq "Succeeded"){
+                $asServer | Suspend-AzureRmAnalysisServicesServer -Verbose
+            } 
+        }
     }else {
         Write-Output "No object config for current day of week" | timestamp
         if($asServer.State -eq "Succeeded") {
-            Write-Output "Pausing..." | timestamp
             $asServer | Suspend-AzureRmAnalysisServicesServer -Verbose
         }         
     }
