@@ -12,6 +12,7 @@
 ```bash
 curl -L https://aka.ms/InstallAzureCli | bash
 ```
+Created a folder `$HOME/.azure`
 
 ## Configure
 - https://microsoft.github.io/AzureTipsAndTricks/blog/tip8.html
@@ -53,4 +54,9 @@ az account list
 - Set
 ```
 az account set --subscription <NAME_SUBSCRIPTION>
+```
+
+## Location
+```
+az configure --defaults location="Central US"
 ```
