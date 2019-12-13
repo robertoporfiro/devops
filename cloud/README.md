@@ -36,6 +36,9 @@ az configure
   # type: user
 ```
 
+## Subscriptions
+
+- List subscriptions
 ```
 az account list
 
@@ -45,4 +48,9 @@ az account list
 # Pago pelo Uso    AzureCloud   7934f236-35c8-44e2-9d6e-611cf0165713  Enabled  True
 # Microsoft Azure  AzureCloud   8f2dd591-253b-4c1b-8a2e-1ada03a16f2f  Enabled  False
 
+```
+
+- Set
+```
+az account set --subscription <NAME_SUBSCRIPTION>
 ```
