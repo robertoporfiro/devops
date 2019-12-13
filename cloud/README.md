@@ -15,6 +15,7 @@ curl -L https://aka.ms/InstallAzureCli | bash
 
 ## Configure
 - https://microsoft.github.io/AzureTipsAndTricks/blog/tip8.html
+- Use table mode
 ```
 az configure
 ```
@@ -33,4 +34,15 @@ az configure
 # user:
   # name: brunocampos01@gmail.com.br
   # type: user
+```
+
+```
+az account list
+
+# A few accounts are skipped as they don't have 'Enabled' state. Use '--all' to display them.
+# Name             CloudName    SubscriptionId                        State    IsDefault
+# ---------------  -----------  ------------------------------------  -------  -----------
+# Pago pelo Uso    AzureCloud   7934f236-35c8-44e2-9d6e-611cf0165713  Enabled  True
+# Microsoft Azure  AzureCloud   8f2dd591-253b-4c1b-8a2e-1ada03a16f2f  Enabled  False
+
 ```
