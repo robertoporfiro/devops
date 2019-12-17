@@ -59,6 +59,7 @@
       - [Marathon](#managemant-libraries)
 
   - [Cloud](#cloud)
+    - [Azure](#azure)
     - [AWS CLI](#awscli)
     - [S3](#s3)
     - [EC2](#ec2)
@@ -248,7 +249,7 @@ https://www.infoq.com/br/presentations/infraestrutura-e-criacao-de-apis-em-alta-
   - Configuration AWS
 - Azure
   - [Sample Scripts](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cli-samples?toc=%2Fcli%2Fazure%2Ftoc.json&bc=%2Fcli%2Fazure%2Fbreadcrumb%2Ftoc.json&view=azure-cli-latest)
-
+  - https://kylenunery.com/guide-to-naming-things-in-azure/
 
 ### Configuration AWS
 
