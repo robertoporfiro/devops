@@ -1,0 +1,11 @@
+SELECT
+    idcomarca,
+    cdcomarca,
+    nmcomarca,
+    cdcomarcasede,
+    flforauso,
+    dtusuinclusao,
+    cdusuinclusao,
+    nmcomarcacalculado,
+    dtcarga
+FROM "dComarca"

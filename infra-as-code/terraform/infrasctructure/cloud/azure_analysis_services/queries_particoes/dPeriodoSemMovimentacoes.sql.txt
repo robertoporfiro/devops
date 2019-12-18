@@ -1,0 +1,8 @@
+SELECT
+    idperiodosemmovimentacoes,
+    cdperiodosemmovimentacoes,
+    deperiodosemmovimentacoes,
+    cdminperiodosemmovimentacoes,
+    cdmaxperiodosemmovimentacoes,
+    dtcarga
+FROM "dPeriodoSemMovimentacoes"

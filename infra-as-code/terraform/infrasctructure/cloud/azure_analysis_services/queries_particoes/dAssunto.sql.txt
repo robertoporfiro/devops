@@ -1,0 +1,15 @@
+SELECT
+    idassunto,
+    cdassunto,
+    cdassuntoext,
+    deassunto,
+    cdassuntoextpai,
+    flultimonivel,
+    flselecionavel,
+    flcomplementar,
+    flmariapenha,
+    flforauso,
+    dtusuinclusao,
+    cdusuinclusao,
+    dtcarga
+FROM "dAssunto"

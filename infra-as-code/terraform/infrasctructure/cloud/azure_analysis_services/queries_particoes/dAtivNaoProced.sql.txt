@@ -1,0 +1,10 @@
+SELECT
+    idativnaoproced,
+    cdativnaoproced,
+    deativnaoproced,
+    cdativnaoprocedpai,
+    flforauso,
+    cdusuinclusao,
+    dtusuinclusao,
+    dtcarga
+FROM "dAtivNaoProced"

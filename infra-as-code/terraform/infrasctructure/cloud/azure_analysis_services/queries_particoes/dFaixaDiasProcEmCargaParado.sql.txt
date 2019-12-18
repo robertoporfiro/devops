@@ -1,0 +1,11 @@
+SELECT
+
+    idfaixadiasprocemcargaparado,
+
+    cdfaixadiasprocemcargaparado,
+
+    defaixadiasprocemcargaparado,
+
+    dtcarga
+
+FROM "dFaixaDiasProcEmCargaParado"

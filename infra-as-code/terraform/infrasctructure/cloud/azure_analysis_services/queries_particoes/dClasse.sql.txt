@@ -1,0 +1,16 @@
+SELECT
+    idclasse,
+    cdclasse,
+    cdclasseext,
+    declasse,
+    cdclasseextpai,
+    fltipoclasse,
+    flarea,
+    idgrau,
+    flultimonivel,
+    flselecionavel,
+    flforauso,
+    dtusuinclusao,
+    cdusuinclusao,
+    dtcarga
+FROM "dClasse"

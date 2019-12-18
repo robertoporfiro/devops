@@ -1,0 +1,7 @@
+SELECT
+    idprograma,
+    cdtipoprocesso,
+    cdprograma,
+    deprograma,
+    dtcarga
+FROM "dPrograma"

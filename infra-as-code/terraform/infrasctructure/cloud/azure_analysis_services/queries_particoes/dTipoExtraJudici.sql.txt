@@ -1,0 +1,7 @@
+SELECT
+    idtipoextrajudici,
+    cdtipoprocesso,
+    cdtipoextrajudici,
+    detipoextrajudici,
+    dtcarga
+FROM "dTipoExtraJudici"

@@ -1,0 +1,18 @@
+SELECT
+    idlocal,
+    cdforo,
+    cdtipolocal,
+    cdlocal,
+    delocal,
+    deendereco,
+    decomplemento,
+    debairro,
+    nucep,
+    sglocal,
+    cdgrupo,
+    flterceiro,
+    flforauso,
+    dtusuinclusao,
+    cdusuinclusao,
+    dtcarga
+FROM "dLocal"

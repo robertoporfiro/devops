@@ -1,0 +1,21 @@
+SELECT
+    iddata,
+    cddata,
+    dtdata,
+    cddia,
+    cddiasemana,
+    dediasemana,
+    cdmes,
+    demes,
+    demesabr,
+    cdanomes,
+    cdmesano,
+    demesano,
+    cdbimestre,
+    debimestre,
+    cdtrimestre,
+    detrimestre,
+    cdsemestre,
+    desemestre,
+    cdano
+FROM "dTempo"

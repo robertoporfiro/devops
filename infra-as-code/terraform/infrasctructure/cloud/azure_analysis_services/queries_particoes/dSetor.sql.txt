@@ -1,0 +1,9 @@
+SELECT
+    idsetor,
+    cdsetor,
+    desetor,
+    flforauso,
+    dtusuinclusao,
+    cdusuinclusao,
+    dtcarga
+FROM "dSetor"

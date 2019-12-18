@@ -1,0 +1,9 @@
+SELECT
+    idespecialidade,
+    cdespecialidade,
+    deespecialidade,
+    dtusuinclusao,
+    cdusuinclusao,
+    flforauso,
+    dtcarga
+FROM "dEspecialidade"

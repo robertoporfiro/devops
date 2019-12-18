@@ -1,0 +1,11 @@
+SELECT
+
+    idfaixadiasprocpendvencida,
+
+    cdfaixadiasprocpendvencida,
+
+    defaixadiasprocpendvencida,
+
+    dtcarga
+
+FROM "dFaixaDiasProcPendVencida"

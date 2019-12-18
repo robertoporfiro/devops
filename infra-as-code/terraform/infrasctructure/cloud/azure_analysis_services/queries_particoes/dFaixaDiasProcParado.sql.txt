@@ -1,0 +1,10 @@
+SELECT
+
+    idfaixadiasprocparado,
+
+    cdfaixadiasprocparado,
+
+    defaixadiasprocparado,
+    dtcarga
+
+FROM "dFaixaDiasProcParado"

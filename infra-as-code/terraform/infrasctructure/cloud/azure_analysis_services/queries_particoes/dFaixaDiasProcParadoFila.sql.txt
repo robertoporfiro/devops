@@ -1,0 +1,11 @@
+SELECT
+
+    idfaixadiasprocparadofila,
+
+    cdfaixadiasprocparadofila,
+
+    defaixadiasprocparadofila,
+
+    dtcarga
+
+FROM "dFaixaDiasProcParadoFila"

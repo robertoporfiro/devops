@@ -1,0 +1,8 @@
+SELECT
+    idtipoprocadm,
+    cdtipoprocadm,
+    denome,
+    flpadrao,
+    flforauso,
+    dtcarga
+FROM "dTipoProcAdm"
