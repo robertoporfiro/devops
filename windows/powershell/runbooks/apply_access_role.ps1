@@ -1,102 +1,128 @@
-<#  
-    .SYNOPSIS 
+<#
+    .SYNOPSIS
         Apply access policy roles in Azure Analysis Services
-    
-    .PARAMETER server_name  
-        The Azure Analysis Service Server endpoint 
-    
-    .PARAMETER database_name  
-        The Analysis Service Database  
-        
-    .PARAMETER container_name  
-        The container name with contains json files 
-    
-    .PARAMETER file_readers  
-        The file with roles of read
 
-    .PARAMETER file_admins  
-        The file with roles of administrator
+    .PARAMETER server_name
+        The Azure Analysis Service Server endpoint
+
+    .PARAMETER DatabaseName
+        The Analysis Service Database
 #>
-param(     
-    [parameter(Mandatory=$false)] 
-    [string] $server_name = "asazure://brazilsouth.asazure.windows.net/insightsmpms",
+param(
+    [parameter(Mandatory=$false)]
+    [string] $EndpointServer = "asazure://<LOCATION>.asazure.windows.net/<PRODUCT_NAME><CLIENT_NAME>",
 
-    [Parameter(Mandatory = $false)]  
-    [String]$database_name = "Insights MPMS",
+    [Parameter(Mandatory = $false)]
+    [String]$DatabaseName = "<PRODUCT_NAME> <CLIENT_NAME>",
 
-    [Parameter(Mandatory = $false)]  
-    [String]$container_name = "analysis-services",
-
-    [Parameter(Mandatory = $false)]  
-    [String]$file_readers = "role_readers.json",
-
-    [Parameter(Mandatory = $false)]  
-    [String]$file_admins = "role_admins.json"
+    [Parameter(Mandatory = $false)]
+    [String]$NameUser = "application_user"
 )
 
-Write-Output "Applying access policy roles in Azure Analysis Services"
+# Query
+$role_admins = @"
+<SCRIPT_ROLE_ADMINS>
+"@ | ConvertFrom-Json
 
-$connection_string = 'DefaultEndpointsProtocol=https;AccountName=mpms;AccountKey=h0du3PT+v2RW4tLWDCac4Q/XBAkHd9LCnJwoDkLJgj8rpz8wyRUaqPniUC6ALS708OpXagjcdtZuv/hYtyWdAQ==;EndpointSuffix=core.windows.net'
-$storage_account = New-AzureStorageContext -ConnectionString $connection_string
-$inputfile_reader = "C:\Temp\$file_readers"
-$inputfile_admin = "C:\Temp\$file_admins"
+$role_readers = @"
+<SCRIPT_ROLE_READERS>
+"@ | ConvertFrom-Json
 
+#******************************************************************************
+# Runbook logs
+#******************************************************************************
+$ErrorActionPreference = "Stop"
+filter timestamp {"[$(Get-Date -Format G)]: $_"}
+Write-Output "Script started with UTC zone." | timestamp
 
-# Logging in to Azure
-Write-Output "Logging in to Azure..."
-$userCredential = Get-AutomationPSCredential -Name 'application_user'
+Write-Output "Parameters: `
+                          $EndpointServer `
+                          $DatabaseName `
+                          $NameUser " | timestamp
+#******************************************************************************
+# Logging into Azure
+#******************************************************************************
+Write-Output "Logging in to Azure..." | timestamp
+
+try {
+    # Ensures you do not inherit an AzureRMContext in your runbook
+    Disable-AzureRmContextAutosave -Scope Process
+
+    $connection = Get-AutomationConnection -Name AzureRunAsConnection
+
+    while(!($connectionResult) -And ($logonAttempt -le 10)) {
+        $LogonAttempt++
+        # Logging in to Azure...
+        $connectionResult = Login-AzureRmAccount `
+                                -ServicePrincipal `
+                                -Tenant $connection.TenantID `
+                                -ApplicationID $connection.ApplicationID `
+                                -CertificateThumbprint $connection.CertificateThumbprint
+
+        Start-Sleep -Seconds 5
+    }
+
+} catch {
+    Write-Output "Logging FAILED !" | timestamp
+    Write-Output "connection: $connection"
+    Write-Output $_.Exception
+    Write-Error -Message $_.Exception
+
+    # Send email
+    Start-AzureRmAutomationRunbook `
+        -AutomationAccountName $AutomationAccountName `
+        -Name $RunbookNameEmail `
+        -ResourceGroupName $ResourceGroupName
+
+    throw $_.Exception
+}
+#******************************************************************************
+# Get credentials Azure
+#******************************************************************************
+Write-Output "Get credentials Azure..." | timestamp
+
+$userCredential = Get-AutomationPSCredential -Name $NameUser
 $cred = New-Object -TypeName System.Management.Automation.PSCredential `
-                   -ArgumentList $userCredential.UserName,
-                                 $userCredential.Password
-
-# Download file reader
+                   -ArgumentList `
+                        $userCredential.UserName, `
+                        $userCredential.Password
+#******************************************************************************
+# Azure Analysis Service
+#******************************************************************************
 try {
-    Write-Output "Getting file $reader"
-    Get-AzureStorageBlobContent -Container $container_name `
-                                -Blob $file_readers `
-                                -Destination $inputfile_reader `
-                                -Context $storage_account `
-                                -Force
+    # Get the server status
+    $asServer = Get-AzureRmAnalysisServicesServer -Res $ResourceGroupName `
+                                                  -Name $ServerName
+    Write-Output "Azure Analysis Services STATUS: $($asServer.State)" | timestamp
 
-    # Run Analysis Services Partition Job
-    Write-Output "`nApplying Polices: READ"
-    Write-Output $inputfile_reader
-    Invoke-ASCmd -Server $server_name `
-                -InputFile $inputfile_reader `
-                -Credential $cred
+    # Download file
+    if($asServer.State -eq "Succeeded") {
+        Write-Output "Executing query: $role_admins" | timestamp
+        Invoke-ASCmd `
+            -Server $EndpointServer `
+            -Credential $cred `
+            -Database $DatabaseName `
+            -Query ($role_admins | ConvertTo-Json -Depth 25)
+
+
+        Write-Output "Executing query: $role_readers" | timestamp
+        Invoke-ASCmd `
+            -Server $EndpointServer `
+            -Credential $cred `
+            -Database $DatabaseName `
+            -Query ($role_readers | ConvertTo-Json -Depth 25)
+
+    }else {
+        Write-Warning "Services paused. Exiting"
+    }
+
 } catch {
-    Write-Output "`n`nFailed: "
-    Write-Output $server_name
-    Write-Output $database_name
-    Write-Output $storage_account
-    Write-Output $container_name
-    Write-Output $file_readers
-    throw 
+    Write-Output "FAILED !" | timestamp
+    Write-Output $ResourceGroupName
+    Write-Output $ServerName
+    Write-Output "$($_.Exception.Message)"
+
+    throw $_.Exception
+} finally {
+    Write-Output "--- Script finished ---" | timestamp
 }
-
-# Download file admins
-try {
-    Write-Output "Getting file $file_admins"
-    Get-AzureStorageBlobContent -Container $container_name `
-                                -Blob $file_admins `
-                                -Destination $inputfile_admin `
-                                -Context $storage_account `
-                                -Force
-
-    # Run Analysis Services Partition Job
-    Write-Output "`nApplying Polices: Admin"
-    Write-Output $inputfile_admin
-    Invoke-ASCmd -Server $server_name `
-                -InputFile $inputfile_admin `
-                -Credential $cred
-} catch {
-    Write-Output "`n`nFailed: "
-    Write-Output $server_name
-    Write-Output $database_name
-    Write-Output $storage_account
-    Write-Output $container_name
-    Write-Output $file_admins
-    throw 
-}
-
-Write-Output "--- Script finished ---"
