@@ -1,0 +1,5 @@
+SELECT
+    iddiasperiodopendencia,
+    cddiasperiodopendencia,
+    dtcarga
+FROM "dDiasPeriodoPendencia"

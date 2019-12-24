@@ -1,0 +1,13 @@
+SELECT
+    idusuario,
+    cdusuario,
+    nmusuario,
+    dtativacao,
+    dtdesativacao,
+    cdpessoacontrol,
+    nmcargo,
+    flforauso,
+    flusufuncaoativ,
+    dtusuultimoacesso,
+    dtcarga
+FROM "dUsuario"

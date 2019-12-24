@@ -1,0 +1,8 @@
+SELECT
+    identrancia,
+    nuentrancia,
+    deentrancia,
+    nuordem,
+    flforauso,
+    dtcarga
+FROM "dEntrancia"

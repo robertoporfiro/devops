@@ -1,0 +1,9 @@
+SELECT
+    idclassificacao,
+    cdclassificacao,
+    declassificacao,
+    flforauso,
+    cdusuinclusao,
+    dtusuinclusao,
+    dtcarga
+FROM "dClassificacao"

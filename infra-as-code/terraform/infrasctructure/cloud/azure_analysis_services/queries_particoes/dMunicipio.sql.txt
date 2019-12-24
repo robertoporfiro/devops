@@ -1,0 +1,12 @@
+SELECT
+    idmunicipio,
+    cdmunicipio,
+    nmmunicipio,
+    cduf,
+    nuddd,
+    cdnacionalidade,
+    flforauso,
+    dtusuinclusao,
+    cdusuinclusao,
+    dtcarga
+FROM "dMunicipio"

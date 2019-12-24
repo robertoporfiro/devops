@@ -1,0 +1,12 @@
+SAJPMSINSIGHTS =
+  (DESCRIPTION =
+  (ADDRESS_LIST =
+      (ADDRESS =
+        (PROTOCOL = TCP)
+        (Host = 10.12.32.47)
+        (Port = 1521)
+       )
+  )
+  (CONNECT_DATA = (SID = INSIGHT) (SERVICE_NAME = INSIGHT) (SERVER = DEDICATED)
+  )
+)

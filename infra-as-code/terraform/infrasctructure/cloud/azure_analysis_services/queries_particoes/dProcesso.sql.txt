@@ -1,0 +1,42 @@
+SELECT
+    
+    idprocesso,
+
+    cdprocesso,
+    nuprocesso,
+    nuprocessoformatado,
+
+    detipoprocesso,
+
+    delinkconsulta,
+
+    nusequltimamv,
+
+    nuformatado,
+
+    flsegredojustica,
+
+    flreupreso,
+
+    fljusticagratuita,
+
+    nuprocessoorigem,
+
+    flatribconcorrente,
+
+    idgrau,
+
+    nuprocessoexterno,
+
+    nusessao,
+
+    flaprovacao,
+
+    nuedital,
+
+    deprocessojudextrajud,
+
+    dtcarga 
+
+FROM
+ "dProcesso"

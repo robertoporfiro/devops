@@ -1,0 +1,8 @@
+SELECT
+    idareaatuacao,
+    cdareaatuacao,
+    deareaatuacao,
+    dtusuinclusao,
+    cdusuinclusao,
+    dtcarga
+FROM "dAreaAtuacao"

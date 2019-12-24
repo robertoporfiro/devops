@@ -1,0 +1,9 @@
+SELECT
+    idsituacaoprocesso,
+    cdsituacaoprocesso,
+    desituacaoprocesso,
+    flprocessoativo,
+    flforauso,
+    cdcor,
+    dtcarga
+FROM "dSituacaoProcesso"

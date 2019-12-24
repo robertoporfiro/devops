@@ -1,0 +1,8 @@
+SELECT
+    idfaixaqtdemovimentacoes,
+    cdfaixaqtdemovimentacoes,
+    defaixaqtdemovimentacoes,
+    cdminqtdemovimentacoes,
+    cdmaxqtdemovimentacoes,
+    dtcarga
+FROM "dFaixaQtdeMovimentacoes"

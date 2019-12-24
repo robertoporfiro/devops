@@ -1,0 +1,8 @@
+SELECT
+    idtipoprocesso,
+    cdtipoprocesso,
+    detipoprocesso,
+    flforauso,
+    dtcarga
+FROM
+    "dTipoProcesso"
