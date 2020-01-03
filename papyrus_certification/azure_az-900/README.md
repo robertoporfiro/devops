@@ -6,7 +6,6 @@
 - https://www.udemy.com/course/introducao-ao-microsoft-azure-certificacao-az-900/
 - https://www.udemy.com/course/microsoft-azure-beginners-guide/
 - https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/
-- https://docs.microsoft.com/en-us/azure/#pivot=get-started
 - https://docs.microsoft.com/en-us/learn/
 - https://github.com/AzureMentor/Azure-AZ-900-Study-Guide
 

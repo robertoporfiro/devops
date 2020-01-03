@@ -20,8 +20,12 @@
 
 - **Infrastructure As Code and Configuration Management** :computer: :computer: :computer:
   - [Scripts]() # learning
+      - [Bash]() # learning
+      - [PowerShell]() # learning
   - [Chef](infra-as-code/chef/)
   - [Ansible](infra-as-code/ansible) # learning
+  - [Terraform](infra-as-code/terraform) # learning
+
 
 - **Control Version** :black_circle::heavy_minus_sign::black_circle::heavy_minus_sign::red_circle:
   - Files Git
@@ -71,6 +75,8 @@
     - [Crontab](#crontab)
     - [Jenkins](#jenkins)
     - [Rundeck](#rundeck)
+    - [Runbooks](#runbooks)
+
 
 - **Monitoring** :hourglass_flowing_sand: :chart_with_upwards_trend:
     - In production ...
@@ -191,11 +197,21 @@ Line Test ...
 
 # Virtualization
 
+<img src="images/2-vm-vs-container-vs-serverless.png" align="center" height=auto width=100%/>
+
+
 ## Containers
+Containers provide a consistent, isolated execution environment for applications.
+
+The application and all its dependencies is packaged into a "container" and then a standard runtime environment is used to execute the app. This allows the container to start up in just a few seconds, because there's no OS to boot and initialize. You only need the app to launch.
+
+
+The portability of the container makes it easy for applications to be deployed in multiple environments, either on-premises or in the cloud, often with no changes to the application.
+
+
 - Docker Hub – para armazenamento público de “Docker Images”;
 - Docker Registry – para armazenar imagens em ambiente on-premises;
 - Docker Cloud – um serviço gerenciado para criar e executar contêiner;
-- Docker Datacenter – como uma oferta comercial que incorpora muitas tecnologias Docker.
 
 
 #### Docker Comands
@@ -224,6 +240,15 @@ CMD git clone <url-repo>
 - Documentation: https://docs.docker.com/engine/reference/commandline/docker/
 - https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
 
+
+
+#### serverless computing
+Serverless computing lets you run application code without creating, configuring, or maintaining a server. 
+
+The core idea is that your application is broken into separate functions that run when triggered by some action
+
+for example, you can build a serverless process that automatically sends an email confirmation after a customer makes an online purchase.
+
 ---
 
 ### Orchestrators
@@ -244,6 +269,13 @@ https://www.infoq.com/br/presentations/infraestrutura-e-criacao-de-apis-em-alta-
 
 
 ## Cloud
+some of the features of cloud computing
+
+### cost-effective
+### scalable
+### elastic
+### Diference between scalable and elastic
+
 
 - AWS
   - Configuration AWS
