@@ -23,12 +23,12 @@
 ---
 
 # AZ-900: Understand Cloud Concepts (20%)
-- Undertand Cloud Terms
-- Undertand the Principles of Economies of Scale
-- Undertand the Difference between Capital Expenditure (CapEx) and Operational Expenditure (OpEx)
-- Understand the consumption-based model
-- Describe IaaS, PaaS and SaaS
-- Describe difference between public, private and hydrid cloud
+- Cloud Terms
+- Principles of Economies of Scale
+- Difference between Capital Expenditure (CapEx) and Operational Expenditure (OpEx)
+- Consumption-based model
+- IaaS, PaaS and SaaS
+- Difference between public, private and hydrid cloud
 
 # Understand core Azure services (35%)
 - Architectural
@@ -86,3 +86,31 @@
 - Azure Monitor
 - Azure Service Health
 - Understand the use cases and benefits of Azure Monitor and Azure Service Health
+
+---
+
+# AZ-900: Understand Cloud Concepts (20%)
+
+### Capital expenditure (CapEx) versus operational expenditure (OpEx)
+#### CapEx
+- As Capital expenditure são para grandes compras que serão usadas no futuro.
+- CapEx computing costs
+ - Server
+ - Storage
+ - Network
+ - Backup
+ - disaster recovery
+
+- As operational expenditure são custos de curto prazo.
+- OpEx cloud computing costs
+  - Leasing software
+  - usage/demand instead of fixed hardware
+  - Billing at the user or organization level
+
+
+
+
+
+
+
+cloud_services.png
