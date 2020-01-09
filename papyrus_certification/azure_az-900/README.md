@@ -18,3 +18,71 @@
 
 ### English Trainning
 - https://www.udemy.com/course/curso-de-ingles-para-ti/
+
+
+---
+
+# AZ-900: Understand Cloud Concepts (20%)
+- Undertand Cloud Terms
+- Undertand the Principles of Economies of Scale
+- Undertand the Difference between Capital Expenditure (CapEx) and Operational Expenditure (OpEx)
+- Understand the consumption-based model
+- Describe IaaS, PaaS and SaaS
+- Describe difference between public, private and hydrid cloud
+
+# Understand core Azure services (35%)
+- Architectural
+  - Regions
+  - Avaalibily Zones
+  - Resource Groups
+  - Resource Manager
+- Products
+  - VM
+  - VM scale
+  - Service Functions
+  - Container Instance
+  - Kubernetes Service
+  - Virtual Network
+  - Load Balancer
+  - VPN 
+  - Gateway
+  - Content Delivery Network
+  - Blob Storage
+  - Disk Storage
+  - File Storage
+  - Archive Storage
+  - Azure Marketplace and its usage scenarios
+- Solutions
+  - IoT
+  - SQL Data Warehouse
+  - HDInsight
+  - Azure Databricks
+  - Azure Machine Learning Service and Studio
+  - Logic Apps
+  - Event Grid
+  - Azure DevOps
+  - Azure DevTest Labs
+- Tools
+  - Azure Portal
+  - Azure PowerShell
+  - Azure CLI
+  - Cloud Shell
+  - Azure Advisor
+
+# Understand security, privacy, compliance, and trust (30%)
+- Network Security Groups (NSG)
+- Application Security Groups (ASG)
+- User Defined Rules (UDR)
+- Azure Firewall
+- Azure DDoS Protection
+- Choose an appropriate Azure security solution 
+- Understand the difference between authentication and authorization
+- Azure Active Directory
+- Azure Multi-Factor Authentication
+- Azure Security Center
+- Key Vault
+- Azure Information Protection (AIP)
+- Azure Advanced Threat Protection (ATP)
+- Azure Monitor
+- Azure Service Health
+- Understand the use cases and benefits of Azure Monitor and Azure Service Health
