@@ -267,19 +267,34 @@ Blob Storage (S3)
 É para grande quantidade de dados unstructured.
 Easy scaling
 
+Blob Storage (Cold)
+Otimizado para dados que são acessado com pouca frequência (30 dias)
+**OS custos de armazenamento são mais baixos e custos de acesso mais altos em comparação com o hot tier**.
+NOTE: deletion period of 30 days.
+
+Archive Storage (S3 Glacier)
+Serve para armazenar dados que rarely são acessados (180 dias). É muito útil para backup e recovery.
+NOTE: deletion period of 180 days.
+
+
 File Storage
 Compartilha arquivos via protocolo SMB.
 
 Disk Storage
 Serve para storage de disco de VM. Em uma VM é permitido somente 1 disco por vez, então é possível utilizar o Disk Storage para virtualizar outro disco.
 
-Archive Storage (S3 Glacier)
-Serve para armazenar dados que rarely são acessados (180 dias). É muito útil para backup e recovery.
-
+Azure Marketplace
+É um lugar que apresenta soluções de partners da Azure. É possível dicover ou buy solutions para serem provisionadas na Azure. Ex, VMs personalizadas, databases, developer tools.
 
 Why to use Azure Data Services?
 - Automated backup and recovery
 - Replication accors the globe
 - Support for data analitcs
 - Encryption
-- Storage tiers 
+- Storage tiers
+
+
+NOTE: deletion period of 30 days.
+
+Tools
+<img src="images/azure_tools.png" align="center" height=auto width=100%/>
