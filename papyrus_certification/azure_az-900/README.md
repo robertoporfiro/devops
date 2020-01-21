@@ -173,13 +173,13 @@ Disavantages
 ---
 
 # Understand core Azure services (35%)
-- Architectural
+## Architectural
   - Regions
-  - Avaalibily Zones
+  - Avaialibility Zones
   - Resource Groups
   - Resource Manager
 
-## Regions
+### Regions
 - É uma área geográfica.
 - Pode posuir vários datacenters
 - A própria Azure faz o balanceamento de resources.
@@ -187,3 +187,73 @@ Disavantages
 <img src="images/2-regions-large.png" align="center" height=auto width=100%/>
 
 - A Azure é o cloud provider com mais regiões no mundo. Isso provê melhor scalability e  redundancy.
+- Não é gerado poluição de carbono e a energia vem de fontes renováveis.
+- É o menor grão dos recursos físicos que o usuário pode escolher.
+
+### Avaialibility Zones
+- São datacenters separados em uma mesma região.
+-  há um mínimo 3 zones dentro de uma única region
+
+<img src="images/4-availability-zones.png" align="center" height=auto width=100%/>
+
+### Resource Group
+É um agrupador de resources onde é possível aplicar políticas de acesso.
+
+
+### Resource Manager (ARM)
+É um serviço que faz o deploy e management de resource na Azure.
+- Parecido com terraform, chef, ansible
+
+### Service-Level Agreements
+Há 3 keys no SLA da Azure:
+1. Performance product and services.
+2. Uptime and Connectivity Guarantees (99 until 99.999)
+3. Service credits. Azure apply discount to as compensation for an under-performing product and services.
+
+### Application availability
+- Referece ao tempo global (overral time) que o sistema esta trabalhando.
+
+
+## Products
+  - VM
+  - VM scale
+  - Service Functions
+  - Container Instance
+  - Kubernetes Service
+  - Virtual Network
+  - Load Balancer
+  - VPN 
+  - Gateway
+  - Content Delivery Network
+  - Blob Storage
+  - Disk Storage
+  - File Storage
+  - Archive Storage
+  - Azure Marketplace and its usage scenarios
+
+### VM
+VM são as máquinas virtuais linux e windows. Se for produtos como windows server ou sql server, a Azure se torna 5x mais barata que a AWS.
+
+### VM Scale Set
+VM scale faz um scaling up ou out automático. Quando a carga de trabalho cai, o próprio serviço se encarrega de excluir as VMs não utilizadas (elatic).
+
+<img src="images/01-deploy.png" align="left" height=auto width=45%/>
+<img src="images/02-scale.png" align="right" height=auto width=40%/>
+
+
+### Virtual Network (Vnet)
+É um isolamento lógico da network na Azure decicado a uma subscription.
+
+Advantages
+- segurança
+- isolamento
+- políticas de tráfego
+
+### Application Gateway
+É um load balancer que gerencia o tráfego baseado em URL.
+NOTE: o Azure Load Balancer tambem gerencia o trágefo mas se basea em IP.
+
+###  Content Delivery Network (CDN) 
+Uma delivery network de conteúdo é uma rede de servidores que armazena conteúdo de alguma coisa da web em cache para os usuários em sua borda, ou seja, o usuário não precisa ir até o servidor principal para obter o conteúdo, basta acessar a CDN mais próxima.
+ 
+<img src="images/cdn.png" align="center" height=auto width=100%/>
