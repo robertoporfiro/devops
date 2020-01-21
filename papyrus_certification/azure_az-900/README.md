@@ -229,7 +229,6 @@ Há 3 keys no SLA da Azure:
   - Disk Storage
   - File Storage
   - Archive Storage
-  - Azure Marketplace and its usage scenarios
 
 ### VM
 VM são as máquinas virtuais linux e windows. Se for produtos como windows server ou sql server, a Azure se torna 5x mais barata que a AWS.
@@ -250,10 +249,37 @@ Advantages
 - políticas de tráfego
 
 ### Application Gateway
-É um load balancer que gerencia o tráfego baseado em URL.
+**É um load balancer que gerencia o tráfego baseado em URL**.
 NOTE: o Azure Load Balancer tambem gerencia o trágefo mas se basea em IP.
 
 ###  Content Delivery Network (CDN) 
-Uma delivery network de conteúdo é uma rede de servidores que armazena conteúdo de alguma coisa da web em cache para os usuários em sua borda, ou seja, o usuário não precisa ir até o servidor principal para obter o conteúdo, basta acessar a CDN mais próxima.
- 
+Uma delivery network de conteúdo é uma rede de servidores que armazena conteúdo de alguma coisa da web em cache para os usuários em sua borda, ou seja, o usuário não precisa ir até o servidor principal para obter o conteúdo, basta acessar a CDN mais próxima (de menor latência).
+
 <img src="images/cdn.png" align="center" height=auto width=100%/>
+
+SQL Database
+O servico de SQL database exige que seja configurado um servidor.
+
+Cosmos DB
+É schema-less data, idela para dados semi-estruturados (json, por exemplo).
+
+Blob Storage (S3)
+É para grande quantidade de dados unstructured.
+Easy scaling
+
+File Storage
+Compartilha arquivos via protocolo SMB.
+
+Disk Storage
+Serve para storage de disco de VM. Em uma VM é permitido somente 1 disco por vez, então é possível utilizar o Disk Storage para virtualizar outro disco.
+
+Archive Storage (S3 Glacier)
+Serve para armazenar dados que rarely são acessados (180 dias). É muito útil para backup e recovery.
+
+
+Why to use Azure Data Services?
+- Automated backup and recovery
+- Replication accors the globe
+- Support for data analitcs
+- Encryption
+- Storage tiers 
