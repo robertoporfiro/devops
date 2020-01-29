@@ -148,6 +148,11 @@ Disavantages
 - specific security requirements 
 - You don't own the hardware or services and cannot manage them as you may want 
 
+Question: You are running a virtual machine in a public cloud using IaaS. Which model correctly reflects how that resource is managed?
+<br/>
+shared responsibility: The cloud provider being responsible for the cloud services infrastructure and the end user being responsible for the service being configured and managed correctly.
+
+
 #### Private Cloud
 You create a cloud environment in your own datacenter.
 
@@ -186,12 +191,12 @@ Disavantages
 
 <img src="images/2-regions-large.png" align="center" height=auto width=100%/>
 
-- A Azure é o cloud provider com mais regiões no mundo. Isso provê melhor scalability e  redundancy.
+- A Azure é o cloud provider com mais regions no mundo. Isso provê melhor scalability e  redundancy.
 - Não é gerado poluição de carbono e a energia vem de fontes renováveis.
 - É o menor grão dos recursos físicos que o usuário pode escolher.
 
 ### Avaialibility Zones
-- São datacenters separados em uma mesma região.
+- São datacenters separados em uma mesma region.
 -  há um mínimo 3 zones dentro de uma única region
 
 <img src="images/4-availability-zones.png" align="center" height=auto width=100%/>
@@ -211,7 +216,7 @@ Há 3 keys no SLA da Azure:
 3. Service credits. Azure apply discount to as compensation for an under-performing product and services.
 
 ### Application availability
-- Referece ao tempo global (overral time) que o sistema esta trabalhando.
+- Referese ao tempo global (overral time) que o sistema esta trabalhando.
 
 
 ## Products
@@ -248,6 +253,20 @@ Advantages
 - isolamento
 - políticas de tráfego
 
+Question: You plan to deploy 20 virtual machines to an Azure environment. To ensure that a virtual machine named VM1 cannot connect to the other virtual machines, VM1 must ***be deployed to a separate virtual network***
+
+to securely communicate with each other, the internet, and on-premises networks.So
+
+....
+
+**Virtual network gateway**
+
+**Firewall**
+
+Question: You have an Azure environment that contains 10 virtual networks and 100 virtual machines.You need to limit the amount of inbound traffic to all the Azure virtual networks.
+
+**Azure Traffic Manager**
+
 ### Application Gateway
 **É um load balancer que gerencia o tráfego baseado em URL**.
 NOTE: o Azure Load Balancer tambem gerencia o trágefo mas se basea em IP.
@@ -257,36 +276,30 @@ Uma delivery network de conteúdo é uma rede de servidores que armazena conteú
 
 <img src="images/cdn.png" align="center" height=auto width=100%/>
 
-SQL Database
-O servico de SQL database exige que seja configurado um servidor.
+**SQL Database**: O servico de SQL database exige que seja configurado um servidor.
 
-Cosmos DB
-É schema-less data, idela para dados semi-estruturados (json, por exemplo).
+**Cosmos DB**: É schema-less data, idel para dados semi-estruturados (json, por exemplo).
 
-Blob Storage (S3)
-É para grande quantidade de dados unstructured.
+**Blob Storage (S3)**: É para grande quantidade de dados unstructured.
 Easy scaling
 
-Blob Storage (Cold)
-Otimizado para dados que são acessado com pouca frequência (30 dias)
-**OS custos de armazenamento são mais baixos e custos de acesso mais altos em comparação com o hot tier**.
-NOTE: deletion period of 30 days.
+**Blob Storage (Cold)**:
+- Otimizado para dados que são acessado com pouca frequência (30 dias)
+- **OS custos de armazenamento são mais baixos e custos de acesso mais altos em comparação com o hot tier**.
+- NOTE: deletion period of 30 days.
 
-Archive Storage (S3 Glacier)
-Serve para armazenar dados que rarely são acessados (180 dias). É muito útil para backup e recovery.
-NOTE: deletion period of 180 days.
+**Archive Storage (S3 Glacier)**:
+- Serve para armazenar dados que rarely são acessados (180 dias). É muito útil para backup e recovery.
+- NOTE: deletion period of 180 days.
 
 
-File Storage
-Compartilha arquivos via protocolo SMB.
+**File Storage**: Compartilha arquivos via protocolo SMB.
 
-Disk Storage
-Serve para storage de disco de VM. Em uma VM é permitido somente 1 disco por vez, então é possível utilizar o Disk Storage para virtualizar outro disco.
+**Disk Storage**: Serve para storage de disco de VM. Em uma VM é permitido somente 1 disco por vez, então é possível utilizar o Disk Storage para virtualizar outro disco.
 
-Azure Marketplace
-É um lugar que apresenta soluções de partners da Azure. É possível dicover ou buy solutions para serem provisionadas na Azure. Ex, VMs personalizadas, databases, developer tools.
+**Azure Marketplace**: É um lugar que apresenta soluções de partners da Azure. É possível dicover ou buy solutions para serem provisionadas na Azure. Ex, VMs personalizadas, databases, developer tools.
 
-Why to use Azure Data Services?
+### Why to use Azure Data Services?
 - Automated backup and recovery
 - Replication accors the globe
 - Support for data analitcs
@@ -294,7 +307,61 @@ Why to use Azure Data Services?
 - Storage tiers
 
 
-NOTE: deletion period of 30 days.
-
 Tools
 <img src="images/azure_tools.png" align="center" height=auto width=100%/>
+
+**Azure Dashboard**: can be exported `json`
+
+---
+
+# Understand security, privacy, compliance, and trust (30%)
+- Network Security Groups (NSG)
+- Application Security Groups (ASG)
+- User Defined Rules (UDR)
+- Azure Firewall
+- Azure DDoS Protection
+- Choose an appropriate Azure security solution 
+- Understand the difference between authentication and authorization
+- Azure Active Directory
+- Azure Multi-Factor Authentication
+- Azure Security Center
+- Key Vault
+- Azure Information Protection (AIP)
+- Azure Advanced Threat Protection (ATP)
+- Azure Monitor
+- Azure Service Health
+- Understand the use cases and benefits of Azure Monitor and Azure Service Health
+
+**Network Security Groups (AWS = VPC)**: 
+- A security group acts as a virtual firewall 
+- This services filter network traffic
+- **contains a list of security roles** about control inbound and outbound network traffic. Network Security Groups can be associated to subnets, VM and NICs.
+
+
+<img src="images/security_group.jpg" align="center" height=auto width=100%/>
+
+**Application Security Groups**
+- Application security groups enable you to configure network security as a natural extension of an application'
+
+- Not need explict IP address
+
+<img src="images/application-security-groups.png" align="center" height=auto width=100%/>
+
+**Azure Firewall**
+- Network Security Group and Application Security Group not match pattern our identify traffic
+
+<img src="images/firewall-threat.png" align="center" height=auto width=100%/>
+
+- It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability.
+- Integrated with Azure Monitor for logging and analytics.
+
+**Azure DDos Protection**
+- Distributed denial of service
+- A DDoS attack attempts to exhaust an application’s resources, making the application unavailable to legitimate users. 
+- Clear network edge before impact application.
+- Azure DDoS protection, combined with application design best practices, provide defense against DDoS attacks.
+- Application layer 
+
+**Authentication**
+
+**Authorization**
