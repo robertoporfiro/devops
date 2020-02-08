@@ -1,5 +1,25 @@
 # Terraform 
 
+## Samples
+### Azure
+- [Case 1](https://github.com/brunocampos01/business-intelligence-at-azure)
+  - Azure Analysis Services
+  - Azure Automation Account
+  - Azure Storage Account
+  - Azure Log Analytics
+  - Runbooks Scripts Generator
+
+- [Case 2](azure/)
+  - Azure Automation Account
+  - Container
+  - Security
+  - DataBase
+
+### AWS
+
+ 
+---
+
 ## Install
 Check which latest version in https://www.terraform.io/downloads.html
 ```

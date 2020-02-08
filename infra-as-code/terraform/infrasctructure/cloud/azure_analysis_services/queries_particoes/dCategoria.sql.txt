@@ -1,7 +1,0 @@
-SELECT
-    idcategoria,
-    cdcategoria,
-    nmcategoria,
-    cdcategoriapai,
-    dtcarga
-FROM "dCategoria"

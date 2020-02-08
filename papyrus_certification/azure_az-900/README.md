@@ -362,6 +362,52 @@ Tools
 - Azure DDoS protection, combined with application design best practices, provide defense against DDoS attacks.
 - Application layer 
 
+##  Azure Identity services
 **Authentication**
+Authentication is the process of **estabilishing the identity** of a person or service loking to access a resource.
 
 **Authorization**
+Authorization is the process of estabilishing what **level of access** an authenticated person or service has.
+
+**Azure Active Directory**
+Identity and access management service. Also do:
+- business to business (B2B) identity services
+- business to costumer (B2C) identity services
+
+## security tools and features of Azure
+**Azure Security Center**
+
+<img src="images/compute.png" align="center" height=auto width=100%/>
+<img src="images/sc-net-map.png" align="center" height=auto width=100%/>
+
+- Is a monitoring service that provides threat protection across all of your services in Azure and on-premises. 
+- Use machine learning to deteck and block malwares
+- Azure Security Center is a unified infrastructure security management system 
+
+<img src="images/overview_security_center.png" align="center" height=auto width=100%/>
+
+- Can do:
+  - provide recommendations based on configurations, resources and network
+  - monitor security settings 
+
+- Usage scenrios
+ - For incident response
+ - Recommendations fo enhance security (melhorar a segurança)
+
+**Advanced Threat Protection**
+Cloud-based that identifies, detects and helps investigate to 
+ - advanced threats (ameaças)
+ - compromised identities
+ - malicious insider actions (ações maliciosas)
+
+Components
+- ATP portal
+- ATP sensor
+- ATP cloud service
+
+Advanced
+- Monitor profile user how activities and behavior
+- Identify suspicious activities
+- Protect user identities and reduce the attack surface
+
+**Azure Information Protection**

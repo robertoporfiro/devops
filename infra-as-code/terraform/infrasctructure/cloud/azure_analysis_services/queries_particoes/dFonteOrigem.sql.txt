@@ -1,9 +1,0 @@
-SELECT
-    idfonteorigem,
-    cdfonteorigem,
-    defonteorigem,
-    flforauso,
-    dtusuinclusao,
-    cdusuinclusao,
-    dtcarga
-FROM "dFonteOrigem"

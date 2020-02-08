@@ -1,1 +1,0 @@
-del.bat: forfiles -p "E:\sajinsights\ETL\Logs" -d -60 -m *.log -c "cmd /c del /f /q @path"

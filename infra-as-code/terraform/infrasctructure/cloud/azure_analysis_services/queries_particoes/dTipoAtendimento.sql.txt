@@ -1,9 +1,0 @@
-SELECT
-    idtipoatendimento,
-    cdtipoatendimento,
-    detipoatendimento,
-    flforauso,
-    dtusuinclusao,
-    cdusuinclusao,
-    dtcarga
-FROM "dTipoAtendimento"

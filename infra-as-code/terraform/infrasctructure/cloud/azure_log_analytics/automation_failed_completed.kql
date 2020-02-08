@@ -1,5 +1,0 @@
-AzureDiagnostics
-| where ResourceGroup == "SAJINSIGHTS-MPMS" 
-| where ResourceProvider == "MICROSOFT.AUTOMATION" 
-| where ResultType in ("Failed", "Completed") 
-| sort by TimeGenerated desc
