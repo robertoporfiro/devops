@@ -423,6 +423,36 @@ São ferramentas que a Azure tem para gerenciar subscriptions.
 - Blueprints (conjuntos repetitíveis de recursos)
 
 **Azure policy**
+Allow create, assing and manage polices over resources.
+
+
+**Role-based access control**
+Controla o nível de autorização por usuário.
+
+**Locks**
+- Lock resources to prevent unexpected changes
+- É um serviço para que quando um usuário tenha acesso a um recurso só possa executar algumas funções.
+- Ajuda a previnir exclusão acidental (canNotDelete) ou limitar a somente leitura (readOnly) algum usuário.
+
+<img src="images/set-lock.png" align="center" height=auto width=100%/>
+
+<img src="images/delete-lock.png" align="center" height=auto width=100%/>
+
+
+**Azure Blueprints**
+- É um RM que guarda estado.
+- define a repeatable set of Azure resources
+- O serviço foi projetado para ajudar na configuração do ambiente . - Essa configuração geralmente consiste em um conjunto de grupos de recursos, políticas, atribuições de função e implantações de modelo do Resource Manager.
+
+- É uma forma declarativa de orquestrar a implatação de recursos que segue a ordem:
+1. Role assignment
+2. Policy assignment 
+3. ARM template 
+
+-  different from Resource Manager templates: RM é um documento que não existe nativamente no Azure não há conexão ou relacionamento ativo com a modelagem feita, ou seja, não guarda estado.
+Com o Blueprints, o relacionamento entre a definição do blueprint (o que deve ser implantado) e a atribuição do blueprint (o que foi implantado) é preservado.
+
+
 ---
 
 ## Understand Azure pricing and support (20-25%)
