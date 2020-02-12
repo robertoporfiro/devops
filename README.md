@@ -20,11 +20,11 @@
 
 - **Infrastructure As Code and Configuration Management** :computer: :computer: :computer:
   - [Scripts]() # learning
-      - [Bash]() # learning
-      - [PowerShell]() # learning
+      - [Bash](infra-as-code/bash)
+      - [PowerShell](infra-as-code/powershell)
   - [Chef](infra-as-code/chef/)
   - [Ansible](infra-as-code/ansible) # learning
-  - [Terraform](infra-as-code/terraform) # learning
+  - [Terraform](infra-as-code/terraform)
 
 
 - **Control Version** :black_circle::heavy_minus_sign::black_circle::heavy_minus_sign::red_circle:
