@@ -400,14 +400,29 @@ Cloud-based that identifies, detects and helps investigate to
  - compromised identities
  - malicious insider actions (ações maliciosas)
 
-Components
-- ATP portal
-- ATP sensor
-- ATP cloud service
-
 Advanced
 - Monitor profile user how activities and behavior
 - Identify suspicious activities
 - Protect user identities and reduce the attack surface
 
 **Azure Information Protection**
+Help organizations classify and protect documents and email with labels.
+
+<img src="images/info-protect-recommend-calloutsv2.png" align="center" height=auto width=100%/>
+
+### Understand monitoring and reporting options in Azure
+
+**Azure Monitor and Azure Service Health**
+Azure Monitor monitora, analisa dados e execução ações encima de alertas criados. Já o Azure Service Health mostra a saúde da Azure onde é possível ver as manutenções preventivas e se há algum incidente.
+
+### Azure governance methodologies
+São ferramentas que a Azure tem para gerenciar subscriptions.
+- Azure policy
+- Role-based access control
+- Lock
+- Blueprints (conjuntos repetitíveis de recursos)
+
+**Azure policy**
+---
+
+## Understand Azure pricing and support (20-25%)
