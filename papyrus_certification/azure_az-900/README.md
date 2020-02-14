@@ -249,11 +249,16 @@ Montei um guia de estudos com foco na certificação AZ-900 Fundaments da Azure.
 ## AZ-900: Understand Cloud Concepts (20%)
 
 ### Cloud Concept
-- Scalability — The application running in the cloud can expand its size when there are more users in the system.
+- Scalability
+ - scaling up: vertical
+ - caling out: horizontal
+ - _can expand its size when there are more users in the system_
 
-- Elasticity — The application running in the cloud can shrink its size when there are fewer users in the system. The users can also set automatic shutdown during the non-business hours to save money.
+- Elasticity
+ - _can shrink its size when there are fewer users in the system_
+ - _can also set automatic shutdown during the non-business hours to save money_
 
-### Capital expenditure (CapEx) versus operational expenditure (OpEx)
+### [Capital expenditure (CapEx) versus operational expenditure (OpEx)](https://docs.microsoft.com/en-us/learn/modules/principles-cloud-computing/3c-capex-vs-opex)
 O Capital expenditure garante custos fixos para compras a longo prazo. Isto torna a melhor escolha quando o budget é limitado.
 - CapEx computing costs
  - Server
@@ -263,18 +268,15 @@ O Capital expenditure garante custos fixos para compras a longo prazo. Isto torn
  - disaster recovery
  
 O operational expenditure são custos de curto prazo.
-- OpEx cloud computing costs
-  - Leasing software
-  - usage/demand instead of fixed hardware
-  - Billing at the user or organization level
+- _OpEx cloud computing costs_
+  - _Leasing software_
+  - _usage/demand instead of fixed hardware_
+  - _Billing at the user or organization level_
 
-Quando não se sabe a demand e growth a melhor escolha é o OpEx
+Quando não se sabe a demanda e _growth_ a melhor escolha é o OpEx
 
 <img src="images/3c-capexvsopex.png" align="center" height=auto width=100%/>
 
-
-#### Reference
-- https://docs.microsoft.com/en-us/learn/modules/principles-cloud-computing/3c-capex-vs-opex
 
 ### IaaS, PaaS and SaaS
 
