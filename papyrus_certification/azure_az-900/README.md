@@ -3,7 +3,7 @@
 
 <img src="images/azure-fundamentals-600x600.png" align="right" height=auto width=20%/>
 
-Montei um guia de estudos com foco na certificação AZ-900 Fundaments da Azure. Os títulos estão em inglês para manter a mesma referência do que é cobrado mas dentro dos tópicos há conteúdo em português e inglês para facilitar a compreensão.
+Montei um guia de estudos com foco na certificação AZ-900 Fundaments da Azure. Os títulos (tópicos) e subtítulos estão em inglês para manter a mesma referência do que é cobrado mas dentro dos tópicos há conteúdo em português e inglês para facilitar a compreensão.
 
 
 ## Summary
