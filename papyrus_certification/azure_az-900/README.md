@@ -326,14 +326,14 @@ Disavantages
 
 ---
 
-# Understand core Azure services (35%)
-## Architectural
-  - Regions
-  - Avaialibility Zones
-  - Resource Groups
-  - Resource Manager
+## Understand core Azure services (35%)
+### Architectural
+  - [Regions](#regions)
+  - [Avaialibility Zones](#avaialibility-zones)
+  - [Resource Groups](#resource-groups)
+  - [Resource Manager](#resource-manager)
 
-### Regions
+#### Regions
 - É uma área geográfica.
 - Pode posuir vários datacenters
 - A própria Azure faz o balanceamento de resources.
@@ -344,119 +344,130 @@ Disavantages
 - Não é gerado poluição de carbono e a energia vem de fontes renováveis.
 - É o menor grão dos recursos físicos que o usuário pode escolher.
 
-### Avaialibility Zones
+#### Avaialibility Zones
 - São datacenters separados em uma mesma region.
--  há um mínimo 3 zones dentro de uma única region
+- Há um mínimo 3 zones dentro de uma única region
 
 <img src="images/4-availability-zones.png" align="center" height=auto width=100%/>
 
-### Resource Group
-É um agrupador de resources onde é possível aplicar políticas de acesso.
+#### Resource Group
+<img src="images/resourcegroup_color.png" align="right" height=auto width=100%/>
+
+É um agrupador lógico de _resources_ onde é possível aplicar políticas de acesso.
+
+#### Resource Manager (ARM)
+- É um serviço que faz o _deploy_ e _management_ de resource na Azure.
+- Parecido com chef, ansible (não tem estado)
 
 
-### Resource Manager (ARM)
-É um serviço que faz o deploy e management de resource na Azure.
-- Parecido com terraform, chef, ansible
+### Describe some of the core products available in Azure
+ - Environments
+   - [VM](#vm)
+   - [VM scale](#vm-scale)
+   - [Service Functions](#service-functions)
+   - [Container Instance](#container-instance)
+   - [Kubernetes Service](#kubernets-services)
+ - Network
+   - [Virtual Network](#)
+   - [Load Balancer](#)
+   - [VPN Gateway](#)
+   - [Application Gateway](#)
+   - [Content Delivery Network](#)
+ - Storage
+   - [Blob Storage](#)
+   - [Disk Storage](#)
+   - [File Storage](#)
+   - [Archive Storage](#)
+ - [Azure Marketplace](#)
 
-### Service-Level Agreements
-Há 3 keys no SLA da Azure:
-1. Performance product and services.
-2. Uptime and Connectivity Guarantees (99 until 99.999)
-3. Service credits. Azure apply discount to as compensation for an under-performing product and services.
 
-### Application availability
-- Referese ao tempo global (overral time) que o sistema esta trabalhando.
+#### Service Functions
+...
 
-
-## Products
-  - VM
-  - VM scale
-  - Service Functions
-  - Container Instance
-  - Kubernetes Service
-  - Virtual Network
-  - Load Balancer
-  - VPN 
-  - Gateway
-  - Content Delivery Network
-  - Blob Storage
-  - Disk Storage
-  - File Storage
-  - Archive Storage
-
-### VM
+#### VM
 VM são as máquinas virtuais linux e windows. Se for produtos como windows server ou sql server, a Azure se torna 5x mais barata que a AWS.
 
-### VM Scale Set
-VM scale faz um scaling up ou out automático. Quando a carga de trabalho cai, o próprio serviço se encarrega de excluir as VMs não utilizadas (elatic).
+#### VM Scale Set
+VM scale faz um scaling up ou scaling out automático. Quando a carga de trabalho cai, o próprio serviço se encarrega de excluir as VMs não utilizadas (_elatic_).
 
 <img src="images/01-deploy.png" align="left" height=auto width=45%/>
 <img src="images/02-scale.png" align="right" height=auto width=40%/>
 
+#### Load Balancer
 
-### Virtual Network (Vnet)
-É um isolamento lógico da network na Azure decicado a uma subscription.
+<img src="images/load_balancer.png" align="right" height=auto width=40%/>
 
-Advantages
-- segurança
-- isolamento
-- políticas de tráfego
+#### Virtual Network (Vnet)
+- É um isolamento lógico de _network_ na Azure no escopo de uma [region](#region).
 
-Question: You plan to deploy 20 virtual machines to an Azure environment. To ensure that a virtual machine named VM1 cannot connect to the other virtual machines, VM1 must ***be deployed to a separate virtual network***
+<img src="images/vnet.png" align="right" height=auto width=40%/>
 
-to securely communicate with each other, the internet, and on-premises networks.So
+- Permite definir os private IPs. Tambem é possível criar VNets com o mesmo espaço de endereço em duas regiões diferentes (por exemplo, Leste dos EUA e Oeste dos EUA)
+- Você pode vincular uma rede virtual a uma rede local por meio de um gateway VPN
+- Advantages
+  - segurança
+  - isolamento
+  - políticas de tráfego
+- _Secure your VNet using Network Security Groups (NSGs)_
+**Question: You plan to deploy 20 virtual machines to an Azure environment. To ensure that a virtual machine named VM1 cannot connect to the other virtual machines, VM1 must ***be deployed to a separate virtual network***
 
-....
+**Question: You have an Azure environment that contains 10 virtual networks and 100 virtual machines.You need to limit the amount of inbound traffic to all the Azure virtual networks.**
 
-**Virtual network gateway**
+<img src="images/D0mh7tjXgAElwyP.png" align="center" height=auto width=100%/>
 
-**Firewall**
-
-Question: You have an Azure environment that contains 10 virtual networks and 100 virtual machines.You need to limit the amount of inbound traffic to all the Azure virtual networks.
-
-**Azure Traffic Manager**
-
-### Application Gateway
-**É um load balancer que gerencia o tráfego baseado em URL**.
+#### Application Gateway
+**É um load balancer que gerencia o tráfego baseado em rota (URL)**.
 NOTE: o Azure Load Balancer tambem gerencia o trágefo mas se basea em IP.
 
-###  Content Delivery Network (CDN) 
-Uma delivery network de conteúdo é uma rede de servidores que armazena conteúdo de alguma coisa da web em cache para os usuários em sua borda, ou seja, o usuário não precisa ir até o servidor principal para obter o conteúdo, basta acessar a CDN mais próxima (de menor latência).
+<img src="images/app_gateway.png" align="center" height=auto width=100%/>
+
+#### VPN Gateway
+- É um tunelamento de um _virtual network_ que encripta o tráfego entre a cloud e o ambiente local.
+- A VPN gateway is a specific type of virtual network gateway that is used to send encrypted traffic between an Azure virtual network and an on-premises location 
+- Each virtual network can have only one VPN gateway
+
+<img src="images/vpn_gateway.png" align="center" height=auto width=100%/>
+
+#### Content Delivery Network (CDN) 
+Uma _delivery network_ de conteúdo é uma rede de servidores que armazena conteúdo de alguma coisa da web em cache para os usuários em sua borda, ou seja, o usuário não precisa ir até o servidor principal para obter o conteúdo, basta acessar a CDN mais próxima (de menor latência).
 
 <img src="images/cdn.png" align="center" height=auto width=100%/>
 
-**SQL Database**: O servico de SQL database exige que seja configurado um servidor.
+#### SQL Database
+O servico de SQL database exige que seja configurado um servidor.
 
-**Cosmos DB**: É schema-less data, idel para dados semi-estruturados (json, por exemplo).
+#### Cosmos DB
+É schema-less data, ideal para dados semi-estruturados (json, por exemplo).
 
-**Blob Storage (S3)**: É para grande quantidade de dados unstructured.
-Easy scaling
+#### Blob Storage 'S3'
+É para grande quantidade de dados unstructured.
 
-**Blob Storage (Cold)**:
+#### Blob Storage Cold 'S3 Glacier'
 - Otimizado para dados que são acessado com pouca frequência (30 dias)
 - **OS custos de armazenamento são mais baixos e custos de acesso mais altos em comparação com o hot tier**.
 - NOTE: deletion period of 30 days.
 
-**Archive Storage (S3 Glacier)**:
+#### Archive Storage 'S3 Glacier'
 - Serve para armazenar dados que rarely são acessados (180 dias). É muito útil para backup e recovery.
 - NOTE: deletion period of 180 days.
 
+#### File Storage
+Compartilha arquivos via **protocolo SMB**
 
-**File Storage**: Compartilha arquivos via protocolo SMB.
+#### Disk Storage
+Serve para storage de disco de VM. Em uma VM é permitido somente 1 disco por vez, então é possível utilizar o Disk Storage para virtualizar outro disco.
 
-**Disk Storage**: Serve para storage de disco de VM. Em uma VM é permitido somente 1 disco por vez, então é possível utilizar o Disk Storage para virtualizar outro disco.
+#### Azure Marketplace
+É um lugar que apresenta soluções de _partners_ da Azure. É possível decobrir e comprar soluções para serem provisionadas na Azure. Ex, VMs personalizadas, databases, developer tools.
 
-**Azure Marketplace**: É um lugar que apresenta soluções de partners da Azure. É possível dicover ou buy solutions para serem provisionadas na Azure. Ex, VMs personalizadas, databases, developer tools.
-
-### Why to use Azure Data Services?
+#### Why to use Azure Data Services?
 - Automated backup and recovery
 - Replication accors the globe
-- Support for data analitcs
+- Support for data analytcs
 - Encryption
 - Storage tiers
 
-
-Tools
+## Tools
 <img src="images/azure_tools.png" align="center" height=auto width=100%/>
 
 **Azure Dashboard**: can be exported `json`
@@ -650,6 +661,16 @@ Features:
 - sla geral da Azure: 99,9%
 
 <img src="images/calulate_sla.png" align="center" height=auto width=100%/>
+
+
+## Service-Level Agreements
+Há 3 keys no SLA da Azure:
+1. Performance product and services.
+2. Uptime and Connectivity Guarantees (99 until 99.999)
+3. Service credits. Azure apply discount to as compensation for an under-performing product and services.
+
+### Application availability
+- Referese ao tempo global (overral time) que o sistema esta trabalhando.
 
 ---
 
