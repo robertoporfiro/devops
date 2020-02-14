@@ -364,7 +364,8 @@ Disavantages
  - Environments
    - [VM](#vm)
    - [VM scale](#vm-scale)
-   - [Service Functions](#service-functions)
+   - [Azure Functions](#azure-functions)
+   - [Logic Apps](#logic-apps)
    - [Container Instance](#container-instance)
    - [Kubernetes Service](#kubernets-services)
  - Network
@@ -381,7 +382,10 @@ Disavantages
  - [Azure Marketplace](#)
 
 
-#### Service Functions
+#### Azure Functions
+...
+
+### Logic Apps
 ...
 
 #### VM
@@ -468,41 +472,59 @@ Serve para storage de disco de VM. Em uma VM é permitido somente 1 disco por ve
 - Storage tiers
 
 ## Tools
-<img src="images/azure_tools.png" align="center" height=auto width=100%/>
+<img src="images/azure_tools.png" align="center" height=auto width=90%/>
+
+<br/>
 
 **Azure Dashboard**: can be exported `json`
 
 ---
 
 # Understand security, privacy, compliance, and trust (30%)
+
+## Azure Securing Network
 - Network Security Groups (NSG)
 - Application Security Groups (ASG)
 - User Defined Rules (UDR)
 - Azure Firewall
 - Azure DDoS Protection
 - Choose an appropriate Azure security solution 
+
+## Identity Services
 - Understand the difference between authentication and authorization
 - Azure Active Directory
 - Azure Multi-Factor Authentication
+
+## Azure Security Tools
 - Azure Security Center
 - Key Vault
 - Azure Information Protection (AIP)
 - Azure Advanced Threat Protection (ATP)
+
+## Azure Governance
+ describe policies and initiatives with Azure Policy
+• describe Role-Based Access Control (RBAC)
+• describe Locks
+• describe Azure Advisor security assistance
+• describe Azure Blueprints
+
+## Azure Monitoring and Reporting Options
 - Azure Monitor
 - Azure Service Health
 - Understand the use cases and benefits of Azure Monitor and Azure Service Health
+
+
+
 
 **Network Security Groups (AWS = VPC)**: 
 - A security group acts as a virtual firewall 
 - This services filter network traffic
 - **contains a list of security roles** about control inbound and outbound network traffic. Network Security Groups can be associated to subnets, VM and NICs.
 
-
 <img src="images/security_group.jpg" align="center" height=auto width=100%/>
 
 **Application Security Groups**
 - Application security groups enable you to configure network security as a natural extension of an application'
-
 - Not need explict IP address
 
 <img src="images/application-security-groups.png" align="center" height=auto width=100%/>
@@ -650,8 +672,8 @@ Features:
 <img src="images/azure_suport.png" align="center" height=auto width=100%/>
 
 **Knowledge Center**
-- É um stackoverflow para azure
-- é um banco de dados que contém perguntas e repostas da comunidade.
+- 'stackoverflow' da azure
+- É um banco de dados que contém perguntas e repostas da comunidade.
 
 **How to open a support ticket**
 <img src="images/suport_help.png" align="center" height=auto width=100%/>
