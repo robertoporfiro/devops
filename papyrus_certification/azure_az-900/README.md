@@ -43,7 +43,7 @@
 # Understand core Azure services (35%)
 - Architectural
   - Regions
-  - Avaalibily Zones
+  - Avalibily Zones
   - Resource Groups
   - Resource Manager
 - Products
@@ -439,7 +439,7 @@ Controla o nível de autorização por usuário.
 <img src="images/delete-lock.png" align="center" height=auto width=100%/>
 
 
-**Azure Blueprints**
+**[Azure Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview)**
 - É um RM que guarda estado.
 - define a repeatable set of Azure resources
 - O serviço foi projetado para ajudar na configuração do ambiente . - Essa configuração geralmente consiste em um conjunto de grupos de recursos, políticas, atribuições de função e implantações de modelo do Resource Manager.
@@ -456,3 +456,48 @@ Com o Blueprints, o relacionamento entre a definição do blueprint (o que deve 
 ---
 
 ## Understand Azure pricing and support (20-25%)
+
+**Azure Subscritpions**
+- Is a logical container used to provision resource.
+- Azure subscription is associated with Azure AD.
+
+**Subscription Types**
+- Free
+  - $ 200 for 30 day
+  - started with 12 months of free services
+- Student
+  - $ 100 for 12 months
+- Pay-as-you-go
+- Enterprise Agreement: ideal para empresas que contratam serviços em nuvem e licenças de software, como office, sob um único contrato, o que garante descontos.
+
+**[Management Groups](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview)**
+These groups are containers that help you manage access, policy, and compliance for multiple subscriptions.
+
+- Ex: You can create a hierarchy that applies a policy, for example, which limits VM locations to the US West Region
+
+<img src="images/tree.png" align="center" height=auto width=100%/>
+
+**[Object Hierarchy](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources?tabs=AzureManagmentGroupsAndHierarchy)**
+
+<img src="images/scope-levels.png" align="center" height=auto width=100%/>
+
+**[Azure Support Options](https://azure.microsoft.com/en-us/support/plans/)**
+
+Features:
+- Para ter suporte com um desenvolvedor da Azure é necessário pagar o suporte **premier**
+- o suporte **developer** não esta disponível para empresas 
+
+<img src="images/azure_suport.png" align="center" height=auto width=100%/>
+
+**Knowledge Center**
+- É um stackoverflow para azure
+- é um banco de dados que contém perguntas e repostas da comunidade.
+
+**How to open a support ticket**
+<img src="images/suport_help.png" align="center" height=auto width=100%/>
+
+## SLA
+- O sla expecifica o que acontece se um serviço falhar. Por exemplo, em caso de falhas o cliente pode ganhar descontos (service credits)
+- sla geral da Azure: 99,9%
+
+<img src="images/calulate_sla.png" align="center" height=auto width=100%/>

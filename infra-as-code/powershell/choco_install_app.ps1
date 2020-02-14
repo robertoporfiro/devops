@@ -10,7 +10,7 @@ choco install vscode                        --force --yes --ignore-checksums --n
 
 choco install sql-server-management-studio  --force --yes --ignore-checksums --no-progress --version = 15.0.18206.0
 
-choco install sql-server-2019               --force --yes --ignore-checksums --params='/QUIET /IACCEPTSQLSERVERLICENSETERMS /IACCEPTROPENLICENSETERMS /ACTION="install" /LANGUAGE=pt-BR' | timestamp
+choco install sql-server-2019               --force --yes --ignore-checksums --params='/QUIET /IACCEPTSQLSERVERLICENSETERMS /IACCEPTROPENLICENSETERMS /ACTION="install" /LANGUAGE=pt-BR'
 
 choco install powerbi                       --force --yes --ignore-checksums --no-progress --version = 2.75.5649.582
 
