@@ -1,34 +1,34 @@
-## Simulado
-- https://www.udemy.com/course/simulado-certificacao-az-900/
-- https://www.udemy.com/course/simulado-para-a-prova-az-900/
+# Study Guide for Azure Certification az-900
+![License](https://img.shields.io/badge/Code%20License-MIT-blue.svg)
 
-### Cursos
-- https://www.udemy.com/course/introducao-ao-microsoft-azure-certificacao-az-900/
-- https://www.udemy.com/course/microsoft-azure-beginners-guide/
-- https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/
-- https://github.com/AzureMentor/Azure-AZ-900-Study-Guide
+<img src="images/azure-fundamentals-600x600.png" align="center" height=auto width=90%/>
 
-### Link da prova
-- https://wsr.pearsonvue.com/testtaker/registration/Dashboard/MICROSOFT
+Montei um guia de estudos para conseguir a certificação AZ-900 Fundamentos da Azure.
 
-### Como a prova funciona
-- https://www.youtube.com/watch?v=Vb0OGIH-2MM&list=PLahhVEj9XNTceGnF19qSjYxYzS4S_Wlmf&index=2&t=0s
-- https://www.youtube.com/watch?v=k9qDZ4gnjtA
-
-### English Trainning
-- https://www.udemy.com/course/curso-de-ingles-para-ti/
-
----
-
-## Cronograma
-
-- Sunday: overview
-- Monday: Understand core Azure services (35%)
-- Tuesday: Understand core Azure services (35%)
-- Wednesday: Understand security, privacy, compliance, and trust (30%)
-- Thursday: Understand security, privacy, compliance, and trust (30%)
-- Friday: Understand Azure Pricing and Support (25%)
-- Saturday: Review
+## Summary
+- Simulates
+    - https://www.udemy.com/course/simulado-certificacao-az-900/
+    - https://www.udemy.com/course/simulado-para-a-prova-az-900/
+- Tranning
+    - https://www.udemy.com/course/introducao-ao-microsoft-azure-certificacao-az-900/
+    - https://www.udemy.com/course/microsoft-azure-beginners-guide/
+    - https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/
+    - https://github.com/AzureMentor/Azure-AZ-900-Study-Guide
+- Link for Test
+    - https://wsr.pearsonvue.com/testtaker/registration/Dashboard/MICROSOFT
+- How the test works ?
+    - https://www.youtube.com/watch?v=Vb0OGIH-2MM&list=PLahhVEj9XNTceGnF19qSjYxYzS4S_Wlmf&index=2&t=0s
+    - https://www.youtube.com/watch?v=k9qDZ4gnjtA
+- English Trainning
+    - https://www.udemy.com/course/curso-de-ingles-para-ti/
+- Schedule
+    - Sunday: overview
+    - Monday: Understand core Azure services (35%)
+    - Tuesday: Understand core Azure services (35%)
+    - Wednesday: Understand security, privacy, compliance, and trust (30%)
+    - Thursday: Understand security, privacy, compliance, and trust (30%)
+    - Friday: Understand Azure Pricing and Support (25%)
+    - Saturday: Review
 
 ---
 
@@ -501,3 +501,11 @@ Features:
 - sla geral da Azure: 99,9%
 
 <img src="images/calulate_sla.png" align="center" height=auto width=100%/>
+
+---
+
+## Author
+- Bruno Aurélio Rôzza de Moura Campos (brunocampos01@gmail.com)
+
+## Copyright
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Bruno A. R. M. Campos</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
