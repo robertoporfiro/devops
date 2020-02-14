@@ -38,7 +38,7 @@ Montei um guia de estudos com foco na certificação AZ-900 Fundaments da Azure.
 * Describe [Hybrid cloud](https://azure.microsoft.com/en-ca/overview/what-is-hybrid-cloud-computing/)
 * Compare and contrast the 3 different cloud models
 
-# AZ-900: Understand Core Azure Services (30-35%)
+**AZ-900: Understand Core Azure Services (30-35%)**
 
 ## Understand the core Azure architectural components
 
@@ -107,7 +107,7 @@ Montei um guia de estudos com foco na certificação AZ-900 Fundaments da Azure.
 * Understand [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-overview)
 
 
-# AZ-900: Understand Security, Privacy, Compliance, and Trust (25-30%)
+**AZ-900: Understand Security, Privacy, Compliance, and Trust (25-30%)**
 
 ## Understand securing network connectivity in Azure
 
@@ -162,7 +162,7 @@ Montei um guia de estudos com foco na certificação AZ-900 Fundaments da Azure.
 * Understand [Azure Government cloud services](https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-welcome)
 * Describe Azure China cloud services
 
-# AZ-900: Understand Azure Pricing and Support (20-25%)
+**AZ-900: Understand Azure Pricing and Support (20-25%)**
 
 ## Understand Azure Subscriptions
 
@@ -218,9 +218,7 @@ Montei um guia de estudos com foco na certificação AZ-900 Fundaments da Azure.
     * GA means a service is in production and can be used by anyone with an Azure subscription
 * Understand how to [monitor feature updates and product changes](https://azure.microsoft.com/en-ca/updates/)
 
-
-
-- Uselful Links
+**Uselful Links**
     - Simulates
         - https://www.udemy.com/course/simulado-certificacao-az-900/
         - https://www.udemy.com/course/simulado-para-a-prova-az-900/
