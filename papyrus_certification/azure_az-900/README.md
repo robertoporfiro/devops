@@ -1,26 +1,241 @@
 # Study Guide for Azure Certification az-900
 ![License](https://img.shields.io/badge/Code%20License-MIT-blue.svg)
 
-<img src="images/azure-fundamentals-600x600.png" align="center" height=auto width=90%/>
+<img src="images/azure-fundamentals-600x600.png" align="right" height=auto width=20%/>
 
-Montei um guia de estudos para conseguir a certificação AZ-900 Fundamentos da Azure.
+Montei um guia de estudos com foco na certificação AZ-900 Fundaments da Azure. Os títulos estão em inglês para manter a mesma referência do que é cobrado mas dentro dos tópicos há conteúdo em português e inglês para facilitar a compreensão.
+
 
 ## Summary
-- Simulates
-    - https://www.udemy.com/course/simulado-certificacao-az-900/
-    - https://www.udemy.com/course/simulado-para-a-prova-az-900/
-- Tranning
-    - https://www.udemy.com/course/introducao-ao-microsoft-azure-certificacao-az-900/
-    - https://www.udemy.com/course/microsoft-azure-beginners-guide/
-    - https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/
-    - https://github.com/AzureMentor/Azure-AZ-900-Study-Guide
-- Link for Test
-    - https://wsr.pearsonvue.com/testtaker/registration/Dashboard/MICROSOFT
-- How the test works ?
-    - https://www.youtube.com/watch?v=Vb0OGIH-2MM&list=PLahhVEj9XNTceGnF19qSjYxYzS4S_Wlmf&index=2&t=0s
-    - https://www.youtube.com/watch?v=k9qDZ4gnjtA
-- English Trainning
-    - https://www.udemy.com/course/curso-de-ingles-para-ti/
+
+**AZ-900: Understand Cloud Concepts (15-20%)**
+## Describe the benefits and considerations of using cloud services
+
+* Understand terms such as:
+	* [High Availability](https://docs.microsoft.com/en-us/azure/architecture/checklist/availability)
+	* Scalability
+	* [Elasticity](https://azure.microsoft.com/en-ca/overview/what-is-elastic-computing/)
+	* Agility
+	* Fault Tolerance
+	* [Disaster Recovery](https://docs.microsoft.com/en-ca/azure/site-recovery/site-recovery-overview)
+* Understand the Principles of Economies of Scale [(PDF)](http://download.microsoft.com/download/6/e/4/6e4cb3d1-5004-4024-8d90-6c66c83c17aa/the_economics_of_the_cloud_white_paper.pdf)
+* Understand the differences between:
+	* Capital Expenditure (CapEx)
+	* Operational Expenditure (OpEx)
+* Understand the consumption-based model
+
+## Describe the differences between Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS) and Software-as-a-Service (SaaS)
+
+* Describe [Platform-as-a-Service (PaaS)](https://azure.microsoft.com/en-ca/overview/what-is-paas/)
+* Describe [Software-as-a-Service (SaaS)](https://azure.microsoft.com/en-ca/overview/what-is-saas/)
+* Describe [Infrastructure-as-a-Service (IaaS)](https://azure.microsoft.com/en-ca/overview/what-is-iaas/)
+* [Compare and contrast the 3 different service types](https://azure.microsoft.com/en-ca/overview/types-of-cloud-computing/)
+
+## Describe the differences between Public, Private and Hybrid cloud models
+
+* Describe [Public cloud](https://azure.microsoft.com/en-ca/overview/what-is-a-public-cloud/)
+* Describe [Private cloud](https://azure.microsoft.com/en-ca/overview/what-is-a-private-cloud/)
+* Describe [Hybrid cloud](https://azure.microsoft.com/en-ca/overview/what-is-hybrid-cloud-computing/)
+* Compare and contrast the 3 different cloud models
+
+# AZ-900: Understand Core Azure Services (30-35%)
+
+## Understand the core Azure architectural components
+
+* Describe [Regions](https://azure.microsoft.com/en-ca/global-infrastructure/regions/)
+* Describe [Availability Zones](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview)
+* Describe [Resource Groups](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/getting-started/azure-resource-access#what-is-an-azure-resource-group)
+* Describe [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview)
+* Describe the benefits and usage of core Azure architectural components
+
+## Describe some of the core products available in Azure
+
+* Describe products available for Compute such as:
+	* [Windows Virtual Machines](https://docs.microsoft.com/en-ca/azure/virtual-machines/windows/overview) | [Linux Virtual Machines](https://docs.microsoft.com/en-ca/azure/virtual-machines/linux/overview)
+	* [Virtual Machine Scale Sets](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview)
+	* [App Service](https://docs.microsoft.com/en-us/azure/app-service/)
+	* [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+	* Azure Container Instsances (ACI)
+	* Azure Kubernetes Service (AKS)
+* Describe products available for Networking such as:
+	* [Virtual Network](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview)
+	* [Load Balancer](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-overview)
+	* [VPN Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+	* [Application Gateway](https://docs.microsoft.com/en-us/azure/application-gateway/overview)
+	* [Content Delivery Network](https://docs.microsoft.com/en-us/azure/cdn/cdn-overview)
+* Describe products available for Storage such as:
+	* [Blob Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview)
+	* [Disk Storage](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview)
+	* [File Storage](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-introduction)
+	* [Archive Storage](https://docs.microsoft.com/en-ca/azure/storage/blobs/storage-blob-storage-tiers)
+* Describe products available for Databases such as:
+	* [Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction)
+	* [Azure SQL Database](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-technical-overview)
+	* Azure Databsae for MySQL
+	* Azure Database for PostgreSQL
+	* [Azure Database Migration Service (DMS)](https://docs.microsoft.com/en-us/azure/dms/dms-overview)
+	* [Azure Synapse Analytics (formerly SQL DW)](https://docs.microsoft.com/en-ca/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is)
+* Describe the [Azure Marketplace and its usage scenarios](https://azuremarketplace.microsoft.com/en-us/about)
+
+## Describe some of the solutions available on Azure
+
+* Describe [Internet of Things (IoT) and products](https://docs.microsoft.com/en-us/azure/iot-fundamentals/iot-services-and-technologies) that are available for IoT on Azure such as:
+	* [IoT Fundamentals](https://docs.microsoft.com/bs-cyrl-ba/azure/iot-fundamentals/index)
+	* [IoT Hub](https://docs.microsoft.com/en-ca/azure/iot-hub/about-iot-hub)
+	* [IoT Central](https://docs.microsoft.com/en-ca/azure/iot-central/overview-iot-central)
+* Describe Big Data and Analytics and products that are available for Big Data and Analytics such as:
+	* [Azure Synapse Analytics (formerly SQL DW)](https://docs.microsoft.com/en-ca/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is)
+	* [HDInsight](https://docs.microsoft.com/en-ca/azure/hdinsight/)
+	* [Azure Databricks](https://docs.microsoft.com/en-us/azure/azure-databricks/what-is-azure-databricks)
+* Describe Artificial Intelligence (AI) and products that are available for AI such as:
+	* [Azure Machine Learning Service](https://azure.microsoft.com/en-ca/services/machine-learning-service/)
+	* [Azure Machine Learning Studio](https://azure.microsoft.com/en-ca/services/machine-learning-studio/) | [https://studio.azureml.net/](https://studio.azureml.net/)
+* Describe Serverless computing and Azure products that are available for serverless computing such as:
+	* [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+	* [Logic Apps](https://docs.microsoft.com/en-ca/azure/logic-apps/logic-apps-overview)
+	* Event grid
+* Describe the benefits and outcomes of using Azure solutions
+
+## Understand Azure management tools
+
+* Understand Azure tools such as:
+	* [Azure Portal](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-overview)
+	* [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/overview?view=azps-1.6.0)
+	* [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest)
+	* [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview)
+
+* Understand [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-overview)
+
+
+# AZ-900: Understand Security, Privacy, Compliance, and Trust (25-30%)
+
+## Understand securing network connectivity in Azure
+
+* Describe [Network Security Groups (NSG)](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview)
+* Describe [Application Security Groups (ASG)](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview#application-security-groups)
+* Describe User Defined Rules (UDR)
+* Describe [Azure Firewall](https://docs.microsoft.com/en-us/azure/firewall/overview)
+* Describe [Azure DDoS Protection](https://docs.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview)
+* Choose an appropriate Azure security solution
+
+## Describe core Azure Identity services
+
+* Understand the difference between [Authentication and Authorization](https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization)
+* Describe [Azure Active Directory](https://docs.microsoft.com/en-ca/azure/active-directory/fundamentals/active-directory-whatis)
+* Describe [Azure Multi-Factor Authentication](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks)
+
+## Describe security tools and features of Azure
+
+* Describe [Azure Security Center](https://docs.microsoft.com/en-us/azure/security/azure-security)
+* Understand [Azure Security Center](https://docs.microsoft.com/en-ca/azure/security-center/security-center-intro) usage scenarios
+* Describe [Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-whatis)
+* Describe [Azure Information Protection (AIP)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-information-protection)
+* Describe [Azure Advanced Threat Protection (ATP)](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp)
+
+## Describe Azure governance methodologies
+
+* Describe policies and initiatives with [Azure Policy](https://docs.microsoft.com/en-us/azure/governance/policy/overview)
+* Describe [Role-Based Access Control (RBAC)](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview)
+* Describe [Locks](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-lock-resources)
+* Describe [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-overview) security assistance
+* Describe [Azure Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview)
+
+## Understand monitoring and reporting options in Azure
+
+* Describe [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/overview)
+* Describe [Azure Service Health](https://docs.microsoft.com/en-ca/azure/service-health/)
+* Understand the use cases and benefits of:
+    * Azure Monitor
+    * Azure Service Health
+
+## Understand privacy, compliance and data protection standards in Azure
+
+* Understand industry compliance terms such as:
+    * [GDPR](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-overview) | [More info](https://docs.microsoft.com/en-us/office365/securitycompliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool)
+    * [ISO](https://www.microsoft.com/en-us/TrustCenter/Compliance/iso-iec-27018)
+    * [NIST](https://www.microsoft.com/en-us/trustcenter/compliance/NIST_CSF)
+* Understand the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-ca/privacystatement)
+* Describe the [Trust Center](https://www.microsoft.com/en-us/trustcenter/cloudservices/azure)
+* Describe the [Service Trust Portal](https://servicetrust.microsoft.com/) | [Getting Started](https://docs.microsoft.com/en-us/office365/securitycompliance/get-started-with-service-trust-portal)
+* Describe [Compliance Manager](/)
+* Determine if Azure is compliant for a business need
+* Understand [Azure Government cloud services](https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-welcome)
+* Describe Azure China cloud services
+
+# AZ-900: Understand Azure Pricing and Support (20-25%)
+
+## Understand Azure Subscriptions
+
+* Describe an [Azure Subscription](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/getting-started/azure-resource-access#what-is-an-azure-subscription)
+* Understand the uses and options with Azure Subscriptions such as:
+    * Access Control
+    * Offer Types
+* Understand subscription management using Management Groups
+
+## Understand planning and management of costs
+
+* Understand options for purchasing Azure products and services
+* Understand options around [Azure Free account](https://azure.microsoft.com/en-ca/free/free-account-faq/)
+* Understand the factors affecting costs such as:
+    * Resource Types
+    * Services
+    * Locations
+    * Ingress traffic
+    * Egress traffic
+* Understand Zones for billing purposes
+* Understand the [Pricing calculator](https://azure.microsoft.com/en-ca/pricing/calculator/)
+* Understand the [Total Cost of Ownership (TCO) calculator](https://azure.microsoft.com/en-ca/pricing/tco/)
+* Understand [best practices for minimizing Azure costs](https://docs.microsoft.com/en-us/azure/billing/billing-getting-started) such as:
+    * Performing [Cost Analysis](https://docs.microsoft.com/en-us/azure/cost-management/quick-acm-cost-analysis)
+    * Creating [spending limits](https://docs.microsoft.com/en-us/azure/billing/billing-spending-limit) and [quotas](https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits)
+    * [Using tags to identify cost owners](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-using-tags)
+    * Using [Azure reservations](https://azure.microsoft.com/en-ca/reservations/)
+    * Using [Azure Advisor recommendations](https://docs.microsoft.com/en-ca/azure/advisor/advisor-overview)
+* Describe [Azure Cost Management](https://docs.microsoft.com/en-us/azure/cost-management/overview-cost-mgt)
+
+## Understand the support options available with Azure
+
+* Understand [support plans](https://azure.microsoft.com/en-ca/support/plans/) that are available such as:
+    * [Developer](https://azure.microsoft.com/en-ca/support/plans/developer/)
+    * [Standard](https://azure.microsoft.com/en-ca/support/plans/standard/)
+    * [Professional Direct (ProDirect)](https://azure.microsoft.com/en-ca/support/plans/prodirect/)
+    * [Premier](https://azure.microsoft.com/en-ca/support/plans/premier/)
+* Understand [how to open a support ticket](https://azure.microsoft.com/en-ca/support/create-ticket/)
+* Understand [available support channels outside of support plan channels](https://azure.microsoft.com/en-ca/support/faq/)
+* Describe the [Knowledge Center](https://azure.microsoft.com/en-us/resources/knowledge-center/)
+
+## Describe Azure Service Level Agreements (SLAs)
+
+* Describe a [Service Level Agreement (SLA)](https://azure.microsoft.com/en-ca/support/legal/sla/)
+* Understand Composite SLAs
+* Understand how to determine an appropriate SLA for an application
+
+## Understand service lifecycle in Azure
+
+* Understand Public Preview features
+* Understand [Private Preview features](https://azure.microsoft.com/en-ca/support/legal/preview-supplemental-terms/)
+* Understand the term General Availability (GA)
+    * GA means a service is in production and can be used by anyone with an Azure subscription
+* Understand how to [monitor feature updates and product changes](https://azure.microsoft.com/en-ca/updates/)
+
+
+
+- Uselful Links
+    - Simulates
+        - https://www.udemy.com/course/simulado-certificacao-az-900/
+        - https://www.udemy.com/course/simulado-para-a-prova-az-900/
+    - Tranning
+        - https://www.udemy.com/course/introducao-ao-microsoft-azure-certificacao-az-900/
+        - https://www.udemy.com/course/microsoft-azure-beginners-guide/
+        - https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/
+        - https://github.com/AzureMentor/Azure-AZ-900-Study-Guide
+    - Link for Test
+        - https://wsr.pearsonvue.com/testtaker/registration/Dashboard/MICROSOFT
+    - How the test works ?
+        - https://www.youtube.com/watch?v=Vb0OGIH-2MM&list=PLahhVEj9XNTceGnF19qSjYxYzS4S_Wlmf&index=2&t=0s
+        - https://www.youtube.com/watch?v=k9qDZ4gnjtA
+    - English Trainning
+        - https://www.udemy.com/course/curso-de-ingles-para-ti/
 - Schedule
     - Sunday: overview
     - Monday: Understand core Azure services (35%)
@@ -32,73 +247,7 @@ Montei um guia de estudos para conseguir a certificação AZ-900 Fundamentos da 
 
 ---
 
-# Understand Cloud Concepts (20%)
-- Cloud Terms
-- Principles of Economies of Scale
-- Difference between Capital Expenditure (CapEx) and Operational Expenditure (OpEx)
-- Consumption-based model
-- IaaS, PaaS and SaaS
-- Difference between public, private and hydrid cloud
-
-# Understand core Azure services (35%)
-- Architectural
-  - Regions
-  - Avalibily Zones
-  - Resource Groups
-  - Resource Manager
-- Products
-  - VM
-  - VM scale
-  - Service Functions
-  - Container Instance
-  - Kubernetes Service
-  - Virtual Network
-  - Load Balancer
-  - VPN 
-  - Gateway
-  - Content Delivery Network
-  - Blob Storage
-  - Disk Storage
-  - File Storage
-  - Archive Storage
-  - Azure Marketplace and its usage scenarios
-- Solutions
-  - IoT
-  - SQL Data Warehouse
-  - HDInsight
-  - Azure Databricks
-  - Azure Machine Learning Service and Studio
-  - Logic Apps
-  - Event Grid
-  - Azure DevOps
-  - Azure DevTest Labs
-- Tools
-  - Azure Portal
-  - Azure PowerShell
-  - Azure CLI
-  - Cloud Shell
-  - Azure Advisor
-
-# Understand security, privacy, compliance, and trust (30%)
-- Network Security Groups (NSG)
-- Application Security Groups (ASG)
-- User Defined Rules (UDR)
-- Azure Firewall
-- Azure DDoS Protection
-- Choose an appropriate Azure security solution 
-- Understand the difference between authentication and authorization
-- Azure Active Directory
-- Azure Multi-Factor Authentication
-- Azure Security Center
-- Key Vault
-- Azure Information Protection (AIP)
-- Azure Advanced Threat Protection (ATP)
-- Azure Monitor
-- Azure Service Health
-- Understand the use cases and benefits of Azure Monitor and Azure Service Health
-
----
-
+# Resume
 ## AZ-900: Understand Cloud Concepts (20%)
 
 ### Cloud Concept
