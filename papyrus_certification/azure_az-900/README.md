@@ -1,12 +1,12 @@
 # Study Guide for Azure Certification az-900
 ![License](https://img.shields.io/badge/Code%20License-MIT-blue.svg)
 
-<img src="images/azure-fundamentals-600x600.png" align="right" height=auto width=20%/>
+<img src="images/azure-fundamentals-600x600.png" align="right" height=auto width=15%/>
 
 Montei um guia de estudos com foco na certificação AZ-900 Fundaments da Azure. Os títulos (tópicos) e subtítulos estão em inglês para manter a mesma referência do que é cobrado mas dentro dos tópicos há conteúdo em português e inglês para facilitar a compreensão.
 
 
-## Summary
+# Summary
 
 **AZ-900: Understand Cloud Concepts (15-20%)**
 ## Describe the benefits and considerations of using cloud services
