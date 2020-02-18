@@ -218,45 +218,47 @@ Montei um guia de estudos com foco na certificação AZ-900 Fundaments da Azure.
     * GA means a service is in production and can be used by anyone with an Azure subscription
 * Understand how to [monitor feature updates and product changes](https://azure.microsoft.com/en-ca/updates/)
 
-**Uselful Links**
-    - Simulates
+## Uselful Links
+- Simulates
         - https://www.udemy.com/course/simulado-certificacao-az-900/
         - https://www.udemy.com/course/simulado-para-a-prova-az-900/
-    - Tranning
+- Tranning
         - https://www.udemy.com/course/introducao-ao-microsoft-azure-certificacao-az-900/
         - https://www.udemy.com/course/microsoft-azure-beginners-guide/
         - https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/
         - https://github.com/AzureMentor/Azure-AZ-900-Study-Guide
-    - Link for Test
+- Link for Test
         - https://wsr.pearsonvue.com/testtaker/registration/Dashboard/MICROSOFT
-    - How the test works ?
+- How the test works ?
         - https://www.youtube.com/watch?v=Vb0OGIH-2MM&list=PLahhVEj9XNTceGnF19qSjYxYzS4S_Wlmf&index=2&t=0s
         - https://www.youtube.com/watch?v=k9qDZ4gnjtA
-    - English Trainning
+- English Trainning
         - https://www.udemy.com/course/curso-de-ingles-para-ti/
-- Schedule
-    - Sunday: overview
-    - Monday: Understand core Azure services (35%)
-    - Tuesday: Understand core Azure services (35%)
-    - Wednesday: Understand security, privacy, compliance, and trust (30%)
-    - Thursday: Understand security, privacy, compliance, and trust (30%)
-    - Friday: Understand Azure Pricing and Support (25%)
-    - Saturday: Review
+
+## Schedule
+- Sunday: overview
+- Monday: Understand core Azure services (35%)
+- Tuesday: Understand core Azure services (35%)
+- Wednesday: Understand security, privacy, compliance, and trust (30%)
+- Thursday: Understand security, privacy, compliance, and trust (30%)
+- Friday: Understand Azure Pricing and Support (25%)
+- Saturday: Review
 
 ---
+---
 
-# Resume
+# **Resume**
 ## AZ-900: Understand Cloud Concepts (20%)
 
 ### Cloud Concept
 - Scalability
- - scaling up: vertical
- - caling out: horizontal
- - _can expand its size when there are more users in the system_
+  - scaling up: vertical
+  - caling out: horizontal
+  - _can expand its size when there are more users in the system_
 
 - Elasticity
- - _can shrink its size when there are fewer users in the system_
- - _can also set automatic shutdown during the non-business hours to save money_
+  - _can shrink its size when there are fewer users in the system_
+  - _can also set automatic shutdown during the non-business hours to save money_
 
 ### [Capital expenditure (CapEx) versus operational expenditure (OpEx)](https://docs.microsoft.com/en-us/learn/modules/principles-cloud-computing/3c-capex-vs-opex)
 O Capital expenditure garante custos fixos para compras a longo prazo. Isto torna a melhor escolha quando o budget é limitado.
@@ -325,13 +327,14 @@ Disavantages
 - You have some initial CapEx costs
 
 ---
+---
 
 ## Understand core Azure services (35%)
 ### Architectural
   - [Regions](#regions)
   - [Avaialibility Zones](#avaialibility-zones)
   - [Resource Groups](#resource-groups)
-  - [Resource Manager](#resource-manager)
+  - [Azure Resource Manager](#azure-resource-manager)
 
 #### Regions
 - É uma área geográfica.
@@ -348,22 +351,27 @@ Disavantages
 - São datacenters separados em uma mesma region.
 - Há um mínimo 3 zones dentro de uma única region
 
-<img src="images/4-availability-zones.png" align="center" height=auto width=100%/>
+<img src="images/4-availability-zones.png" align="center" height=auto width=70%/>
 
-#### Resource Group
-<img src="images/resourcegroup_color.png" align="right" height=auto width=100%/>
+<br/>
+
+#### Resource Groups
+<img src="images/resourcegroup_color.png" align="right" height=auto width=10%/>
 
 É um agrupador lógico de _resources_ onde é possível aplicar políticas de acesso.
 
-#### Resource Manager (ARM)
+#### Azure Resource Manager
 - É um serviço que faz o _deploy_ e _management_ de resource na Azure.
 - Parecido com chef, ansible (não tem estado)
 
+<br/>
+<br/>
+<br/>
 
 ### Describe some of the core products available in Azure
  - Environments
    - [VM](#vm)
-   - [VM scale](#vm-scale)
+   - [VM scale set](#vm-scale-set)
    - [Azure Functions](#azure-functions)
    - [Logic Apps](#logic-apps)
    - [Container Instance](#container-instance)
@@ -383,10 +391,15 @@ Disavantages
 
 
 #### Azure Functions
-...
+- É um recurso que permite executar _call_ de funções a partir de uma trigger.
+- _Serverless applications_
 
-### Logic Apps
-...
+#### Logic Apps
+- É um serviço de nuvem que ajuda a agendar, automatizar e orquestrar tarefas, processos de negócios e fluxos de trabalho quando você precisar integrar aplicativos, dados, sistemas e serviços em empresas ou organizações. 
+- Não precisa se preocupar em criar, hospedar, dimensionar, gerenciar, manter e monitorar seus aplicativos. O Logic Apps lida com essas preocupações para você. Além disso, você paga apenas pelo que usa com base em um modelo de preços de consumo .
+- _Logic Apps allow developers to design workflows that articulate intent via a trigger and series of steps_
+
+<img src="images/logic_app.png" align="center" height=auto width=80%/>
 
 #### VM
 VM são as máquinas virtuais linux e windows. Se for produtos como windows server ou sql server, a Azure se torna 5x mais barata que a AWS.
@@ -395,35 +408,46 @@ VM são as máquinas virtuais linux e windows. Se for produtos como windows serv
 VM scale faz um scaling up ou scaling out automático. Quando a carga de trabalho cai, o próprio serviço se encarrega de excluir as VMs não utilizadas (_elatic_).
 
 <img src="images/01-deploy.png" align="left" height=auto width=45%/>
-<img src="images/02-scale.png" align="right" height=auto width=40%/>
+<img src="images/02-scale.png" align="center" height=auto width=40%/>
+
+<br/>
 
 #### Load Balancer
+É um serviço de distribuição de carga.
 
-<img src="images/load_balancer.png" align="right" height=auto width=40%/>
+<img src="images/load_balancer.png" align="center" height=auto width=80%/>
 
-#### Virtual Network (Vnet)
-- É um isolamento lógico de _network_ na Azure no escopo de uma [region](#region).
+<br/>
 
-<img src="images/vnet.png" align="right" height=auto width=40%/>
+#### Virtual Network
+- É um isolamento lógico de _network_ na Azure no escopo de uma [regions](#regions).
+
+<img src="images/vnet.png" align="center" height=auto width=90%/>
 
 - Permite definir os private IPs. Tambem é possível criar VNets com o mesmo espaço de endereço em duas regiões diferentes (por exemplo, Leste dos EUA e Oeste dos EUA)
-- Você pode vincular uma rede virtual a uma rede local por meio de um gateway VPN
+- É possível vincular uma vnet a uma rede local por meio de um gateway VPN.
+
+<img src="images/D0mh7tjXgAElwyP.png" align="center" height=auto width=100%/>
+
 - Advantages
   - segurança
   - isolamento
   - políticas de tráfego
 - _Secure your VNet using Network Security Groups (NSGs)_
-**Question: You plan to deploy 20 virtual machines to an Azure environment. To ensure that a virtual machine named VM1 cannot connect to the other virtual machines, VM1 must ***be deployed to a separate virtual network***
+
+
+**Question: You plan to deploy 20 virtual machines to an Azure environment. To ensure that a virtual machine named VM1 cannot connect to the other virtual machines, VM1 must *_be deployed to a separate virtual network_**
 
 **Question: You have an Azure environment that contains 10 virtual networks and 100 virtual machines.You need to limit the amount of inbound traffic to all the Azure virtual networks.**
 
-<img src="images/D0mh7tjXgAElwyP.png" align="center" height=auto width=100%/>
-
 #### Application Gateway
 **É um load balancer que gerencia o tráfego baseado em rota (URL)**.
+
 NOTE: o Azure Load Balancer tambem gerencia o trágefo mas se basea em IP.
 
 <img src="images/app_gateway.png" align="center" height=auto width=100%/>
+
+<br/>
 
 #### VPN Gateway
 - É um tunelamento de um _virtual network_ que encripta o tráfego entre a cloud e o ambiente local.
@@ -479,82 +503,79 @@ Serve para storage de disco de VM. Em uma VM é permitido somente 1 disco por ve
 **Azure Dashboard**: can be exported `json`
 
 ---
+---
+## Understand security, privacy, compliance, and trust (30%)
 
-# Understand security, privacy, compliance, and trust (30%)
+### Azure Securing Network
+- [Network Security Groups (NSG)](#network-security-groups-(NSG))
+- [Application Security Groups (ASG)](#application-security-groups-(ASG))
+- [User Defined Rules (UDR)](#)
+- [Azure Firewall](#)
+- [Azure DDoS Protection](#)
+- [Choose an appropriate Azure security solution](#)
 
-## Azure Securing Network
-- Network Security Groups (NSG)
-- Application Security Groups (ASG)
-- User Defined Rules (UDR)
-- Azure Firewall
-- Azure DDoS Protection
-- Choose an appropriate Azure security solution 
-
-## Identity Services
-- Understand the difference between authentication and authorization
-- Azure Active Directory
-- Azure Multi-Factor Authentication
-
-## Azure Security Tools
-- Azure Security Center
-- Key Vault
-- Azure Information Protection (AIP)
-- Azure Advanced Threat Protection (ATP)
-
-## Azure Governance
- describe policies and initiatives with Azure Policy
-• describe Role-Based Access Control (RBAC)
-• describe Locks
-• describe Azure Advisor security assistance
-• describe Azure Blueprints
-
-## Azure Monitoring and Reporting Options
-- Azure Monitor
-- Azure Service Health
-- Understand the use cases and benefits of Azure Monitor and Azure Service Health
-
-
-
-
-**Network Security Groups (AWS = VPC)**: 
-- A security group acts as a virtual firewall 
-- This services filter network traffic
+#### Network Security Groups (NSG)
+- AWS = VPC
+- O Network Security Group (NSG) é a principal ferramenta para gerenciar e controlar as regras de tráfego de rede. 
+- _A security group acts as a virtual firewall_ 
+- _This services filter network traffic_
 - **contains a list of security roles** about control inbound and outbound network traffic. Network Security Groups can be associated to subnets, VM and NICs.
 
 <img src="images/security_group.jpg" align="center" height=auto width=100%/>
 
-**Application Security Groups**
-- Application security groups enable you to configure network security as a natural extension of an application'
+<br/>
+
+#### Application Security Groups (ASG)
+- Ajuda a gerenciar a segurança de máquinas virtuais agrupando-os de acordo com os aplicativos executados neles.
+- Os ASGs são usados ​​dentro de um NSG para aplicar uma regra de segurança de rede.
+- _Application Security Groups enable you to configure network security as a natural extension of an application_
 - Not need explict IP address
 
 <img src="images/application-security-groups.png" align="center" height=auto width=100%/>
 
-**Azure Firewall**
-- Network Security Group and Application Security Group not match pattern our identify traffic
+<img src="images/application-security-groups_doc.png" align="center" height=auto width=100%/>
+
+<br/>
+
+#### Azure Firewall
+- _Network Security Group and Application Security Group not match pattern our identify traffic_
+- É um firewall totalmente stateful como um serviço com alta disponibilidade incorporada e escalabilidade irrestrita na nuvem.
 
 <img src="images/firewall-threat.png" align="center" height=auto width=100%/>
 
-- It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability.
 - Integrated with Azure Monitor for logging and analytics.
 
-**Azure DDos Protection**
+#### Azure DDos Protection
 - Distributed denial of service
 - A DDoS attack attempts to exhaust an application’s resources, making the application unavailable to legitimate users. 
-- Clear network edge before impact application.
+- Os ataques DDoS podem ser direcionados para qualquer terminal acessível publicamente pela Internet.
 - Azure DDoS protection, combined with application design best practices, provide defense against DDoS attacks.
-- Application layer 
+- Atua na camada de aplicação 
 
-##  Azure Identity services
-**Authentication**
-Authentication is the process of **estabilishing the identity** of a person or service loking to access a resource.
+<img src="images/ddos_protection.png" align="center" height=auto width=100%/>
+- Nesta arquitetura, o DDoS Protection Standard está ativado na rede virtual.
 
-**Authorization**
-Authorization is the process of estabilishing what **level of access** an authenticated person or service has.
+<br/>
 
-**Azure Active Directory**
-Identity and access management service. Also do:
-- business to business (B2B) identity services
-- business to costumer (B2C) identity services
+## Identity Services (IAM)
+- [Understand the difference between authentication and authorization](#)
+- [Azure Active Directory](#)
+- [Azure Multi-Factor Authentication](#)
+
+#### Understand the difference between authentication and authorization
+**Authentication**: Authentication is the process of **estabilishing the identity** of a person or service loking to access a resource.
+
+**Authorization**: Authorization is the process of estabilishing what **level of access** an authenticated person or service has.
+
+#### **Azure Active Directory**
+- O [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/) é um serviço que fornece gerenciamento de identidade e acesso para ambientes de nuvem e híbridos.
+- O [Azure Active Directory B2C](https://azure.microsoft.com/en-us/services/active-directory-b2c/) gerencia e protege as identidades dos clientes e o acesso na nuvem usando IAM security features.
+
+
+
+
+
+
 
 ## security tools and features of Azure
 **Azure Security Center**
@@ -576,7 +597,7 @@ Identity and access management service. Also do:
  - For incident response
  - Recommendations fo enhance security (melhorar a segurança)
 
-**Advanced Threat Protection**
+#### Advanced Threat Protection**
 Cloud-based that identifies, detects and helps investigate to 
  - advanced threats (ameaças)
  - compromised identities
@@ -587,14 +608,36 @@ Advanced
 - Identify suspicious activities
 - Protect user identities and reduce the attack surface
 
-**Azure Information Protection**
+#### Azure Information Protection**
 Help organizations classify and protect documents and email with labels.
 
 <img src="images/info-protect-recommend-calloutsv2.png" align="center" height=auto width=100%/>
 
+
+
+
+## Azure Security Tools
+- Azure Security Center
+- Key Vault
+- Azure Information Protection (AIP)
+- Azure Advanced Threat Protection (ATP)
+
+## Azure Governance
+ describe policies and initiatives with Azure Policy
+• describe Role-Based Access Control (RBAC)
+• describe Locks
+• describe Azure Advisor security assistance
+• describe Azure Blueprints
+
+## Azure Monitoring and Reporting Options
+- Azure Monitor
+- Azure Service Health
+- Understand the use cases and benefits of Azure Monitor and Azure Service Health
+
+
 ### Understand monitoring and reporting options in Azure
 
-**Azure Monitor and Azure Service Health**
+#### Azure Monitor and Azure Service Health**
 Azure Monitor monitora, analisa dados e execução ações encima de alertas criados. Já o Azure Service Health mostra a saúde da Azure onde é possível ver as manutenções preventivas e se há algum incidente.
 
 ### Azure governance methodologies
@@ -604,14 +647,14 @@ São ferramentas que a Azure tem para gerenciar subscriptions.
 - Lock
 - Blueprints (conjuntos repetitíveis de recursos)
 
-**Azure policy**
+#### Azure policy**
 Allow create, assing and manage polices over resources.
 
 
-**Role-based access control**
+#### Role-based access control**
 Controla o nível de autorização por usuário.
 
-**Locks**
+#### Locks**
 - Lock resources to prevent unexpected changes
 - É um serviço para que quando um usuário tenha acesso a um recurso só possa executar algumas funções.
 - Ajuda a previnir exclusão acidental (canNotDelete) ou limitar a somente leitura (readOnly) algum usuário.
@@ -621,7 +664,7 @@ Controla o nível de autorização por usuário.
 <img src="images/delete-lock.png" align="center" height=auto width=100%/>
 
 
-**[Azure Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview)**
+#### [Azure Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview)**
 - É um RM que guarda estado.
 - define a repeatable set of Azure resources
 - O serviço foi projetado para ajudar na configuração do ambiente . - Essa configuração geralmente consiste em um conjunto de grupos de recursos, políticas, atribuições de função e implantações de modelo do Resource Manager.
@@ -639,11 +682,11 @@ Com o Blueprints, o relacionamento entre a definição do blueprint (o que deve 
 
 ## Understand Azure pricing and support (20-25%)
 
-**Azure Subscritpions**
+#### Azure Subscritpions**
 - Is a logical container used to provision resource.
 - Azure subscription is associated with Azure AD.
 
-**Subscription Types**
+#### Subscription Types**
 - Free
   - $ 200 for 30 day
   - started with 12 months of free services
@@ -652,18 +695,18 @@ Com o Blueprints, o relacionamento entre a definição do blueprint (o que deve 
 - Pay-as-you-go
 - Enterprise Agreement: ideal para empresas que contratam serviços em nuvem e licenças de software, como office, sob um único contrato, o que garante descontos.
 
-**[Management Groups](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview)**
+#### [Management Groups](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview)**
 These groups are containers that help you manage access, policy, and compliance for multiple subscriptions.
 
 - Ex: You can create a hierarchy that applies a policy, for example, which limits VM locations to the US West Region
 
 <img src="images/tree.png" align="center" height=auto width=100%/>
 
-**[Object Hierarchy](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources?tabs=AzureManagmentGroupsAndHierarchy)**
+#### [Object Hierarchy](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources?tabs=AzureManagmentGroupsAndHierarchy)**
 
 <img src="images/scope-levels.png" align="center" height=auto width=100%/>
 
-**[Azure Support Options](https://azure.microsoft.com/en-us/support/plans/)**
+#### [Azure Support Options](https://azure.microsoft.com/en-us/support/plans/)**
 
 Features:
 - Para ter suporte com um desenvolvedor da Azure é necessário pagar o suporte **premier**
@@ -671,27 +714,27 @@ Features:
 
 <img src="images/azure_suport.png" align="center" height=auto width=100%/>
 
-**Knowledge Center**
+#### Knowledge Center**
 - 'stackoverflow' da azure
 - É um banco de dados que contém perguntas e repostas da comunidade.
 
-**How to open a support ticket**
+#### How to open a support ticket**
 <img src="images/suport_help.png" align="center" height=auto width=100%/>
 
-## SLA
+#### SLA
 - O sla expecifica o que acontece se um serviço falhar. Por exemplo, em caso de falhas o cliente pode ganhar descontos (service credits)
 - sla geral da Azure: 99,9%
 
 <img src="images/calulate_sla.png" align="center" height=auto width=100%/>
 
 
-## Service-Level Agreements
+#### Service-Level Agreements
 Há 3 keys no SLA da Azure:
 1. Performance product and services.
 2. Uptime and Connectivity Guarantees (99 until 99.999)
 3. Service credits. Azure apply discount to as compensation for an under-performing product and services.
 
-### Application availability
+#### Application availability
 - Referese ao tempo global (overral time) que o sistema esta trabalhando.
 
 ---
