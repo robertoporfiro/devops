@@ -68,7 +68,7 @@ Powershell .\choco_install_app.ps1 | timestamp
 
 # Download data_gateway
 Write-Output "Downloading Data Gateway"| timestamp
-$url = "https://requirements.blob.core.windows.net/applications/data_gateway.exe"
+$url = "https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409" #"https://requirements.blob.core.windows.net/applications/data_gateway.exe"
 $file_output = "tmp\data_gateway.exe"
 
 Start-BitsTransfer `
