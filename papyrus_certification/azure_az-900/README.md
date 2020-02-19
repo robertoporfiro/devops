@@ -244,6 +244,71 @@ Montei um guia de estudos com foco na certificação AZ-900 Fundaments da Azure.
 - Friday: Understand Azure Pricing and Support (25%)
 - Saturday: Review
 
+Appointment
+Saturday, 2020
+Start Time: 19:00 BRT
+
+Exam
+AZ-900: Microsoft Azure Fundamentals
+Language: English
+Exam Length: 90 minutes
+
+<img src="images/3c-capexvsopex.png" align="center" height=auto width=100%/>
+
+
+- Microsoft Policies
+```
+System Requirements
+ALERT: Before you register for an online proctored exam, review the system requirements, check the list of participating countries, read about the testing protocols, and complete the required system test: Online Proctoring Required Information
+Admission Policy
+PLEASE NOTE THIS EXAM IS PROCTORED IN ENGLISH ONLY. THERE IS NOT AN OPTION FOR LOCAL LANGUAGE PROCTORING AT THIS TIME.
+
+PERFORM A SYSTEM TEST (Prior to Exam Day):
+Please follow this link to perform a SYSTEM TEST from the same computer and location you will be testing from on exam day: http://www.pearsonvue.com/microsoft/op. Ensure you have administrative rights on your computer to be able to download the software.
+
+If your system does not meet the requirements please register to take the exam at a testing center. If your computer is found not to meet requirements on the exam day you are unlikely to receive a refund.
+
+REVIEW EXAM INFORMATION (Prior to Exam Day):
+Please follow this link http://www.pearsonvue.com/microsoft/op to find information on:
+
+Exam policies
+System requirements
+Admission steps.
+
+REVIEW ID POLICIES (Prior to Exam Day):
+Please be prepared to show one (1) valid form of unexpired, Government issued personal ID.
+The Government issued ID must have your signature and must have your photo.
+The name on the registration must match the names on the Government issued ID exactly.
+
+Please note that we are unable to accept the following ID’s for an online proctored exam.
+Renewal forms with expired ID’s
+Government Issued name change documents with Government ID.
+
+START YOUR EXAM (Exam Day):
+Login: START YOUR EXAM (Exam Day):
+Login: www.microsoft.com/learning
+Click “Dashboard” to view your appointments, and then choose “Start a previously scheduled online proctored exam.”
+Click on your exam under 'Purchased Online Exams'
+Click “Begin” and proceed through the self check-in process and wait for a Proctor to connect with you
+
+We recommend logging in 15 minutes early to start the check-in process. YOU WILL ONLY HAVE up to 15 minutes after your scheduled appointment time to begin the exam process.
+This exam admission process also includes the following Enhanced Security Protocol admission steps: Digital Photograph
+
+You will not be allowed to have any personal items with you in your testing environment. This includes all bags, books not authorized by the testing program, notes, pagers, and watches. Please note you are required to have a clean and clutter free workstation. During check-in, the Greeter will ask you to scan the room and will inspect any materials near your workstation.
+
+Facial Comparison Policy
+
+You understand and agree that Pearson VUE may use facial comparison technology for the purpose of verifying your identity during the testing process. It will compare your facial image to the one on your identification and to facial images captured during the testing process and help us further develop, upgrade, and improve this application. If you do not agree to the use of facial comparison technology during your testing session, do not accept this term. You will not be able to complete your registration online. Instead, please call the Pearson VUE call center to complete your registration.
+
+Reschedule Policy
+There is no charge if you reschedule an exam appointment at least 6 business days prior to your appointment. There is a fee of 12.5% (based on the current Microsoft exam price as published on Microsoft.com/learning) for rescheduling your appointment 5 business days or less before your exam date. If you fail to show up for your exam appointment (no-show) or dont reschedule your appointment at least 24 hours prior to your scheduled appointment, you forfeit your entire exam fee. Business days are Monday-Friday, not including holidays.
+You may reschedule your appointment by calling the Pearson VUE call center, contacting the test center where your appointment is scheduled, or accessing the Microsoft Learning website and choosing the reschedule action. If you registered with accommodations, you must reschedule through the call center.
+
+Cancellation Policy
+There is no charge if you cancel an exam appointment at least 6 business days prior to your appointment. There is a fee of 12.5% (based on the current Microsoft exam price as published on Microsoft.com/learning) for cancelling your appointment 5 business days or less before your exam date.
+If you fail to show up for your exam appointment (no-show) or dont cancel your appointment at least 24 hours prior to your scheduled appointment, you forfeit your entire exam fee. Business days are Monday-Friday, not including holidays.
+You may cancel your appointment by calling the Pearson VUE call center, contacting the test center where your appointment is scheduled, or accessing the Microsoft Learning website and choosing the reschedule action. If you registered with accommodations, you must cancel through the call center.
+```
 ---
 ---
 
@@ -436,7 +501,7 @@ VM scale faz um scaling up ou scaling out automático. Quando a carga de trabalh
 - _Secure your VNet using Network Security Groups (NSGs)_
 
 
-**Question: You plan to deploy 20 virtual machines to an Azure environment. To ensure that a virtual machine named VM1 cannot connect to the other virtual machines, VM1 must *_be deployed to a separate virtual network_**
+**Question: You plan to deploy 20 virtual machines to an Azure environment. To ensure that a virtual machine named VM1 cannot connect to the other virtual machines, VM1 must _be deployed to a separate virtual network_**
 
 **Question: You have an Azure environment that contains 10 virtual networks and 100 virtual machines.You need to limit the amount of inbound traffic to all the Azure virtual networks.**
 
@@ -557,7 +622,7 @@ Serve para storage de disco de VM. Em uma VM é permitido somente 1 disco por ve
 
 <br/>
 
-## Identity Services (IAM)
+## Identity and Access Management (IAM)
 - [Understand the difference between authentication and authorization](#)
 - [Azure Active Directory](#)
 - [Azure Multi-Factor Authentication](#)
@@ -568,19 +633,42 @@ Serve para storage de disco de VM. Em uma VM é permitido somente 1 disco por ve
 **Authorization**: Authorization is the process of estabilishing what **level of access** an authenticated person or service has.
 
 #### **Azure Active Directory**
-- O [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/) é um serviço que fornece gerenciamento de identidade e acesso para ambientes de nuvem e híbridos.
+- O [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/) é um serviço que fornece gerenciamento de identidade e acesso para ambientes de nuvem híbrida.
+
+<img src="images/activity-directory-hydrid-cloud.png" align="center" height=auto width=100%/>
+
+
 - O [Azure Active Directory B2C](https://azure.microsoft.com/en-us/services/active-directory-b2c/) gerencia e protege as identidades dos clientes e o acesso na nuvem usando IAM security features.
 
 
+<img src="images/azure_ad_b2c.png" align="center" height=auto width=100%/>
+
+
+O Azure Active Directory (Azure AD) é o serviço de gerenciamento de identidade e acesso baseado em nuvem da Microsoft, como:
+- Office 365
+- Aplicativos em sua rede corporativa e intranet da própria organização.
+
+**Who uses Azure AD?**
+As an IT admin, you can use Azure AD to control access to your apps and your app resources, based on your business requirements. For example, you can use Azure AD to require multi-factor authentication when accessing important organizational resources. Additionally, you can use Azure AD to automate user provisioning between your existing Windows Server AD and your cloud apps, including Office 365. 
+
+As an app developer, you can use Azure AD as a standards-based approach for adding single sign-on (SSO) to your app, allowing it to work with a user's pre-existing credentials. 
+
+
+**AD licenses**
+
+- Office 365 ou o Microsoft Azure usam Azure AD.
+- As licenças pagas do Azure AD são criadas sobre o diretório gratuito existente, fornecendo autoatendimento, monitoramento aprimorado, relatórios de segurança e acesso seguro aos usuários móveis.
+- **Azure Active Directory Free**. Provides user and group management, on-premises directory synchronization, basic reports, self-service password change for cloud users, and single sign-on across Azure, Office 365, and many popular SaaS apps.
 
 
 
-
-
-## security tools and features of Azure
+## Security Tools and Features of Azure
 **Azure Security Center**
 
 <img src="images/compute.png" align="center" height=auto width=100%/>
+
+<br/>
+
 <img src="images/sc-net-map.png" align="center" height=auto width=100%/>
 
 - Is a monitoring service that provides threat protection across all of your services in Azure and on-premises. 
@@ -593,11 +681,11 @@ Serve para storage de disco de VM. Em uma VM é permitido somente 1 disco por ve
   - provide recommendations based on configurations, resources and network
   - monitor security settings 
 
-- Usage scenrios
+- Usage scenarios
  - For incident response
  - Recommendations fo enhance security (melhorar a segurança)
 
-#### Advanced Threat Protection**
+#### Advanced Threat Protection
 Cloud-based that identifies, detects and helps investigate to 
  - advanced threats (ameaças)
  - compromised identities
