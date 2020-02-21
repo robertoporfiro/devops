@@ -491,6 +491,7 @@ VM scale faz um scaling up ou scaling out automático. Quando a carga de trabalh
 
 - Permite definir os private IPs. Tambem é possível criar VNets com o mesmo espaço de endereço em duas regiões diferentes (por exemplo, Leste dos EUA e Oeste dos EUA)
 - É possível vincular uma vnet a uma rede local por meio de um gateway VPN.
+- _Network Interfaces don't add any cost to company_
 
 <img src="images/D0mh7tjXgAElwyP.png" align="center" height=auto width=100%/>
 
@@ -504,6 +505,15 @@ VM scale faz um scaling up ou scaling out automático. Quando a carga de trabalh
 **Question: You plan to deploy 20 virtual machines to an Azure environment. To ensure that a virtual machine named VM1 cannot connect to the other virtual machines, VM1 must _be deployed to a separate virtual network_**
 
 **Question: You have an Azure environment that contains 10 virtual networks and 100 virtual machines.You need to limit the amount of inbound traffic to all the Azure virtual networks.**
+
+
+**Question**
+<br/>
+The companyâ€™s compliance policy states that a server named FinServer must be on a separate network segment.
+You are evaluating which Azure services can be used to meet the compliance policy requirements.
+Which Azure solution should you recommend?
+
+
 
 #### Application Gateway
 **É um load balancer que gerencia o tráfego baseado em rota (URL)**.
@@ -586,7 +596,14 @@ Serve para storage de disco de VM. Em uma VM é permitido somente 1 disco por ve
 - _This services filter network traffic_
 - **contains a list of security roles** about control inbound and outbound network traffic. Network Security Groups can be associated to subnets, VM and NICs.
 
+
+- It can contain multiple inbound and outbound security rules that enable you to filter traffic to and from resources by source and destination IP address, port, and protocol
+
 <img src="images/security_group.jpg" align="center" height=auto width=100%/>
+
+**Question**
+<br/>
+You want to filter inbound and outbound network traffic to and from Azure resources in your Azure virtual network. Which Azure service should you use?
 
 <br/>
 
@@ -608,7 +625,28 @@ Serve para storage de disco de VM. Em uma VM é permitido somente 1 disco por ve
 
 <img src="images/firewall-threat.png" align="center" height=auto width=100%/>
 
+- Azure Firewall will control access in and out of your network but will not control inbound and outbound
+
 - Integrated with Azure Monitor for logging and analytics.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### Azure DDos Protection
 - Distributed denial of service
@@ -620,7 +658,18 @@ Serve para storage de disco de VM. Em uma VM é permitido somente 1 disco por ve
 <img src="images/ddos_protection.png" align="center" height=auto width=100%/>
 - Nesta arquitetura, o DDoS Protection Standard está ativado na rede virtual.
 
+**Question**
 <br/>
+There has been an attack on your public-facing website, and the application's resources have been overwhelmed and exhausted, and are now unavailable to users. What service should you use to prevent this type of attack?
+
+
+
+<br/>
+
+#### Service Trust
+- É um portal fornece uma variedade de conteúdo, ferramentas e outros recursos sobre práticas de segurança, privacidade 
+- Portal: https://www.microsoft.com/pt-br/trust-center?rtc=1
+
 
 ## Identity and Access Management (IAM)
 - [Understand the difference between authentication and authorization](#)
@@ -648,14 +697,25 @@ O Azure Active Directory (Azure AD) é o serviço de gerenciamento de identidade
 - Office 365
 - Aplicativos em sua rede corporativa e intranet da própria organização.
 
+**Features**
+<br/>
+- Authentication
+- Access management
+- Application management
+- SSO
+- B2C identity services
+- B2B identity services
+- Device manager
+
 **Who uses Azure AD?**
+<br/>
 As an IT admin, you can use Azure AD to control access to your apps and your app resources, based on your business requirements. For example, you can use Azure AD to require multi-factor authentication when accessing important organizational resources. Additionally, you can use Azure AD to automate user provisioning between your existing Windows Server AD and your cloud apps, including Office 365. 
 
 As an app developer, you can use Azure AD as a standards-based approach for adding single sign-on (SSO) to your app, allowing it to work with a user's pre-existing credentials. 
 
 
 **AD licenses**
-
+- _The unused user accounts don't add any cost to the company_
 - Office 365 ou o Microsoft Azure usam Azure AD.
 - As licenças pagas do Azure AD são criadas sobre o diretório gratuito existente, fornecendo autoatendimento, monitoramento aprimorado, relatórios de segurança e acesso seguro aos usuários móveis.
 - **Azure Active Directory Free**. Provides user and group management, on-premises directory synchronization, basic reports, self-service password change for cloud users, and single sign-on across Azure, Office 365, and many popular SaaS apps.
@@ -702,6 +762,10 @@ Help organizations classify and protect documents and email with labels.
 <img src="images/info-protect-recommend-calloutsv2.png" align="center" height=auto width=100%/>
 
 
+**Question**: 
+<br/>
+_________ is a cloud-based solution that helps an organization to classify and optionally, protect its documents and emails by applying labels.
+
 
 
 ## Azure Security Tools
@@ -735,14 +799,14 @@ São ferramentas que a Azure tem para gerenciar subscriptions.
 - Lock
 - Blueprints (conjuntos repetitíveis de recursos)
 
-#### Azure policy**
+#### Azure policy
 Allow create, assing and manage polices over resources.
 
 
 #### Role-based access control**
 Controla o nível de autorização por usuário.
 
-#### Locks**
+#### Locks
 - Lock resources to prevent unexpected changes
 - É um serviço para que quando um usuário tenha acesso a um recurso só possa executar algumas funções.
 - Ajuda a previnir exclusão acidental (canNotDelete) ou limitar a somente leitura (readOnly) algum usuário.
@@ -750,6 +814,21 @@ Controla o nível de autorização por usuário.
 <img src="images/set-lock.png" align="center" height=auto width=100%/>
 
 <img src="images/delete-lock.png" align="center" height=auto width=100%/>
+
+**Question**
+<br/>
+To avoid accidental deletion of a resource, we can use _____
+
+**Question**
+<br/>
+Which of the following would be good to put a resource lock on?
+
+_You want to put a lock on something that is important/critical for you/your application._
+
+**Question**
+<br/>
+When you apply a lock at a parent scope, all resources within that scope inherit the same lock. 
+**True**
 
 
 #### [Azure Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview)**
@@ -774,7 +853,7 @@ Com o Blueprints, o relacionamento entre a definição do blueprint (o que deve 
 - Is a logical container used to provision resource.
 - Azure subscription is associated with Azure AD.
 
-#### Subscription Types**
+#### Subscription Types
 - Free
   - $ 200 for 30 day
   - started with 12 months of free services
@@ -783,7 +862,14 @@ Com o Blueprints, o relacionamento entre a definição do blueprint (o que deve 
 - Pay-as-you-go
 - Enterprise Agreement: ideal para empresas que contratam serviços em nuvem e licenças de software, como office, sob um único contrato, o que garante descontos.
 
-#### [Management Groups](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview)**
+
+**Question**
+<br/>
+Your Azure trial account expired last week. You are now unable to ________
+<br/>
+_access the azure portal_
+
+#### [Management Groups](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview)
 These groups are containers that help you manage access, policy, and compliance for multiple subscriptions.
 
 - Ex: You can create a hierarchy that applies a policy, for example, which limits VM locations to the US West Region
@@ -794,19 +880,29 @@ These groups are containers that help you manage access, policy, and compliance 
 
 <img src="images/scope-levels.png" align="center" height=auto width=100%/>
 
-#### [Azure Support Options](https://azure.microsoft.com/en-us/support/plans/)**
+#### [Azure Support Options](https://azure.microsoft.com/en-us/support/plans/)
 
-Features:
+Features
+- Para abrir um _new support request_ são aceitos os seguintes planos:
+  - Premier
+  - Professional
+  - Standard
+  - Developer
 - Para ter suporte com um desenvolvedor da Azure é necessário pagar o suporte **premier**
 - o suporte **developer** não esta disponível para empresas 
 
 <img src="images/azure_suport.png" align="center" height=auto width=100%/>
 
-#### Knowledge Center**
+
+**Question**
+<br/>
+Your company plans to purchase Azure.The companyâ€™s support policy states that the Azure environment must provide an option to access support engineers by phone or email. You need to recommend which support plan meets the support policy requirement.
+
+#### Knowledge Center
 - 'stackoverflow' da azure
 - É um banco de dados que contém perguntas e repostas da comunidade.
 
-#### How to open a support ticket**
+#### How to open a support ticket
 <img src="images/suport_help.png" align="center" height=auto width=100%/>
 
 #### SLA
@@ -824,6 +920,12 @@ Há 3 keys no SLA da Azure:
 
 #### Application availability
 - Referese ao tempo global (overral time) que o sistema esta trabalhando.
+
+**Question**
+<br/>
+As you increase availability, you also increase the cost and complexity of your solution?
+
+_Availability refers to the proportion of time that a system is functional and working. Maximizing availability requires implementing measures to prevent possible service failures_
 
 ---
 
