@@ -8,7 +8,7 @@
 
 <img src='images/devops.png' align="right" height=auto width=50%>
 
-
+TESTE
 # Summary
 
 - :penguin:**Linux**:penguin:
@@ -51,7 +51,7 @@
 
 - **Virtualization** :shell:
   - [Fundamentals]()
-  - [Virtual Environment Python](#virtual-environment-python) :snake:
+  - [Virtual Environment Python](https://github.com/brunocampos01/becoming-a-expert-python#virtual-environment) :snake:
   - [Containers](#containers)
     - [Fundamentals]()
       - Files Docker
