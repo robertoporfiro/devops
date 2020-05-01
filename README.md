@@ -34,6 +34,9 @@ image:
 projects: []
 ---
 
+todo
+tipos de deploy, canary, blue-green
+
 # DevOps
 
 ![devops](https://img.shields.io/badge/Dev-Ops-blue.svg)
