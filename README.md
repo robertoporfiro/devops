@@ -70,7 +70,7 @@ tipos de deploy, canary, blue-green
     - [Local Directory: .git]()
     - [.gitconfig](git/.gitconfig)
     - [.gitignore](git/gitignore-models)
-    - [.gitattributes](git/) # in production
+    - [.gitattributes](git/) # in production https://github.com/github/linguist#overrides
     - [.gitkeep](git/)
   
   - Good Pratices :bookmark_tabs:
