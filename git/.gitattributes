@@ -17,7 +17,7 @@
 *.rtf  diff=astextplain
 *.RTF  diff=astextplain
 
-*.gitattributes text
+*.gitattributes diff=astextplain
 .gitignore      text
 *.md            text
 *.css           text diff=css
