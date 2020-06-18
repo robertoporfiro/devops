@@ -1,1 +1,10 @@
-
+MkDocs Samples
+- https://squidfunk.github.io/mkdocs-material/
+- https://3os.org/
+- https://3os.org/markdownCheatSheet/images/
+- https://docs.kodular.io/
+- https://dbdiagram.io/home
+- https://github.com/KxSystems/docs
+- https://github.com/tanbro/mkdocs-nbconvert
+- https://github.com/greenape/mknotebooks
+- https://mkdocs.github.io/mkdocs-bootswatch/
