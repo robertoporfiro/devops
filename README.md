@@ -251,6 +251,18 @@ The portability of the container makes it easy for applications to be deployed i
 - Docker Registry – para armazenar imagens em ambiente on-premises;
 - Docker Cloud – um serviço gerenciado para criar e executar contêiner;
 
+#### Uninstall old versions
+```
+sudo apt remove docker docker-engine docker.io
+```
+
+The content of */var/lib/docker*, including images, containers, volumes and networks are preserved.
+
+
+```
+sudo ls /var/lib/docker
+```
+
 
 #### Docker Comands
 - Run container: 
