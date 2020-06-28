@@ -33,10 +33,7 @@ prereq:
 											twine \
 											virtualenv \
 											pipenv \
-											jupyter \
-											jupyterlab \
-											pipreqs \
-											pyfiglet
+											pipreqs
 
 ## Delete all compiled Python files
 clean:
