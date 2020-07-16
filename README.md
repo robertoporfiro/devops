@@ -203,7 +203,35 @@ dig my-addr-aws.net
 
 --- 
 
-## Random Themes
+## Check Linux Version
+- Kernel
+```bash
+uname --all
+
+# Linux avell 5.4.0-40-generic #44-Ubuntu SMP Tue Jun 23 00:01:04 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+```
+
+- Operational System
+```bash
+cat /etc/*release
+
+# DISTRIB_ID=Ubuntu
+# DISTRIB_RELEASE=20.04
+# DISTRIB_CODENAME=focal
+# DISTRIB_DESCRIPTION="Ubuntu 20.04 LTS"
+# NAME="Ubuntu"
+# VERSION="20.04 LTS (Focal Fossa)"
+# ID=ubuntu
+# ID_LIKE=debian
+# PRETTY_NAME="Ubuntu 20.04 LTS"
+# VERSION_ID="20.04"
+# HOME_URL="https://www.ubuntu.com/"
+# SUPPORT_URL="https://help.ubuntu.com/"
+# BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+# PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+# VERSION_CODENAME=focal
+# UBUNTU_CODENAME=focal
+```
 
 ### Generate Key
 ```bash
@@ -249,6 +277,18 @@ The portability of the container makes it easy for applications to be deployed i
 - Docker Registry – para armazenar imagens em ambiente on-premises;
 - Docker Cloud – um serviço gerenciado para criar e executar contêiner;
 
+#### Uninstall old versions
+```
+sudo apt remove docker docker-engine docker.io
+```
+
+The content of */var/lib/docker*, including images, containers, volumes and networks are preserved.
+
+
+```
+sudo ls /var/lib/docker
+```
+
 
 #### Docker Comands
 - Run container: 
@@ -263,6 +303,10 @@ docker run [OPTIONS] CONTAINER [CONTAINER...]
 docker stop [OPTIONS] CONTAINER [CONTAINER...]
 ```
 
+- Open terminal inside docker : 
+```
+docker exec -it --user root <DOCKER_NAME> /bin/bash
+```
 
 
 problemas git clone: usando você não é capaz de puxar commit específico com facilidade num CI
