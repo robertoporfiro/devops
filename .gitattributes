@@ -4,6 +4,7 @@
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto
+* text eol=lf
 
 # Documents
 *.doc  diff=astextplain
@@ -17,7 +18,7 @@
 *.rtf  diff=astextplain
 *.RTF  diff=astextplain
 
-*.gitattributes text eol=lf
+*.gitattributes text
 .gitignore      text
 *.md            text
 *.css           text diff=css
@@ -101,7 +102,7 @@
 # Syntax 
 ###############################################################################
 # Example of a `.gitattributes` file which reclassifies `.rb` files as Java:
-*.rb linguist-language=Java
+*.rb   linguist-language=ruby
 *.java linguist-language=Java
-*.py linguist-language=Python
-*.pl linguist-language=Prolog
+*.py   linguist-language=Python
+*.pl   linguist-language=Prolog
