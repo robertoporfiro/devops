@@ -308,6 +308,14 @@ docker stop [OPTIONS] CONTAINER [CONTAINER...]
 docker exec -it --user root <DOCKER_NAME> /bin/bash
 ```
 
+- Principal docker comands: 
+```
+docker images  # images
+docker ps      # containers
+docker volume  # volumes
+docker network # network
+```
+
 
 problemas git clone: usando você não é capaz de puxar commit específico com facilidade num CI
 é melhor para testar o código e por em produção usar o COPY
