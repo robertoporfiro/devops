@@ -314,6 +314,8 @@ docker images  # images
 docker ps      # containers
 docker volume  # volumes
 docker network # network
+
+nmap -n -p- localhost # show port in use
 ```
 
 
