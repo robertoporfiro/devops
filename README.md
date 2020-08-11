@@ -125,6 +125,17 @@ tipos de deploy, canary, blue-green
 
 # Linux
 
+## Wiping the entire disk
+```
+dd if=/dev/zero of=/dev/sdX bs=1M #replace X with the target drive letter.
+```
+
+Wiping the Master boot record (MBR)Edit
+```
+dd if=/dev/zero of=/dev/hdX bs=446 count=1 #replace X with the target drive letter.
+```
+
+
 ## Processing Files and Data
 
 - For JSON, use [`jq`](http://stedolan.github.io/jq/). For interactive use, also see [`jid`](https://github.com/simeji/jid) and [`jiq`](https://github.com/fiatjaf/jiq).
