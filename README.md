@@ -124,8 +124,12 @@ tipos de deploy, canary, blue-green
 
 
 # Linux
-# Structure Directory
+# Packge Manager
+```
+```
 
+### Structure Directory
+...
 
 
 ## Wiping the entire disk
@@ -137,12 +141,6 @@ Wiping the Master boot record (MBR)Edit
 ```
 dd if=/dev/zero of=/dev/hdX bs=446 count=1 #replace X with the target drive letter.
 ```
-
-fone subsolo:
-
-`45802`
-
-`45202`
 
 
 ## Processing Files and Data
